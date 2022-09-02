@@ -1,10 +1,13 @@
-import { Navbar } from '../components/Navbar';
+import { ContactMeForm, Footer, Home, Navbar, Projects } from '../components';
 
 export const PortfolioPage = () => {
   return (
     <div className="animate__animated animate__fadeIn">
       <Navbar />
-      <h1>Gianluca</h1>
+      <Home />
+      <Projects />
+      <ContactMeForm />
+      <Footer />
     </div>
   );
 };

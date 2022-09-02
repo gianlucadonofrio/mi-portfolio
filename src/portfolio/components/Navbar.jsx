@@ -2,20 +2,20 @@ import { useState } from 'react';
 import '../../styles/navbar.css';
 
 export const Navbar = () => {
-  const [isDark, setIsDark] = useState('fa-sun');
+  const [isDark, setIsDark] = useState('light_mode');
 
   const changeMode = () => {
-    if (isDark === 'fa-sun') {
-      setIsDark('fa-moon');
+    if (isDark === 'light_mode') {
+      setIsDark('dark_mode');
       document.body.classList.toggle('light-theme');
     } else {
-      setIsDark('fa-sun');
+      setIsDark('light_mode');
       document.body.classList.toggle('light-theme');
     }
   };
 
   return (
-    <nav className="navbar navbar-expand-lg ">
+    <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container d-flex align-content-lg-center">
         <a
           className="navbar-brand"
@@ -30,7 +30,9 @@ export const Navbar = () => {
             className="button-change-mode navbar-toggler"
             type="button"
           >
-            <i className={`fa-solid ${isDark} change-mode-icon`}></i>
+            <span className="material-symbols-outlined change-mode-icon">
+              {isDark}
+            </span>
           </button>
           <button
             className="navbar-toggler"
@@ -41,26 +43,21 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i className="fa-solid fa-bars navbar-icon"></i>
+            <span className="material-symbols-outlined navbar-icon">menu</span>
           </button>
         </div>
         <div
-          className="collapse navbar-collapse d-lg-flex justify-content-lg-end align-content-lg-center"
+          className="collapse navbar-collapse d-lg-flex justify-content-lg-end"
           id="navbarNav"
         >
-          <ul className="navbar-nav">
+          <ul className="navbar-nav d-lg-flex align-items-lg-center">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/">
-                Sobre mi
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="\">
+              <a className="nav-link" href="#projects">
                 Proyectos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="#contactMe">
                 Contacto
               </a>
             </li>
@@ -70,7 +67,9 @@ export const Navbar = () => {
                 className="button-change-mode"
                 type="button"
               >
-                <i className={`fa-solid ${isDark} change-mode-icon`}></i>
+                <span className="material-symbols-outlined change-mode-icon">
+                  {isDark}
+                </span>
               </button>
             </li>
           </ul>

@@ -8,9 +8,11 @@
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-
+#projects, #contactMe{
+  scroll-margin-top: 100px;
+}
 /*  LIGHT MODE*/
 @media (prefers-color-scheme: dark) {
   body.light-theme {

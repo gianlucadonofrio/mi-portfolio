@@ -5,6 +5,6 @@ import { MiPortfolioApp } from './MiPortfolioApp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MiPortfolioApp />
+      <MiPortfolioApp />
   </React.StrictMode>
 );
