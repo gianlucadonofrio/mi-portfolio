@@ -1,0 +1,20 @@
+:root {
+  --color-bg: #010409;
+  --color-text: #f0f6fc;
+  --color-navbar: #161b22;
+  --color-text-navbar: #f0f6fc;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/*  LIGHT MODE*/
+@media (prefers-color-scheme: dark) {
+  body.light-theme {
+    --color-bg: #ebedf0;
+    --color-text: #1a2027;
+  }
+}
