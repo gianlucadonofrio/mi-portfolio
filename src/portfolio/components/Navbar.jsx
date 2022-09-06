@@ -1,7 +1,9 @@
+import { useRef } from 'react';
 import { useState } from 'react';
 import '../../styles/navbar.css';
 
 export const Navbar = () => {
+  const collapseNavbar = useRef(null);
   const [isDark, setIsDark] = useState('light_mode');
 
   const changeMode = () => {
@@ -19,7 +21,7 @@ export const Navbar = () => {
       <div className="container d-flex align-content-lg-center">
         <a
           className="navbar-brand"
-          href="/"
+          href="#home"
           style={{ fontWeight: 'semi-bold', fontSize: '26px' }}
         >
           Gianluca.
@@ -48,17 +50,41 @@ export const Navbar = () => {
         </div>
         <div
           className="collapse navbar-collapse d-lg-flex justify-content-lg-end"
+          ref={collapseNavbar}
           id="navbarNav"
         >
           <ul className="navbar-nav d-lg-flex align-items-lg-center">
             <li className="nav-item">
-              <a className="nav-link" href="#projects">
+              <a
+                className="nav-link"
+                href="#aboutMe"
+                onClick={() => {
+                  collapseNavbar.current.classList.remove('show');
+                }}
+              >
+                Acerca de mí
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#projects"
+                onClick={() => {
+                  collapseNavbar.current.classList.remove('show');
+                }}
+              >
                 Proyectos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contactMe">
-                Contacto
+              <a
+                className="nav-link"
+                href="#contactMe"
+                onClick={() => {
+                  collapseNavbar.current.classList.remove('show');
+                }}
+              >
+                Contáctame
               </a>
             </li>
             <li className="nav-item d-none d-lg-block">

@@ -1,0 +1,39 @@
+.img-profile {
+  background-color: var(--color-background-image);
+  border-radius: 100% 50% 100% 100%;
+  width: 100%;
+  margin-top: 10px;
+}
+.title__name {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-background-image);
+}
+.title__description {
+  text-align: center;
+}
+.btn__cv__contactme {
+  background-color: var(--color-buttons);
+  color: var(--color-text-buttons);
+  border: 1px solid rgb(19, 47, 76);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-socials {
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* ANIMATIONS */
+.btn__cv__contactme:hover {
+  background-color: var(--color-text);
+  color: var(--color-buttons);
+}
+.btn-socials:hover {
+  color: var(--color-buttons);
+}
