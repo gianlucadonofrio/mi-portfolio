@@ -4,9 +4,9 @@ export const Home = () => {
   return (
     <div
       id="home"
-      className="container-fluid min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-end align-items-center"
+      className="container-fluid min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center  "
     >
-      <div className="container d-flex flex-column-reverse justify-content-start align-items-center col-md-6 p-0">
+      <div className="container d-flex flex-column-reverse justify-content-start align-items-center p-0">
         <div className="container d-flex justify-content-center w-100 flex-wrap">
           <a
             href={require('../../assets/CV-Gianluca-Donofrio.pdf')}
@@ -46,11 +46,11 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container d-flex justify-content-center align-items-end col-md-5">
+      <div className="container-fluid d-flex">
         <img
           src={require('../../assets/profile.png')}
           alt="profile"
-          className="img-profile mt-3"
+          className="img-profile"
           style={{
             backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 68%)',
           }}

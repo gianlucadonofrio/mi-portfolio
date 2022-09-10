@@ -5,7 +5,7 @@ export const Footer = () => {
       <div className="container d-flex flex-column align-items-center pt-3">
         <h2>Contáctame :) </h2>
         <p className="mt-5">
-          O también me puedes contactar a través de mis redes:
+          O también me puedes contactar a través de:
         </p>
         <div className="d-flex justify-content-center flex-row">
           <a
@@ -27,6 +27,17 @@ export const Footer = () => {
           >
             <i
               className="fa-brands fa-github p-2"
+              style={{ fontSize: '35px' }}
+            ></i>
+          </a>
+          <a
+            href="mailto: gian.donofrio2000@gmail.com"
+            target={'_blank'}
+            className="btn-socials"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-solid fa-envelope p-2"
               style={{ fontSize: '35px' }}
             ></i>
           </a>

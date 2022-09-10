@@ -1,17 +1,12 @@
 export const ProjectsCardDesktop = () => {
   return (
     <>
-      <div className="d-flex flex-row" id="project-1">
+      <div className="d-flex flex-row mt-5" id="project-1">
         <div className="col-md-8">
           <img
             src={require('../../../assets/projects/project-1.png')}
-            className="img-fluid"
+            className="img-fluid img-projects"
             alt="Project 1"
-            style={{
-              width: '100%',
-              height: '500px ',
-              objectFit: 'contain',
-            }}
           />
         </div>
         <div className="container col-md-4">
@@ -63,17 +58,12 @@ export const ProjectsCardDesktop = () => {
         </div>
       </div>
 
-      <div className="d-flex flex-row-reverse" id="project-2">
+      <div className="d-flex flex-row-reverse mt-5" id="project-2">
         <div className="col-md-8">
           <img
             src={require('../../../assets/projects/project-2.png')}
-            className="img-fluid"
+            className="img-fluid img-projects"
             alt="Project 1"
-            style={{
-              width: '100%',
-              height: '500px ',
-              objectFit: 'contain',
-            }}
           />
         </div>
         <div className="container col-md-4">
@@ -125,17 +115,12 @@ export const ProjectsCardDesktop = () => {
         </div>
       </div>
 
-      <div className="d-flex flex-row" id="project-3">
+      <div className="d-flex flex-row mt-5" id="project-3">
         <div className="col-md-8">
           <img
             src={require('../../../assets/projects/project-3.png')}
-            className="img-fluid"
+            className="img-fluid img-projects"
             alt="Project 1"
-            style={{
-              width: '100%',
-              height: '500px ',
-              objectFit: 'contain',
-            }}
           />
         </div>
         <div className="container col-md-4">

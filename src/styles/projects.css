@@ -14,8 +14,14 @@
   text-align: right;
 }
 
-.text-card-img{
-  backdrop-filter: blur(30px);
+.text-card-img {
+  backdrop-filter: blur(50px);
   width: 100%;
-  height: 100%; 
+  height: 100%;
+}
+.img-projects {
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: 5px;
 }

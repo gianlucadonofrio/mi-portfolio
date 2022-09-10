@@ -6,7 +6,7 @@ export const Projects = () => {
   return (
     <div
       id="projects"
-      className="container-fluid min-vh-100 d-flex flex-column justify-content-md-center align-items-center"
+      className="container-fluid min-vh-100 d-flex flex-column justify-content-md-center align-items-center mt-5 mb-5"
     >
       <div
         className="container-fluid d-flex flex-column align-items-center "
@@ -19,11 +19,11 @@ export const Projects = () => {
         <div className="vbar"></div>
       </div>
 
-      <div className="container-fluid mt-5 d-flex flex-column justify-content-center">
-        <div className="container mb-3 d-none d-lg-block ">
+      <div className="container-fluid d-flex flex-column justify-content-center">
+        <div className="container d-none d-lg-block ">
           <ProjectsCardDesktop />
         </div>
-        <div className="container mb-3 d-lg-none">
+        <div className="container d-lg-none">
           <ProjectsCardMobile />
         </div>
       </div>

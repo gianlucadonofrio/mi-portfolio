@@ -25,7 +25,7 @@ export const AboutMe = () => {
   return (
     <div
       id="aboutMe"
-      className="container-fluid min-vh-100 d-flex flex-column justify-content-md-center align-items-center"
+      className="container-fluid min-vh-100 d-flex flex-column justify-content-md-center align-items-center "
     >
       <div
         className="container-fluid d-flex flex-column align-items-center "
@@ -34,9 +34,7 @@ export const AboutMe = () => {
         <p style={{ color: 'var(--color-secondary-text)' }} className="m-0">
           Quien soy
         </p>
-        <h1 style={{ fontSize: '3rem', fontWeight: '600' }}>
-          Acerca de mí
-        </h1>
+        <h1 style={{ fontSize: '3rem', fontWeight: '600' }}>Acerca de mí</h1>
         <div className="vbar"></div>
       </div>
       <div
@@ -47,8 +45,7 @@ export const AboutMe = () => {
           Soy desarrollador web Fullstack, apasionado por el{' '}
           <strong style={{ color: 'var( --color-buttons' }}>
             Frontend ❤️.
-          </strong>
-          <br />
+          </strong>{' '}
           Me encanta la tecnología, la programación, y aprender cosas nuevas. Me
           gusta trabajar en equipo y aprender de mis compañeros.
           <br />
@@ -99,7 +96,7 @@ export const AboutMe = () => {
               </div>
 
               <div className="d-none" id="frontend_skills">
-                <div className="container ps-5">
+                <div className="container">
                   <p className="text_card_title">Tecnologías</p>
                   <p className="card-text text_card">
                     HTML | CSS | JavaScript | TypeScript.
@@ -139,7 +136,7 @@ export const AboutMe = () => {
                 ></i>
               </div>
               <div className="d-none" id="backend_skills">
-                <div className="container ps-5">
+                <div className="container">
                   <p className="text_card_title">Tecnologías</p>
                   <p className="card-text text_card">
                     Java | SQL | JavaScript | NodeJs | Express Js.
@@ -179,7 +176,7 @@ export const AboutMe = () => {
                 ></i>
               </div>
               <div className="d-none" id="otherTechnologies_skills">
-                <div className="container ps-5">
+                <div className="container">
                   <p className="text_card_title">Tecnologías</p>
                   <p className="card-text text_card">
                     Junit | Jest | Postman | GitHub | GitLab | UX/UI |

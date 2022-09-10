@@ -10,8 +10,10 @@
   --color-title-skills: #161b22;
   --color-card-shadow: rgba(255, 255, 255, 0.4);
 }
-#projects {
-  scroll-margin-top: 100px;
+#aboutMe,
+#projects,
+#contactMe {
+  scroll-margin-top: 70px;
 }
 body {
   background-color: var(--color-bg);
@@ -57,8 +59,5 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  #aboutMe,
-  #projects {
-    scroll-margin-top: 100px;
-  }
+
 }
