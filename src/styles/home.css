@@ -4,7 +4,7 @@
   width: 100%;
 }
 .title__name {
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 2;
   font-weight: 600;
   background-color: var(--color-buttons);
@@ -18,7 +18,6 @@
 .btn__cv__contactme {
   background-color: var(--color-buttons);
   color: var(--color-text-buttons);
-  border: 1px solid rgb(19, 47, 76);
   border-radius: 5px;
   padding: 10px;
   margin: 5px;
@@ -27,11 +26,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.btn-socials {
-  color: var(--color-text);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+
 /* ANIMATIONS */
 .btn__cv__contactme:hover {
   background-color: var(--color-text);
@@ -41,11 +36,14 @@
   color: var(--color-buttons);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .title__name {
     font-size: 4.5rem;
   }
   .title__description {
     font-size: 1.4rem;
   }
+  .btn__cv__contactme {
+    font-size: 1.6rem;
+  } 
 }

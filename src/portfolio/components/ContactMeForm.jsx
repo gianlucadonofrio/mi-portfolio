@@ -56,7 +56,7 @@ export const ContactMeForm = () => {
   return (
     <div
       id="contactMe"
-      className="container d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center pb-5 position-relative  vh-100"
+      className="container d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center pb-5 position-relative min-vh-100"
     >
       <div className="col-12 col-md-6 p-2 d-flex flex-column justify-content-center">
         <h1
@@ -88,7 +88,7 @@ export const ContactMeForm = () => {
           ></i>
           scroll down
           <i
-            className="fa-solid fa-arrow-down ps-2  " 
+            className="fa-solid fa-arrow-down ps-2  "
             style={{ color: 'var(--color-buttons)' }}
           ></i>
         </p>

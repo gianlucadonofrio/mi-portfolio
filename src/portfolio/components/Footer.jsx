@@ -37,7 +37,7 @@ export const Footer = () => {
             rel="noreferrer"
           >
             <i
-              class="fa-solid fa-envelope p-2"
+              className="fa-solid fa-envelope p-2"
               style={{ fontSize: '35px' }}
             ></i>
           </a>
