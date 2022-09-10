@@ -4,10 +4,10 @@ export const Home = () => {
   return (
     <div
       id="home"
-      className="container d-flex flex-column-reverse flex-md-row justify-content-end align-items-center vh-100"
+      className="container-fluid min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-end align-items-center"
     >
       <div
-        className="container d-flex flex-column align-items-center justify-content-center h-100 d-none d-md-flex p-0"
+        className="container d-flex flex-column align-items-center justify-content-center d-none d-md-flex"
         id="socials-desktop"
         style={{ width: 'fit-content' }}
       >
@@ -34,8 +34,8 @@ export const Home = () => {
           ></i>
         </a>
       </div>
-      <div className="container d-flex flex-column-reverse justify-content-start align-items-center mt-1 col-md-6 p-0">
-        <div className="container d-flex justify-content-center m-0 p-0 w-100 flex-wrap">
+      <div className="container d-flex flex-column-reverse justify-content-start align-items-center col-md-6 p-0">
+        <div className="container d-flex justify-content-center w-100 flex-wrap">
           <a
             href="https://drive.google.com/file/d/1AjktKDYo-TKXjJK4B9k8fREygwsy9sle/view?usp=sharing"
             target={'_blank'}
@@ -61,7 +61,7 @@ export const Home = () => {
           </a>
         </div>
         <div className="d-flex flex-row align-items-center">
-          <div
+          {/* <div
             className="container d-flex flex-column d-sm-none p-0"
             style={{ width: 'fit-content' }}
             id="socials-mobile"
@@ -84,19 +84,19 @@ export const Home = () => {
               rel="noreferrer"
             >
               <i
-                className="fa-brands fa-github p-1  "
+                className="fa-brands fa-github p-1"
                 style={{ fontSize: '35px' }}
               ></i>
             </a>
-          </div>
-          <div className="d-flex flex-column align-items-center mt-3 justify-content-center">
-            <h1 className="w-100 text-center ps-md-3">
+          </div> */}
+          <div className="d-flex flex-column align-items-center justify-content-center">
+            <h1 className="w-100 text-center ps-md-3 mt-2">
               Hola 👋🏼, soy
               <br />
               <span className="title__name"> Gianluca.</span>
             </h1>
             <p className="title__description ps-3">
-              Fullstack Developer Jr, apasionado por el Frontend.
+              Fullstack Developer, apasionado por el Frontend.
             </p>
           </div>
         </div>
@@ -105,7 +105,10 @@ export const Home = () => {
         <img
           src={require('../../assets/profile.png')}
           alt="profile"
-          className="img-profile mt-4"
+          className="img-profile mt-3"
+          style={{
+            backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 68%)',
+          }}
         />
       </div>
     </div>

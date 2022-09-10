@@ -2,12 +2,15 @@
   background-color: var(--color-background-image);
   border-radius: 100% 50% 100% 100%;
   width: 100%;
-  margin-top: 10px;
 }
 .title__name {
   font-size: 3rem;
+  line-height: 2;
   font-weight: 600;
-  color: var(--color-background-image);
+  background-color: var(--color-buttons);
+  padding: 8px;
+  border-radius: 5px;
+  color: var(--color-text-buttons);
 }
 .title__description {
   text-align: center;
@@ -36,4 +39,13 @@
 }
 .btn-socials:hover {
   color: var(--color-buttons);
+}
+
+@media screen and (min-width: 768px) {
+  .title__name {
+    font-size: 4.5rem;
+  }
+  .title__description {
+    font-size: 1.4rem;
+  }
 }

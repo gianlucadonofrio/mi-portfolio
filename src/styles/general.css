@@ -3,28 +3,40 @@
   --color-text: #f0f6fc;
   --color-navbar: #161b22;
   --color-text-navbar: #f0f6fc;
-  --color-background-image: #604a84;
+  --color-background-image: #4158d0;
   --color-buttons: #604a84;
+  --color-secondary-text: #c2c2c2;
   --color-text-buttons: #f0f6fc;
   --color-title-skills: #161b22;
   --color-card-shadow: rgba(255, 255, 255, 0.4);
 }
-
+#projects {
+  scroll-margin-top: 100px;
+}
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: 'Poppins', sans-serif;
 }
-#home {
-  scroll-margin-top: 100px;
+.vbar {
+  width: 100px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--color-buttons);
 }
 .btn-scroll-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   right: 20px;
   display: none;
-  background-color: var(--color-buttons);
-  color: var(--color-text-buttons);
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
   border-radius: 50%;
   border: none;
 }
@@ -33,11 +45,20 @@ body {
   color: var(--color-buttons);
   border: none;
 }
+
 /*  LIGHT MODE*/
 @media (prefers-color-scheme: dark) {
   body.light-theme {
     --color-bg: #ebedf0;
     --color-text: #1a2027;
     --color-card-shadow: rgba(0, 0, 0, 0.4);
+    --color-secondary-text: #5d5d5d;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #aboutMe,
+  #projects {
+    scroll-margin-top: 100px;
   }
 }

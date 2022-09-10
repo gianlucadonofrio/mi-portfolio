@@ -15,16 +15,21 @@
   float: left;
   color: var(--color-text-buttons);
   width: fit-content;
-  background-color: var(--color-background-image);
+  background-color: var(--color-buttons);
 }
 .title__contactMe span {
   position: absolute;
   right: 0;
   width: 0;
-  background-color: var(--color-background-image);
+  background-color: var(--color-buttons);
   border-left: 1px solid #000;
-  animation: escribir 5s steps(30) infinite alternate;
+  animation: escribir 3s steps(30) infinite alternate;
 }
+.scroll_down_desktop {
+  margin-bottom: 100px;
+  font-size: 1.3rem;
+}
+
 /*  Animations*/
 .btn:disabled {
   background-color: var(--color-buttons);

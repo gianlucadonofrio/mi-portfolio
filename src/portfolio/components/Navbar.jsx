@@ -1,5 +1,4 @@
-import { useRef } from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import '../../styles/navbar.css';
 
 export const Navbar = () => {
@@ -21,8 +20,11 @@ export const Navbar = () => {
       <div className="container d-flex align-content-lg-center">
         <a
           className="navbar-brand"
-          href="#home"
+          href="/"
           style={{ fontWeight: 'semi-bold', fontSize: '26px' }}
+          onClick={() => {
+            collapseNavbar.current.classList.remove('show');
+          }}
         >
           Gianluca.
         </a>

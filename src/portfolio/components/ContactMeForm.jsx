@@ -21,7 +21,7 @@ export const ContactMeForm = () => {
     try {
       setIsLoading(true);
       await axios
-        .post('https://mi-portfolio-api.herokuapp.com/api/mail', {
+        .post('https://mi-portfolio-api.vercel.app/api/mail', {
           headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
@@ -35,7 +35,6 @@ export const ContactMeForm = () => {
                 <h1>Email: ${email}</h1>
                 <p>Mensaje: ${message}</p>
                 `,
-          sandboxMode: true,
         })
         .then(({ status }) => {
           if (status === 201) {
@@ -57,9 +56,9 @@ export const ContactMeForm = () => {
   return (
     <div
       id="contactMe"
-      className="container d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center pb-5 vh-100 position-relative  "
+      className="container d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center pb-5 position-relative  vh-100"
     >
-      <div className="col-12 col-md-6 p-2  d-flex flex-column justify-content-center">
+      <div className="col-12 col-md-6 p-2 d-flex flex-column justify-content-center">
         <h1
           className="d-flex flex-column justify-content-center align-items-start p-md-2"
           style={{
@@ -76,8 +75,25 @@ export const ContactMeForm = () => {
           <strong>¿Tienes alguna pregunta?</strong> Envíame un mensaje y te
           contestaré lo antes posible.
         </p>
+        <p
+          className="container position-absolute bottom-0 start-0 d-none d-md-block"
+          style={{
+            fontSize: '1.4rem',
+            marginBottom: '100px',
+          }}
+        >
+          <i
+            className="fa-solid fa-computer-mouse pe-2"
+            style={{ color: 'var(--color-buttons)' }}
+          ></i>
+          scroll down
+          <i
+            className="fa-solid fa-arrow-down ps-2  " 
+            style={{ color: 'var(--color-buttons)' }}
+          ></i>
+        </p>
       </div>
-      <div className="col-12 col-md-6 p-2">
+      <div className="col-12 col-md-6">
         <form onSubmit={handleFormSubmit}>
           <div className="mb-3">
             <input
@@ -116,7 +132,7 @@ export const ContactMeForm = () => {
             <textarea
               className="form-control"
               placeholder="Mensaje"
-              rows="3"
+              rows="4"
               name="message"
               value={message}
               onChange={onInputChange}
@@ -136,7 +152,7 @@ export const ContactMeForm = () => {
               ) : (
                 <div className="d-flex justify-content-center align-items-center">
                   Enviar
-                  <i className="fa-solid fa-paper-plane ps-1"></i>
+                  <i className="fa-solid fa-paper-plane ps-1 "></i>
                 </div>
               )}
             </button>
@@ -160,6 +176,20 @@ export const ContactMeForm = () => {
             </div>
           </div>
         </form>
+        <p
+          className="d-flex justify-content-center d-md-none align-items-center "
+          style={{ fontSize: '1.2rem' }}
+        >
+          <i
+            className="fa-solid fa-computer-mouse pe-2"
+            style={{ color: 'var(--color-buttons)' }}
+          ></i>
+          scroll down
+          <i
+            className="fa-solid fa-arrow-down ps-2"
+            style={{ color: 'var(--color-buttons)' }}
+          ></i>
+        </p>
       </div>
     </div>
   );

@@ -4,7 +4,9 @@ export const Footer = () => {
       <hr />
       <div className="container d-flex flex-column align-items-center pt-3">
         <h2>Contáctame :) </h2>
-        <p className="mt-5">O también puedes seguirme en mis redes sociales:</p>
+        <p className="mt-5">
+          O también me puedes contactar a través de mis redes:
+        </p>
         <div className="d-flex justify-content-center flex-row">
           <a
             href="https://www.linkedin.com/in/gianlucadonofrio/"

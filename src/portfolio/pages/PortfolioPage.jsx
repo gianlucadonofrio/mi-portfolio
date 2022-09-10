@@ -36,7 +36,7 @@ export const PortfolioPage = () => {
       <ContactMeForm />
       <Footer />
       <button
-        className="btn btn-lg btn-scroll-top animate__animated animate__slideInUp"
+        className="btn btn-lg btn-scroll-top animate__animated animate__fadeIn"
         onClick={() => {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
