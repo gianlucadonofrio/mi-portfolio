@@ -25,7 +25,7 @@ export const AboutMe = () => {
   return (
     <div
       id="aboutMe"
-      className="container-fluid min-vh-100 d-flex flex-column justify-content-md-center align-items-center "
+      className="container min-vh-100 d-flex flex-column justify-content-md-center align-items-center "
     >
       <div
         className="container-fluid d-flex flex-column align-items-center "

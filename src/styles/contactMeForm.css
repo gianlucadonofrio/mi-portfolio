@@ -13,6 +13,8 @@
   font-size: 2.5rem;
   position: relative;
   float: left;
+  padding: 10px;
+  border-radius: 5px;
   color: var(--color-text-buttons);
   width: fit-content;
   background-color: var(--color-buttons);
@@ -21,6 +23,7 @@
   position: absolute;
   right: 0;
   width: 0;
+
   background-color: var(--color-buttons);
   border-left: 1px solid #000;
   animation: escribir 3s steps(30) infinite alternate;

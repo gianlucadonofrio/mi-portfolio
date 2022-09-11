@@ -56,18 +56,18 @@ export const ContactMeForm = () => {
   return (
     <div
       id="contactMe"
-      className="container d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center pb-5 position-relative min-vh-100"
+      className="container d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center position-relative min-vh-100"
     >
-      <div className="col-12 col-md-6 p-2 d-flex flex-column justify-content-center">
+      <div className="container col-12 col-md-6 d-flex flex-column justify-content-center">
         <h1
-          className="d-flex flex-column justify-content-center align-items-start p-md-2"
+          className="d-flex flex-column justify-content-center align-items-center w-100 align-items-md-start p-md-2"
           style={{
             fontSize: '2.5rem',
             width: 'fit-content',
           }}
         >
           Ahora o nunca!
-          <span className="title__contactMe">
+          <span className="title__contactMe ">
             Contáctame.&#160;<span>&#160;</span>
           </span>
         </h1>
@@ -93,8 +93,8 @@ export const ContactMeForm = () => {
           ></i>
         </p>
       </div>
-      <div className="col-12 col-md-6">
-        <form onSubmit={handleFormSubmit}>
+      <div className="container col-12 col-md-6">
+        <form onSubmit={handleFormSubmit} className='container'>
           <div className="mb-3">
             <input
               type="text"

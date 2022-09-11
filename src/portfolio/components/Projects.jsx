@@ -6,7 +6,7 @@ export const Projects = () => {
   return (
     <div
       id="projects"
-      className="container-fluid min-vh-100 d-flex flex-column justify-content-md-center align-items-center mt-5 mb-5"
+      className="container min-vh-100 d-flex flex-column justify-content-md-center align-items-center mt-5 mb-5"
     >
       <div
         className="container-fluid d-flex flex-column align-items-center "
