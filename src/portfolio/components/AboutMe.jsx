@@ -41,22 +41,63 @@ export const AboutMe = () => {
         className="container d-flex flex-column"
         style={{ width: 'fit-content' }}
       >
-        <p className="text-justify mt-3">
-          Soy desarrollador web Fullstack, apasionado por el{' '}
-          <strong style={{ color: 'var( --color-buttons' }}>
-            Frontend ❤️.
-          </strong>{' '}
-          Me encanta la tecnología, la programación, y aprender cosas nuevas. Me
-          gusta trabajar en equipo y aprender de mis compañeros.
-          <br />
-          Actualmente estoy cursando el segundo track de la carrera Certified
-          Tech Developer, pensada y diseñada por Digital House, Mercado Libre y
-          Globant, en la cual me estoy especializando en el desarrollo Frontend.
-          Recientemente me recibí de Professional Developer, en donde, con un
-          grupo de compañeros, desarrollamos una aplicación web como proyecto
-          final del primer track, en la cual me desempeñé como{' '}
-          <strong>Desarrollador Frontend.</strong>
-        </p>
+        <div className="d-flex align-items-center flex-column flex-md-row">
+          <p className="text-justify mt-3 pe-md-5 ">
+            Soy desarrollador web Fullstack, apasionado por el{' '}
+            <strong style={{ color: 'var( --color-buttons' }}>
+              Frontend ❤️.
+            </strong>{' '}
+            Me encanta la tecnología, la programación, y aprender cosas nuevas.
+            Me gusta trabajar en equipo y aprender de mis compañeros.
+            <br />
+            Actualmente estoy cursando el segundo track de la carrera Certified
+            Tech Developer, pensada y diseñada por Digital House, Mercado Libre
+            y Globant, en la cual me estoy especializando en el desarrollo
+            Frontend. Recientemente me recibí de Professional Developer, en
+            donde, con un grupo de compañeros, desarrollamos una aplicación web
+            como proyecto final del primer track, en la cual me desempeñé como{' '}
+            <strong>Desarrollador Frontend.</strong>
+          </p>
+          <div
+            className="d-flex flex-md-column align-items-center justify-content-end p-3"
+            style={{ width: 'fit-content' }}
+          >
+            <a
+              href="https://www.linkedin.com/in/gianlucadonofrio/"
+              target={'_blank'}
+              className="btn-socials"
+              rel="noreferrer"
+            >
+              <i
+                className="fa-brands fa-linkedin p-2"
+                style={{ fontSize: '35px' }}
+              ></i>
+            </a>
+            <a
+              href="https://github.com/gianlucadonofrio"
+              target={'_blank'}
+              className="btn-socials"
+              rel="noreferrer"
+            >
+              <i
+                className="fa-brands fa-github p-2"
+                style={{ fontSize: '35px' }}
+              ></i>
+            </a>
+            <a
+              href="mailto: gian.donofrio2000@gmail.com"
+              target={'_blank'}
+              className="btn-socials"
+              rel="noreferrer"
+            >
+              <i
+                className="fa-solid fa-envelope p-2"
+                style={{ fontSize: '35px' }}
+              ></i>
+            </a>
+          </div>
+        </div>
+
         <div id="skills_dropdown d-flex align-items-center">
           <div
             className="d-flex flex-column align-items-start mt-1"
