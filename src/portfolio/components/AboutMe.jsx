@@ -76,7 +76,7 @@ export const AboutMe = () => {
                     className="fa-solid fa-code icon_card pe-2"
                     id="frontend_button"
                   ></i>
-                  Frontend Developer
+                  {languagePage.acerca_de_mi__frontend}
                 </div>
                 <i
                   className={
@@ -121,7 +121,7 @@ export const AboutMe = () => {
                     className="fa-solid fa-server icon_card pe-2"
                     id="backend_button"
                   ></i>
-                  Backend Developer
+                  {languagePage.acerca_de_mi__backend}
                 </div>
                 <i
                   id="backend_button"
