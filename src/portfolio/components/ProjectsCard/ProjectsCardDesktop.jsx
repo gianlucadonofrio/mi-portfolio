@@ -32,10 +32,7 @@ export const ProjectsCardDesktop = ({ languagePage }) => {
               <li>MongoDB</li>
               <li>Express</li>
             </ul>
-            <div
-              className="d-flex justify-content-end gap-3"
-              style={{ fontSize: '30px' }}
-            >
+            <div className="d-flex justify-content-end gap-3">
               <a
                 href={languagePage.proyecto1__url_github}
                 target={'_blank'}
@@ -87,10 +84,7 @@ export const ProjectsCardDesktop = ({ languagePage }) => {
               <li>Firebase</li>
               <li>Material UI</li>
             </ul>
-            <div
-              className="d-flex justify-content-start gap-3"
-              style={{ fontSize: '30px' }}
-            >
+            <div className="d-flex justify-content-start gap-3">
               <a
                 href={languagePage.proyecto2__url_github}
                 target={'_blank'}
@@ -141,15 +135,12 @@ export const ProjectsCardDesktop = ({ languagePage }) => {
               <li>Vue Js</li>
               <li>Vuetify</li>
             </ul>
-            <div
-              className="d-flex justify-content-end gap-3"
-              style={{ fontSize: '30px' }}
-            >
+            <div className="d-flex justify-content-end gap-3">
               <a
                 href={languagePage.proyecto3__url_github}
                 target={'_blank'}
                 rel="noreferrer "
-                className=" btn-socials"
+                className="btn-socials"
               >
                 <i className="fa-brands fa-github"></i>
               </a>
@@ -157,7 +148,7 @@ export const ProjectsCardDesktop = ({ languagePage }) => {
                 href={languagePage.proyecto3__url_web}
                 target={'_blank'}
                 rel="noreferrer "
-                className=" btn-socials"
+                className="btn-socials"
               >
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>

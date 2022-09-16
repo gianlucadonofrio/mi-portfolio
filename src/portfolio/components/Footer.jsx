@@ -16,16 +16,7 @@ export const Footer = () => {
             className="btn-socials"
             rel="noreferrer"
           >
-            <i
-              className="fa-brands fa-linkedin-in p-2"
-              style={{
-                fontSize: '35px',
-                background:
-                  '-webkit-linear-gradient( 43deg, #4158D0 0%, #C850C0 68%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}
-            ></i>
+            <i className="fa-brands fa-linkedin-in p-2"></i>
           </a>
           <a
             href="https://github.com/gianlucadonofrio"
@@ -33,16 +24,7 @@ export const Footer = () => {
             className="btn-socials"
             rel="noreferrer"
           >
-            <i
-              className="fa-brands fa-github p-2"
-              style={{
-                fontSize: '35px',
-                background:
-                  '-webkit-linear-gradient( 43deg, #4158D0 0%, #C850C0 68%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}
-            ></i>
+            <i className="fa-brands fa-github p-2"></i>
           </a>
           <a
             href="mailto: gian.donofrio2000@gmail.com"
@@ -50,16 +32,7 @@ export const Footer = () => {
             className="btn-socials"
             rel="noreferrer"
           >
-            <i
-              className="fa-solid fa-envelope p-2"
-              style={{
-                fontSize: '35px',
-                background:
-                  '-webkit-linear-gradient( 43deg, #4158D0 0%, #C850C0 68%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}
-            ></i>
+            <i className="fa-solid fa-envelope p-2"></i>
           </a>
         </div>
       </div>

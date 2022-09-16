@@ -77,7 +77,7 @@ export const ContactMeForm = () => {
         <p
           className="container position-absolute bottom-0 start-0 d-none d-md-block"
           style={{
-            fontSize: '1.4rem',
+            fontSize: '1.5rem',
             marginBottom: '100px',
           }}
         >
@@ -181,7 +181,7 @@ export const ContactMeForm = () => {
         </form>
         <p
           className="d-flex justify-content-center d-md-none align-items-center "
-          style={{ fontSize: '1.2rem' }}
+          style={{ fontSize: '1.5rem' }}
         >
           <i
             className="fa-solid fa-computer-mouse pe-2"

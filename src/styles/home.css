@@ -26,6 +26,13 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.btn-socials {
+  background: -webkit-linear-gradient(43deg, #4158d0 0%, #c850c0 68%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2.3rem !important;
+}
 
 /* ANIMATIONS */
 .btn__cv__contactme:hover {
@@ -58,4 +65,3 @@
     font-size: 1.5rem;
   }
 }
-
