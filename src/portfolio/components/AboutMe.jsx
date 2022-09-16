@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import '../../styles/aboutMe.css';
+import { LanguageContext } from '../context/LanguageContext';
 
 export const AboutMe = () => {
   const [isDownFront, setIsDownFront] = useState(false);
   const [isDownBack, setIsDownBack] = useState(false);
   const [isDownOther, setIsDownOther] = useState(false);
-
+  const { languagePage } = useContext(LanguageContext);
   const dropDownMenu = (e) => {
     const dropDownFrontend = document.getElementById('frontend_skills');
     const dropDownBackend = document.getElementById('backend_skills');
@@ -32,9 +33,11 @@ export const AboutMe = () => {
         id="title_about_me"
       >
         <p style={{ color: 'var(--color-secondary-text)' }} className="m-0">
-          Quien soy
+          {languagePage.acerca_de_mi__text_title}
         </p>
-        <h1 style={{ fontSize: '3rem', fontWeight: '600' }}>Acerca de mí</h1>
+        <h1 style={{ fontSize: '3rem', fontWeight: '600' }}>
+          {languagePage.acerca_de_mi}
+        </h1>
         <div className="vbar"></div>
       </div>
       <div
@@ -43,59 +46,8 @@ export const AboutMe = () => {
       >
         <div className="d-flex align-items-center flex-column flex-md-row">
           <p className="text-justify mt-3 pe-md-5 ">
-            Soy desarrollador web Fullstack, apasionado por el{' '}
-            <strong style={{ color: 'var( --color-buttons' }}>
-              Frontend ❤️.
-            </strong>{' '}
-            Me encanta la tecnología, la programación, y aprender cosas nuevas.
-            Me gusta trabajar en equipo y aprender de mis compañeros.
-            <br />
-            Actualmente estoy cursando el segundo track de la carrera Certified
-            Tech Developer, pensada y diseñada por Digital House, Mercado Libre
-            y Globant, en la cual me estoy especializando en el desarrollo
-            Frontend. Recientemente me recibí de Professional Developer, en
-            donde, con un grupo de compañeros, desarrollamos una aplicación web
-            como proyecto final del primer track, en la cual me desempeñé como{' '}
-            <strong>Desarrollador Frontend.</strong>
+            {languagePage.acerca_de_mi__text}
           </p>
-          <div
-            className="d-flex flex-md-column align-items-center justify-content-end p-3"
-            style={{ width: 'fit-content' }}
-          >
-            <a
-              href="https://www.linkedin.com/in/gianlucadonofrio/"
-              target={'_blank'}
-              className="btn-socials"
-              rel="noreferrer"
-            >
-              <i
-                className="fa-brands fa-linkedin p-2"
-                style={{ fontSize: '35px' }}
-              ></i>
-            </a>
-            <a
-              href="https://github.com/gianlucadonofrio"
-              target={'_blank'}
-              className="btn-socials"
-              rel="noreferrer"
-            >
-              <i
-                className="fa-brands fa-github p-2"
-                style={{ fontSize: '35px' }}
-              ></i>
-            </a>
-            <a
-              href="mailto: gian.donofrio2000@gmail.com"
-              target={'_blank'}
-              className="btn-socials"
-              rel="noreferrer"
-            >
-              <i
-                className="fa-solid fa-envelope p-2"
-                style={{ fontSize: '35px' }}
-              ></i>
-            </a>
-          </div>
         </div>
 
         <div id="skills_dropdown d-flex align-items-center">
@@ -104,7 +56,7 @@ export const AboutMe = () => {
             id="title_about_me"
           >
             <h1 style={{ fontSize: '1.5rem', fontWeight: '600' }}>
-              Habilidades
+              {languagePage.acerca_de_mi__title_habilidades}
             </h1>
             <div className="vbar w-100"></div>
           </div>
@@ -138,11 +90,15 @@ export const AboutMe = () => {
 
               <div className="d-none" id="frontend_skills">
                 <div className="container">
-                  <p className="text_card_title">Tecnologías</p>
+                  <p className="text_card_title">
+                    {languagePage.acerca_de_mi__tecnologias}
+                  </p>
                   <p className="card-text text_card">
                     HTML | CSS | JavaScript | TypeScript.
                   </p>
-                  <p className="text_card_title">Librerías</p>
+                  <p className="text_card_title">
+                    {languagePage.acerca_de_mi__librerias}
+                  </p>
                   <p className="card-text text_card">
                     React JS | Vue JS | Bootstrap | Vuetify | Redux.
                   </p>
@@ -178,11 +134,15 @@ export const AboutMe = () => {
               </div>
               <div className="d-none" id="backend_skills">
                 <div className="container">
-                  <p className="text_card_title">Tecnologías</p>
+                  <p className="text_card_title">
+                    {languagePage.acerca_de_mi__tecnologias}
+                  </p>
                   <p className="card-text text_card">
                     Java | SQL | JavaScript | NodeJs | Express Js.
                   </p>
-                  <p className="text_card_title">Librerías</p>
+                  <p className="text_card_title">
+                    {languagePage.acerca_de_mi__librerias}
+                  </p>
                   <p className="card-text text_card">
                     Spring Boot | Mongoose | Rest API.
                   </p>
@@ -205,7 +165,7 @@ export const AboutMe = () => {
                     className="fa-solid fa-gears icon_card pe-2"
                     id="otherTechnologies_button"
                   ></i>
-                  Otras Tecnologías
+                  {languagePage.acerca_de_mi__otras_tecnologias}
                 </div>
                 <i
                   id="otherTechnologies_button"
@@ -218,7 +178,9 @@ export const AboutMe = () => {
               </div>
               <div className="d-none" id="otherTechnologies_skills">
                 <div className="container">
-                  <p className="text_card_title">Tecnologías</p>
+                  <p className="text_card_title">
+                    {languagePage.acerca_de_mi__tecnologias}
+                  </p>
                   <p className="card-text text_card">
                     Junit | Jest | Postman | GitHub | GitLab | UX/UI |
                     Metodologías Ágiles.

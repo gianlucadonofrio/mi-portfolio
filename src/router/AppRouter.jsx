@@ -1,10 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
+import { LanguageProvider } from '../portfolio/context/LanguageProvider';
 import { PortfolioPage } from '../portfolio/pages/PortfolioPage';
 
 export const AppRouter = () => {
   return (
-    <Routes>
-      <Route path="/*" element={<PortfolioPage />} />
-    </Routes>
+    <LanguageProvider>
+      <Routes>
+        <Route path="/*" element={<PortfolioPage />} />
+      </Routes>
+    </LanguageProvider>
   );
 };

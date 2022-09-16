@@ -1,4 +1,4 @@
-export const ProjectsCardDesktop = () => {
+export const ProjectsCardDesktop = ({ languagePage }) => {
   return (
     <>
       <div className="d-flex flex-row mt-5" id="project-1">
@@ -15,11 +15,10 @@ export const ProjectsCardDesktop = () => {
             style={{ float: 'right' }}
           >
             <h5 className="card-title text-end mb-4 title_project">
-              Calendar MERN
+              {languagePage.proyecto1__title}
             </h5>
             <p className="card-text p-3 mt-2 text-card-desktop">
-              Aplicación web de calendario colaborativo, donde se pueden ver,
-              editar, crear o eliminar los eventos.
+              {languagePage.proyecto1__description}
             </p>
             <ul
               className=" d-flex gap-2 justify-content-end card-text"
@@ -38,7 +37,7 @@ export const ProjectsCardDesktop = () => {
               style={{ fontSize: '30px' }}
             >
               <a
-                href="https://github.com/gianlucadonofrio/calendar-MERN-app"
+                href={languagePage.proyecto1__url_github}
                 target={'_blank'}
                 rel="noreferrer "
                 className=" btn-socials"
@@ -46,7 +45,7 @@ export const ProjectsCardDesktop = () => {
                 <i className="fa-brands fa-github"></i>
               </a>
               <a
-                href="https://calendar-app-two.vercel.app/"
+                href={languagePage.proyecto1__url_web}
                 target={'_blank'}
                 rel="noreferrer "
                 className=" btn-socials"
@@ -72,12 +71,10 @@ export const ProjectsCardDesktop = () => {
             style={{ float: 'left' }}
           >
             <h5 className="card-title text-start mb-4 title_project">
-              Journal App
+              {languagePage.proyecto2__title}
             </h5>
             <p className="card-text p-3 mt-2 text-card-desktop text-start">
-              Aplicación web de diario personal hecha con ReactJS, Sign In/Up
-              con Firebase, Google Sign In. Se pueden crear, editar, eliminar y
-              actualizar notas.
+              {languagePage.proyecto2__description}
             </p>
             <ul
               className=" d-flex gap-2 justify-content-start card-text p-0"
@@ -95,7 +92,7 @@ export const ProjectsCardDesktop = () => {
               style={{ fontSize: '30px' }}
             >
               <a
-                href="https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app"
+                href={languagePage.proyecto2__url_github}
                 target={'_blank'}
                 rel="noreferrer "
                 className="btn-socials"
@@ -103,7 +100,7 @@ export const ProjectsCardDesktop = () => {
                 <i className="fa-brands fa-github"></i>
               </a>
               <a
-                href="https://journal-app-beige.vercel.app"
+                href={languagePage.proyecto2__url_web}
                 target={'_blank'}
                 rel="noreferrer "
                 className=" btn-socials"
@@ -129,11 +126,10 @@ export const ProjectsCardDesktop = () => {
             style={{ float: 'right' }}
           >
             <h5 className="card-title text-end mb-4 title_project">
-              The Food Truck
+              {languagePage.proyecto3__title}
             </h5>
             <p className="card-text p-3 mt-2 text-card-desktop">
-              Aplicación web de pedido de comidas funcional, hecha con VueJS +
-              Vuetify, con un carrito de compras, registro e inicio de sesión.
+              {languagePage.proyecto3__description}
             </p>
             <ul
               className=" d-flex gap-2 justify-content-end card-text"
@@ -150,7 +146,7 @@ export const ProjectsCardDesktop = () => {
               style={{ fontSize: '30px' }}
             >
               <a
-                href="https://github.com/gianlucadonofrio/theFoodTruck-vueJs"
+                href={languagePage.proyecto3__url_github}
                 target={'_blank'}
                 rel="noreferrer "
                 className=" btn-socials"
@@ -158,7 +154,7 @@ export const ProjectsCardDesktop = () => {
                 <i className="fa-brands fa-github"></i>
               </a>
               <a
-                href="https://the-food-truck-vue-js.vercel.app/"
+                href={languagePage.proyecto3__url_web}
                 target={'_blank'}
                 rel="noreferrer "
                 className=" btn-socials"

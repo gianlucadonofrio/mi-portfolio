@@ -1,7 +1,8 @@
 import axios from 'axios';
-import { useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import { useForm } from '../../hooks/useForm';
 import '../../styles/contactMeForm.css';
+import { LanguageContext } from '../context/LanguageContext';
 const contactMeFormFields = {
   name: '',
   email: '',
@@ -15,6 +16,7 @@ export const ContactMeForm = () => {
     useForm(contactMeFormFields);
   const alertSumbitMail = useRef(null);
   const alertErrorMail = useRef(null);
+  const { languagePage } = useContext(LanguageContext);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -60,21 +62,18 @@ export const ContactMeForm = () => {
     >
       <div className="container col-12 col-md-6 d-flex flex-column justify-content-center">
         <h1
-          className="d-flex flex-column justify-content-center align-items-center w-100 align-items-md-start p-md-2"
+          className="d-flex flex-column justify-content-center align-items-start w-100 align-items-md-start p-md-2"
           style={{
             fontSize: '2.5rem',
             width: 'fit-content',
           }}
         >
-          Ahora o nunca!
+          {languagePage.contactme__subtitle}
           <span className="title__contactMe ">
-            Contáctame.&#160;<span>&#160;</span>
+            {languagePage.contactame}.&#160;<span>&#160;</span>
           </span>
         </h1>
-        <p className="p-md-2 mt-2">
-          <strong>¿Tienes alguna pregunta?</strong> Envíame un mensaje y te
-          contestaré lo antes posible.
-        </p>
+        <p className="p-md-2 mt-2">{languagePage.contactme__text}</p>
         <p
           className="container position-absolute bottom-0 start-0 d-none d-md-block"
           style={{
@@ -94,12 +93,12 @@ export const ContactMeForm = () => {
         </p>
       </div>
       <div className="container col-12 col-md-6">
-        <form onSubmit={handleFormSubmit} className='container'>
+        <form onSubmit={handleFormSubmit} >
           <div className="mb-3">
             <input
               type="text"
               className="form-control"
-              placeholder="Nombre"
+              placeholder={languagePage.contactme__form__nombre}
               name="name"
               value={name}
               onChange={onInputChange}
@@ -110,7 +109,7 @@ export const ContactMeForm = () => {
             <input
               type="email"
               className="form-control"
-              placeholder="Correo Electronico"
+              placeholder={languagePage.contactme__form__email}
               name="email"
               value={email}
               onChange={onInputChange}
@@ -121,7 +120,7 @@ export const ContactMeForm = () => {
             <input
               type="text"
               className="form-control"
-              placeholder="Asunto"
+              placeholder={languagePage.contactme__form__asunto}
               name="subjet"
               value={subjet}
               onChange={onInputChange}
@@ -131,7 +130,7 @@ export const ContactMeForm = () => {
           <div className="mb-3">
             <textarea
               className="form-control"
-              placeholder="Mensaje"
+              placeholder={languagePage.contactme__form__mensaje}
               rows="4"
               name="message"
               value={message}
@@ -147,11 +146,13 @@ export const ContactMeForm = () => {
             >
               {isLoading ? (
                 <div className="spinner-border" role="status">
-                  <span className="sr-only">Enviando...</span>
+                  <span className="sr-only">
+                    {languagePage.contactme__form__enviandoMensaje}
+                  </span>
                 </div>
               ) : (
                 <div className="d-flex justify-content-center align-items-center">
-                  Enviar
+                  {languagePage.contactme__form__enviar}
                   <i className="fa-solid fa-paper-plane ps-1 "></i>
                 </div>
               )}
@@ -163,16 +164,18 @@ export const ContactMeForm = () => {
               role="alert"
               ref={alertSumbitMail}
             >
-              <strong>¡Mensaje enviado!</strong> <br />
-              Te responderé lo antes posible.
+              <strong>{languagePage.contactme__form__mensajeEnviado}</strong>
+              <br />
+              {languagePage.contactme__form__mensajeEnviadoTexto}
             </div>
             <div
               className="alert alert-danger text-center d-none"
               role="alert"
               ref={alertErrorMail}
             >
-              <strong>¡El mensaje no se pudo enviar!</strong> <br />
-              Por favor, intenta nuevamente más tarde.
+              <strong>{languagePage.contactme__form__mensajeError}</strong>
+              <br />
+              {languagePage.contactme__form__mensajeErrorTexto}
             </div>
           </div>
         </form>

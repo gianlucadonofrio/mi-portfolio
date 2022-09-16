@@ -1,4 +1,4 @@
-export const ProjectsCardMobile = () => {
+export const ProjectsCardMobile = ({ languagePage }) => {
   const showDescription = (e) => {
     e.preventDefault();
     const description1 = document.querySelector('.project-1');
@@ -28,23 +28,22 @@ export const ProjectsCardMobile = () => {
               className="card-title"
               style={{ fontWeight: '600', color: 'var(--color-navbar)' }}
             >
-              Calendar MERN
+              {languagePage.proyecto1__title}
             </h5>
             <h6
               onClick={showDescription}
               id="project-1"
               style={{ color: 'var(  --color-buttons)' }}
             >
-              Ver más...
+              {languagePage.proyecto_vermas}
             </h6>
             <div className="card-img-overlay project-1 text-card-img d-none d-flex flex-column justify-content-center align-items-center  text-black animate__animated animate__fadeIn animate__faster">
               <p className="text-justify pe-3">
-                Aplicación web de calendario colaborativo, donde se pueden ver,
-                editar, crear o eliminar los eventos.
+                {languagePage.proyecto1__description}
               </p>
               <div className="d-flex gap-3" style={{ fontSize: '30px' }}>
                 <a
-                  href="https://github.com/gianlucadonofrio/calendar-MERN-app"
+                  href={languagePage.proyecto1__url_github}
                   target={'_blank'}
                   rel="noreferrer "
                   className=" btn-socials"
@@ -53,7 +52,7 @@ export const ProjectsCardMobile = () => {
                   <i className="fa-brands fa-github"></i>
                 </a>
                 <a
-                  href="https://calendar-app-two.vercel.app/"
+                  href={languagePage.proyecto1__url_web}
                   target={'_blank'}
                   rel="noreferrer "
                   className=" btn-socials"
@@ -85,24 +84,22 @@ export const ProjectsCardMobile = () => {
               className="card-title"
               style={{ fontWeight: '600', color: 'var(--color-navbar)' }}
             >
-              Journal App
+              {languagePage.proyecto2__title}
             </h5>
             <h6
               onClick={showDescription}
               id="project-2"
               style={{ color: 'var(  --color-buttons)' }}
             >
-              Ver más...
+              {languagePage.proyecto_vermas}
             </h6>
             <div className="card-img-overlay project-2 text-card-img d-none d-flex flex-column justify-content-center align-items-center  text-black animate__animated animate__fadeIn  animate__faster">
               <p className="text-justify pe-3">
-                Aplicación web de diario personal hecha con ReactJS, Sign In/Up
-                con Firebase, Google Sign In. Se pueden crear, editar, eliminar
-                y actualizar notas.
+                {languagePage.proyecto2__description}
               </p>
               <div className="d-flex gap-3" style={{ fontSize: '30px' }}>
                 <a
-                  href="https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app"
+                  href={languagePage.proyecto2__url_github}
                   target={'_blank'}
                   rel="noreferrer "
                   className=" btn-socials"
@@ -111,7 +108,7 @@ export const ProjectsCardMobile = () => {
                   <i className="fa-brands fa-github"></i>
                 </a>
                 <a
-                  href="https://journal-app-beige.vercel.app"
+                  href={languagePage.proyecto2__url_web}
                   target={'_blank'}
                   rel="noreferrer "
                   className=" btn-socials"
@@ -143,23 +140,22 @@ export const ProjectsCardMobile = () => {
               className="card-title"
               style={{ fontWeight: '600', color: 'var(  --color-navbar)' }}
             >
-              The Food Truck
+              {languagePage.proyecto3__title}
             </h5>
             <h6
               onClick={showDescription}
               id="project-3"
               style={{ color: 'var(  --color-buttons)' }}
             >
-              Ver más...
+              {languagePage.proyecto_vermas}
             </h6>
             <div className="card-img-overlay text-card-img project-3 d-none d-flex flex-column justify-content-center align-items-center  text-black animate__animated animate__fadeIn animate__faster">
               <p className="text-justify">
-                Aplicación web de pedido de comidas funcional, hecha con VueJS +
-                Vuetify, con un carrito de compras, registro e inicio de sesión.
+                {languagePage.proyecto3__description}
               </p>
               <div className="d-flex gap-3" style={{ fontSize: '30px' }}>
                 <a
-                  href="https://github.com/gianlucadonofrio/theFoodTruck-vueJs"
+                  href={languagePage.proyecto3__url_github}
                   target={'_blank'}
                   rel="noreferrer "
                   className=" btn-socials"
@@ -168,7 +164,7 @@ export const ProjectsCardMobile = () => {
                   <i className="fa-brands fa-github"></i>
                 </a>
                 <a
-                  href="https://the-food-truck-vue-js.vercel.app/"
+                  href={languagePage.proyecto3__url_web}
                   target={'_blank'}
                   rel="noreferrer "
                   className=" btn-socials"

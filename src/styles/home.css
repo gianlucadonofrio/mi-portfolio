@@ -36,14 +36,26 @@
   color: var(--color-buttons);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
   .title__name {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
   .title__description {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .btn__cv__contactme {
-    font-size: 1.6rem;
-  } 
+    font-size: 1.2rem;
+  }
 }
+@media screen and (min-width: 1023px) {
+  .title__name {
+    font-size: 4rem;
+  }
+  .title__description {
+    font-size: 1.2rem;
+  }
+  .btn__cv__contactme {
+    font-size: 1.5rem;
+  }
+}
+

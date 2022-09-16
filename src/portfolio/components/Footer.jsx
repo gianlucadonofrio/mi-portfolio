@@ -1,12 +1,14 @@
+import { useContext } from 'react';
+import { LanguageContext } from '../context/LanguageContext';
+
 export const Footer = () => {
+  const { languagePage } = useContext(LanguageContext);
   return (
     <div className="w-100">
       <hr />
       <div className="container d-flex flex-column align-items-center pt-3">
-        <h2>Contáctame :) </h2>
-        <p className="mt-5">
-          O también me puedes contactar a través de:
-        </p>
+        <h2>{languagePage.contactame} :)</h2>
+        <p className="mt-5">{languagePage.footer__subtitulo}</p>
         <div className="d-flex justify-content-center flex-row">
           <a
             href="https://www.linkedin.com/in/gianlucadonofrio/"
@@ -15,8 +17,14 @@ export const Footer = () => {
             rel="noreferrer"
           >
             <i
-              className="fa-brands fa-linkedin p-2"
-              style={{ fontSize: '35px' }}
+              className="fa-brands fa-linkedin-in p-2"
+              style={{
+                fontSize: '35px',
+                background:
+                  '-webkit-linear-gradient( 43deg, #4158D0 0%, #C850C0 68%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
             ></i>
           </a>
           <a
@@ -27,7 +35,13 @@ export const Footer = () => {
           >
             <i
               className="fa-brands fa-github p-2"
-              style={{ fontSize: '35px' }}
+              style={{
+                fontSize: '35px',
+                background:
+                  '-webkit-linear-gradient( 43deg, #4158D0 0%, #C850C0 68%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
             ></i>
           </a>
           <a
@@ -38,12 +52,18 @@ export const Footer = () => {
           >
             <i
               className="fa-solid fa-envelope p-2"
-              style={{ fontSize: '35px' }}
+              style={{
+                fontSize: '35px',
+                background:
+                  '-webkit-linear-gradient( 43deg, #4158D0 0%, #C850C0 68%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
             ></i>
           </a>
         </div>
       </div>
-      <p className="container mt-3 p-3"> Hecho con ❤️ por Gianluca D'Onofrio</p>
+      <p className="container mt-3 p-3"> {languagePage.footer__texto}</p>
     </div>
   );
 };

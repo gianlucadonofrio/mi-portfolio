@@ -1,0 +1,48 @@
+{
+  "acerca_de_mi": "About me",
+  "navbar__proyectos": "Projects",
+  "contactame": "Contactme",
+  "home__titulo": "Hi 👋🏼, I'm",
+  "home__subtitulo": "Fullstack developer, passionate about Frontend.",
+  "home__curriculum": "Curriculum",
+  "acerca_de_mi__text_title": "Who I am",
+  "acerca_de_mi__text": "I'm a Fullstack web developer, passionate about Frontend ❤️. I love technology, programming, and learning new things. I like to work in a team and learn from my colleagues. I am currently studying the second track of the Certified Tech Developer career, conceived and designed by Digital House, Mercado Libre and Globant, in which I am specializing in Frontend development. I recently graduated from Professional Developer, where, with a group of colleagues, we developed a web application as the final project of the first track, in which I worked as a Frontend Developer.",
+  "acerca_de_mi__title_habilidades": "Skills",
+  "acerca_de_mi__tecnologias": "Technologies",
+  "acerca_de_mi__librerias": "Libraries",
+  "acerca_de_mi__otras_tecnologias": "Other Technologies",
+  "proyecto_text_titulo": "Some projects I have done",
+  "proyecto_titulo": "My projects",
+  "proyecto_vermas": "See more...",
+
+  "proyecto1__title": "Calendar MERN",
+  "proyecto1__description": "Collaborative calendar web application, where events can be viewed, edited, created or deleted.",
+  "proyecto1__url_github": "https://github.com/gianlucadonofrio/calendar-MERN-app",
+  "proyecto1__url_web": "https://calendar-app-two.vercel.app/",
+
+  "proyecto2__title": "Journal App",
+  "proyecto2__description": "Personal diary web app made with ReactJS, Sign In/Up with Firebase, Google Sign In. Notes can be created, edited, deleted and updated.",
+  "proyecto2__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
+  "proyecto2__url_web": "https://journal-app-beige.vercel.app",
+
+  "proyecto3__title": "The Food Truck",
+  "proyecto3__description": "Functional food ordering web application, made with VueJS + Vuetify, with a shopping cart, registration and login.",
+  "proyecto3__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
+  "proyecto3__url_web": "https://the-food-truck-vue-js.vercel.app/",
+
+  "contactme__subtitle": "Now or never!",
+  "contactme__text": "If you are interested in working with me, or just want to say hello, do not hesitate to contact me.",
+  "contactme__form__nombre": "Name",
+  "contactme__form__email": "Email",
+  "contactme__form__asunto": "Subject",
+  "contactme__form__mensaje": "Message",
+  "contactme__form__enviar": "Send",
+  "contactme__form__enviandoMensaje": "Sending message...",
+
+  "contactme__form__mensajeEnviado": "Message sent successfully!",
+  "contactme__form__mensajeEnviadoTexto": "Thank you for contacting me, I will answer you as soon as possible.",
+  "contactme__form__mensajeError": "Error sending message!",
+  "contactme__form__mensajeErrorTexto": "An error occurred while sending the message, please try again later.",
+  "footer__subtitulo": "Or you can also contact me through:",
+  "footer__texto": "Made with ❤️ by Gianluca D'Onofrio"
+}
