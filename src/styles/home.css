@@ -19,9 +19,9 @@
   background-color: var(--color-buttons);
   color: var(--color-text-buttons);
   border-radius: 5px;
-  padding: 10px;
-  margin: 5px;
-  font-size: 1.2rem;
+  width: 165px;
+  height: 55px;
+  font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -45,13 +45,10 @@
 
 @media screen and (min-width: 767px) {
   .title__name {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .title__description {
     font-size: 1rem;
-  }
-  .btn__cv__contactme {
-    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1023px) {
@@ -63,5 +60,7 @@
   }
   .btn__cv__contactme {
     font-size: 1.5rem;
+    width: 230px;
+    height: 70px;
   }
 }
