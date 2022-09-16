@@ -10,13 +10,13 @@ export const Home = () => {
       className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-0"
     >
       <div
-        className="d-flex flex-md-column align-items-center justify-content-end p-3"
+        className="d-flex flex-md-column align-items-center justify-content-end mb-5"
         style={{ width: 'fit-content' }}
       >
         <a
           href="https://www.linkedin.com/in/gianlucadonofrio/"
           target={'_blank'}
-          className="btn-socials"
+          className="btn-socials "
           rel="noreferrer"
         >
           <i className="fa-brands fa-linkedin-in p-2"></i>
@@ -39,7 +39,7 @@ export const Home = () => {
         </a>
       </div>
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
-        <div className="container-fluid d-flex justify-content-center flex-wrap p-0 flex-md-nowrap">
+        <div className="container-fluid d-flex justify-content-center flex-wrap p-0 flex-md-nowrap gap-1">
           <a
             href={require('../../assets/CV-Gianluca-Donofrio.pdf')}
             target={'_blank'}
@@ -76,7 +76,7 @@ export const Home = () => {
         <img
           src={require('../../assets/profile.png')}
           alt="profile"
-          className="img-profile img-fluid"
+          className="img-profile img-fluid mt-2 mt-md-0"
           style={{
             backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 68%)',
           }}

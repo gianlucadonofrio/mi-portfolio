@@ -3,7 +3,7 @@
   "navbar__proyectos": "My projects",
   "contactame": "Contact me",
   "home__titulo": "Hi 👋🏼, I'm",
-  "home__subtitulo": "Full Stack Developer, appasionate about Frontend development and ReactJS 🚀",
+  "home__subtitulo": "Full Stack Developer, appasionate about Frontend development and ReactJS 🚀.",
   "home__curriculum": "Download CV",
   "acerca_de_mi__text_title": "Who I am",
   "acerca_de_mi__text": "I'm a Fullstack web developer, passionate about Frontend ❤️. I love technology, programming, and learning new things. I like to work in a team and learn from my colleagues. I am currently studying the second track of the Certified Tech Developer career, conceived and designed by Digital House, Mercado Libre and Globant, in which I am specializing in Frontend development. I recently graduated from Professional Developer, where, with a group of colleagues, we developed a web application as the final project of the first track, in which I worked as a Frontend Developer.",
@@ -27,7 +27,7 @@
   "proyecto2__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
   "proyecto2__url_web": "https://journal-app-beige.vercel.app",
 
-  "proyecto3__title": "The Food Truck App",
+  "proyecto3__title": "The Food Truck",
   "proyecto3__description": "The Food Truck is a web application that allows you to order food. You can view the menu, add products to the cart, remove products from the cart, and place the order. It has a login and register system. Enjoy your food! 🍔.",
   "proyecto3__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
   "proyecto3__url_web": "https://the-food-truck-vue-js.vercel.app/",

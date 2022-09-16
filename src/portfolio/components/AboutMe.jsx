@@ -178,9 +178,6 @@ export const AboutMe = () => {
               </div>
               <div className="d-none" id="otherTechnologies_skills">
                 <div className="container">
-                  <p className="text_card_title">
-                    {languagePage.acerca_de_mi__tecnologias}
-                  </p>
                   <p className="card-text text_card">
                     Junit | Jest | Postman | GitHub | GitLab | UX/UI |
                     Metodologías Ágiles.

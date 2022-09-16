@@ -77,23 +77,17 @@ export const ContactMeForm = () => {
         <p
           className="container position-absolute bottom-0 start-0 d-none d-md-block"
           style={{
-            fontSize: '1.5rem',
+            fontSize: '1.3rem',
             marginBottom: '100px',
           }}
         >
-          <i
-            className="fa-solid fa-computer-mouse pe-2"
-            style={{ color: 'var(--color-buttons)' }}
-          ></i>
+          <i className="fa-solid fa-computer-mouse pe-2 btn-scrolldown"></i>
           scroll down
-          <i
-            className="fa-solid fa-arrow-down ps-2  "
-            style={{ color: 'var(--color-buttons)' }}
-          ></i>
+          <i className="fa-solid fa-arrow-down ps-2 btn-scrolldown"></i>
         </p>
       </div>
       <div className="container col-12 col-md-6">
-        <form onSubmit={handleFormSubmit} >
+        <form onSubmit={handleFormSubmit}>
           <div className="mb-3">
             <input
               type="text"
@@ -181,17 +175,11 @@ export const ContactMeForm = () => {
         </form>
         <p
           className="d-flex justify-content-center d-md-none align-items-center "
-          style={{ fontSize: '1.5rem' }}
+          style={{ fontSize: '1.3rem' }}
         >
-          <i
-            className="fa-solid fa-computer-mouse pe-2"
-            style={{ color: 'var(--color-buttons)' }}
-          ></i>
+          <i className="fa-solid fa-computer-mouse pe-2 btn-scrolldown"></i>
           scroll down
-          <i
-            className="fa-solid fa-arrow-down ps-2"
-            style={{ color: 'var(--color-buttons)' }}
-          ></i>
+          <i className="fa-solid fa-arrow-down ps-2 btn-scrolldown"></i>
         </p>
       </div>
     </div>

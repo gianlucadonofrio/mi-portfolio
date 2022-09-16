@@ -29,7 +29,7 @@ export const ProjectsCardDesktop = ({ languagePage }) => {
             >
               <li>MongoDB</li>
               <li>Express</li>
-              <li>React</li>
+              <li>ReactJS</li>
               <li>NodeJS</li>
             </ul>
             <div className="d-flex justify-content-end gap-3">
@@ -80,7 +80,7 @@ export const ProjectsCardDesktop = ({ languagePage }) => {
                 color: 'var(--color-secondary-text)',
               }}
             >
-              <li>React</li>
+              <li>ReactJS</li>
               <li>Firebase</li>
               <li>Material UI</li>
             </ul>
@@ -132,7 +132,7 @@ export const ProjectsCardDesktop = ({ languagePage }) => {
                 color: 'var(--color-secondary-text)',
               }}
             >
-              <li>Vue Js</li>
+              <li>VueJS</li>
               <li>Vuetify</li>
               <li>Vuex</li>
             </ul>
