@@ -15,22 +15,6 @@
   "acerca_de_mi__otras_tecnologias": "Otras habilidades",
   "proyecto_text_titulo": "Algunos de mis proyectos.",
   "proyecto_titulo": "Mis proyectos",
-  "proyecto_vermas": "Ver más...",
-  "proyecto1__title": "Calendar App",
-  "proyecto1__description": "Calendar App es una aplicación web que te permite crear, editar y eliminar eventos. Solo ingrese la fecha y hora del evento, el título y una descripción. Lleva un registro de tus eventos y nunca olvides nada 🗓.",
-  "proyecto1__url_github": "https://github.com/gianlucadonofrio/calendar-MERN-app",
-  "proyecto1__url_web": "https://calendar-app-two.vercel.app/",
-
-  "proyecto2__title": "Journal App",
-  "proyecto2__description": "Aplicación web de diario personal, donde se pueden ver, editar, crear o eliminar notas. Cuenta con un sistema de inicio de sesión y registro. ¡Mantén tus notas seguras! 📝.",
-  "proyecto2__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
-  "proyecto2__url_web": "https://journal-app-beige.vercel.app",
-
-  "proyecto3__title": "The Food Truck",
-  "proyecto3__description": "The Food Truck es una aplicación web que te permite pedir comida. Puede ver el menú, agregar productos al carrito, eliminar productos del carrito y realizar el pedido. Cuenta con un sistema de inicio de sesión y registro. ¡Disfruta tu comida! 🍔.",
-  "proyecto3__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
-  "proyecto3__url_web": "https://the-food-truck-vue-js.vercel.app/",
-
   "contactme__subtitle": "Ahora o nunca!",
   "contactme__text": "Si te interesa trabajar conmigo, o simplemente quieres saludar, no dudes en contactarme. ¡Estaré encantado de responderte! 🤗.",
   "contactme__form__nombre": "Nombre",
@@ -39,12 +23,36 @@
   "contactme__form__mensaje": "Mensaje",
   "contactme__form__enviar": "Enviar",
   "contactme__form__enviandoMensaje": "Enviando...",
-
   "contactme__form__mensajeEnviado": "¡Mensaje enviado!",
   "contactme__form__mensajeEnviadoTexto": "Te responderé lo antes posible.",
   "contactme__form__mensajeError": "¡El mensaje no se pudo enviar!",
   "contactme__form__mensajeErrorTexto": " Por favor, intenta nuevamente más tarde.",
-
   "footer__subtitulo": "O también me puedes contactar a través de:",
-  "footer__texto": "Hecho con ❤️ por Gianluca D'Onofrio."
+  "footer__texto": "Hecho con ❤️ por Gianluca D'Onofrio.",
+  "projects__info": [
+    {
+      "id": 1,
+      "proyecto__title": "Calendar App",
+      "proyecto__description": "Calendar App es una aplicación web que te permite crear, editar y eliminar eventos. Solo ingrese la fecha y hora del evento, el título y una descripción. Lleva un registro de tus eventos y nunca olvides nada 🗓.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/calendar-MERN-app",
+      "proyecto__url_web": "https://calendar-app-two.vercel.app/",
+      "proyecto__tecnologias": ["MongoDB", "Express", "ReactJS", "NodeJS"]
+    },
+    {
+      "id": 2,
+      "proyecto__title": "Journal App",
+      "proyecto__description": "Aplicación web de diario personal, donde se pueden ver, editar, crear o eliminar notas. Cuenta con un sistema de inicio de sesión y registro. ¡Mantén tus notas seguras! 📝.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
+      "proyecto__url_web": "https://journal-app-beige.vercel.app",
+      "proyecto__tecnologias": ["ReactJS", "Firebase", "Material UI"]
+    },
+    {
+      "id": 3,
+      "proyecto__title": "The Food Truck",
+      "proyecto__description": "The Food Truck es una aplicación web que te permite pedir comida. Puede ver el menú, agregar productos al carrito, eliminar productos del carrito y realizar el pedido. Cuenta con un sistema de inicio de sesión y registro. ¡Disfruta tu comida! 🍔.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
+      "proyecto__url_web": "https://the-food-truck-vue-js.vercel.app/",
+      "proyecto__tecnologias": ["VueJS", "VueX", "Vuetify"]
+    }
+  ]
 }

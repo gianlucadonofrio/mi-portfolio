@@ -1,8 +1,7 @@
 import { useContext } from 'react';
 import '../../styles/projects.css';
 import { LanguageContext } from '../context/LanguageContext';
-import { ProjectsCardDesktop } from './ProjectsCard/ProjectsCardDesktop';
-import { ProjectsCardMobile } from './ProjectsCard/ProjectsCardMobile';
+import { ProjectsCards } from './ProjectsCards/ProjectsCards';
 
 export const Projects = () => {
   const { languagePage } = useContext(LanguageContext);
@@ -18,19 +17,14 @@ export const Projects = () => {
         <p style={{ color: 'var(--color-secondary-text)' }} className="m-0">
           {languagePage.proyecto_text_titulo}
         </p>
-        <h1 style={{ fontSize: '3rem', fontWeight: '600' }}>
+        <h1 style={{ fontSize: '2.8rem', fontWeight: '600' }}>
           {languagePage.proyecto_titulo}
         </h1>
         <div className="vbar"></div>
       </div>
 
       <div className="container-fluid d-flex flex-column justify-content-center">
-        <div className="container d-none d-lg-block ">
-          <ProjectsCardDesktop languagePage={languagePage} />
-        </div>
-        <div className="container d-lg-none">
-          <ProjectsCardMobile languagePage={languagePage} />
-        </div>
+        <ProjectsCards languagePage={languagePage} />
       </div>
     </div>
   );

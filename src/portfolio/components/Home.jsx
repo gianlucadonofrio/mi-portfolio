@@ -41,7 +41,7 @@ export const Home = () => {
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
         <div className="container-fluid d-flex justify-content-center flex-wrap p-0 flex-md-nowrap gap-1">
           <a
-            href={require('../../assets/CV-Gianluca-Donofrio.pdf')}
+            href={require('../data/CV-Gianluca-Donofrio.pdf')}
             target={'_blank'}
             rel="noreferrer"
             style={{ textDecoration: 'none' }}

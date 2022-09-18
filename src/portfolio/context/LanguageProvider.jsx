@@ -5,6 +5,7 @@ import * as us from '../languages/us.json';
 
 export const LanguageProvider = ({ children }) => {
   const [languagePage, setLanguagePage] = React.useState(es);
+
   return (
     <LanguageContext.Provider value={{ languagePage, setLanguagePage, es, us }}>
       {children}
