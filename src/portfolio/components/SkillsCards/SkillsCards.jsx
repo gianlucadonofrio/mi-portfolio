@@ -1,6 +1,6 @@
 export const SkillsCards = ({ languagePage }) => {
   return (
-    <div className="skills-cards-container mt-2 d-flex flex-column flex-md-row flex-wrap gap-4 justify-content-center">
+    <div className="skills-cards-container d-flex flex-column flex-md-row flex-wrap gap-4 justify-content-center">
       {languagePage.skills__cards.map((card) => (
         <div
           key={card.id}
@@ -15,9 +15,9 @@ export const SkillsCards = ({ languagePage }) => {
             alt="skill"
             className="card-img-skills"
           />
-          <div className="d-flex flex-column align-items-start justify-content-center mt-5">
+          <div className="d-flex flex-column align-items-center justify-content-center mt-5 mb-2">
             <i
-              className={`fa-solid ${card.icon} ms-5`}
+              className={`fa-solid ${card.icon}`}
               style={{
                 fontSize: '100px',
                 color: 'var(--color-buttons)',
@@ -30,7 +30,7 @@ export const SkillsCards = ({ languagePage }) => {
                 fontWeight: '600',
                 color: 'var(  --color-text-projects)',
               }}
-              className="mt-3 ps-3"
+              className="mt-4"
             >
               {card.title}
             </h5>
@@ -45,7 +45,7 @@ export const SkillsCards = ({ languagePage }) => {
 
                   fontWeight: '600',
                 }}
-                className="d-flex align-items-center mt-3"
+                className="d-flex align-items-center mt-2"
               >
                 <i
                   className="fa-solid fa-circle-check pe-2"
