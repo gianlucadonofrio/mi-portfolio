@@ -33,19 +33,8 @@ export const AboutMe = () => {
           </p>
         </div>
 
-        <div id="skills_dropdown d-flex align-items-center">
-          <div
-            className="d-flex flex-column align-items-start mt-1"
-            id="title_about_me"
-          >
-            <h1 style={{ fontSize: '1.5rem', fontWeight: '600' }}>
-              {languagePage.acerca_de_mi__title_habilidades}
-            </h1>
-            <div className="vbar w-100"></div>
-          </div>
-          <div className="container-fluid p-0">
-            <SkillsCards languagePage={languagePage} />
-          </div>
+        <div className="container-fluid p-0">
+          <SkillsCards languagePage={languagePage} />
         </div>
       </div>
     </div>

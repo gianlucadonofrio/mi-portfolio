@@ -23,7 +23,6 @@
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 .btn-socials {
   background: -webkit-linear-gradient(43deg, #4158d0 0%, #c850c0 68%);
@@ -47,6 +46,7 @@
   }
   .btn-socials:hover {
     transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
   }
 }
 @media screen and (min-width: 1023px) {

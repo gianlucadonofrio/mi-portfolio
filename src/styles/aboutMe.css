@@ -1,9 +1,9 @@
 .card-img-skills {
   position: absolute;
-  width: 200px;
-  top: -40px;
+  width: 250px;
+  bottom: -70px;
   z-index: 1;
-  right: -40px;
+  right: -90px;
   opacity: 0.3;
 }
 .skills-grid {
@@ -13,7 +13,6 @@
   row-gap: 2rem;
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 767px) {
   .skills-card-aboutme {
     width: 45%;
@@ -22,5 +21,9 @@
 @media screen and (min-width: 1023px) {
   .skills-card-aboutme {
     width: 30%;
+  }
+  .skills-card-aboutme:hover{
+    transform: scale(1.02);
+    transition: all 0.7s ease-in-out; 
   }
 }

@@ -4,11 +4,10 @@ export const SkillsCards = ({ languagePage }) => {
       {languagePage.skills__cards.map((card) => (
         <div
           key={card.id}
-          className="card skills-card-aboutme mt-3"
+          className="card skills-card-aboutme mt-3 position-relative"
           style={{
-            backgroundColor: '#161b22',
             overflow: 'hidden',
-            boxShadow: '0 0 15px 0px var(--color-card-shadow)',
+            boxShadow: '0 0 20px  var(  --color-card-shadow)',
           }}
         >
           <img
@@ -21,17 +20,17 @@ export const SkillsCards = ({ languagePage }) => {
               className={`fa-solid ${card.icon} ms-5`}
               style={{
                 fontSize: '100px',
-                color: 'var(--color-text-navbar)',
+                color: 'var(--color-buttons)',
                 zIndex: '2',
               }}
             ></i>
             <h5
               style={{
-                fontSize: '22px',
+                fontSize: '24px',
                 fontWeight: '600',
-                color: 'var(  --color-text-navbar)',
+                color: 'var(  --color-text-projects)',
               }}
-              className="mt-3 ps-2"
+              className="mt-3 ps-3"
             >
               {card.title}
             </h5>
@@ -42,7 +41,8 @@ export const SkillsCards = ({ languagePage }) => {
                 key={skill.id}
                 style={{
                   listStyleType: 'none',
-                  color: 'var(--color-text-navbar)',
+                  color: 'var(  --color-text-projects)',
+
                   fontWeight: '600',
                 }}
                 className="d-flex align-items-center mt-3"
