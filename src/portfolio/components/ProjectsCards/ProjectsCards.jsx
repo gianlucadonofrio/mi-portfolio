@@ -38,7 +38,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                   {project.proyecto__description}
                 </p>
                 <div
-                  className="projects-links d-flex flex-row justify-content-end w-100"
+                  className="projects-links d-flex flex-row justify-content-end w-100 gap-3"
                   style={{ width: 'fit-content' }}
                 >
                   <a
@@ -47,7 +47,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                     className="btn-socials"
                     rel="noreferrer"
                   >
-                    <i className="fa-brands fa-github p-2"></i>
+                    <i className="fa-brands fa-github"></i>
                   </a>
                   <a
                     href={project.proyecto__url_web}
@@ -55,7 +55,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                     className="btn-socials"
                     rel="noreferrer"
                   >
-                    <i className="fa-solid fa-arrow-up-right-from-square p-2"></i>
+                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
                   </a>
                 </div>
                 <ul

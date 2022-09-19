@@ -15,12 +15,13 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; 
+  user-select: none;
 }
-#aboutMe,
-#projects,
-#contactMe {
-  scroll-margin-top: 70px;
+#aboutMe {
+  scroll-margin-top: 20px;
+}
+#projects {
+  scroll-margin-top: 65px;
 }
 body {
   background-color: var(--color-bg);
