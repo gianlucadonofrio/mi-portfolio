@@ -41,8 +41,8 @@
   color: var(--color-text-buttons);
 }
 .btn-submit:hover {
-  background-color: var(--color-text);
-  color: var(--color-text-navbar);
+  background-color: var(--color-hover-buttons);
+  color: var(--color-hover-text-buttons);
 }
 @keyframes escribir {
   from {

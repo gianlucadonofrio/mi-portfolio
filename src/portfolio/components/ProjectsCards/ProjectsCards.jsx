@@ -38,7 +38,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                   {project.proyecto__description}
                 </p>
                 <div
-                  className="projects-links d-flex flex-row justify-content-start w-100"
+                  className="projects-links d-flex flex-row justify-content-end w-100"
                   style={{ width: 'fit-content' }}
                 >
                   <a
@@ -59,7 +59,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                   </a>
                 </div>
                 <ul
-                  className="projects-technologies d-flex flex-wrap m-0 p-1 justify-content-start gap-2"
+                  className="projects-technologies d-flex flex-wrap m-0 p-1 justify-content-end gap-2"
                   style={{ listStyleType: 'none', height: 'fit-content' }}
                 >
                   {project.proyecto__tecnologias.map((tecnologia) => (
