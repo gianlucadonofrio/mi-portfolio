@@ -7,7 +7,8 @@ export const SkillsCards = ({ languagePage }) => {
           className="card skills-card-aboutme mt-3 position-relative"
           style={{
             overflow: 'hidden',
-            boxShadow: '0 0 20px  var(  --color-card-shadow)',
+            boxShadow: '0 0 20px  var(--color-card-shadow)',
+            backgroundColor: 'var(--color-text)',
           }}
         >
           <img
@@ -21,14 +22,13 @@ export const SkillsCards = ({ languagePage }) => {
               style={{
                 fontSize: '100px',
                 color: 'var(--color-buttons)',
-                zIndex: '2',
               }}
             ></i>
             <h5
               style={{
                 fontSize: '24px',
                 fontWeight: '600',
-                color: 'var(  --color-text-projects)',
+                color: 'var(--color-text-projects)',
               }}
               className="mt-4"
             >
@@ -41,9 +41,9 @@ export const SkillsCards = ({ languagePage }) => {
                 key={skill.id}
                 style={{
                   listStyleType: 'none',
-                  color: 'var(  --color-text-projects)',
-
+                  color: 'var(--color-text-projects)',
                   fontWeight: '600',
+                  zIndex: '2',
                 }}
                 className="d-flex align-items-center mt-2"
               >
