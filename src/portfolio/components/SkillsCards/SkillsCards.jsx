@@ -7,7 +7,7 @@ export const SkillsCards = ({ languagePage }) => {
           className="card skills-card-aboutme mt-3 position-relative"
           style={{
             overflow: 'hidden',
-            boxShadow: '0 0 20px  var(--color-card-shadow)',
+            boxShadow: '0 0 14px 0 var(--color-card-shadow)',
             backgroundColor: 'var(--color-text)',
           }}
         >
