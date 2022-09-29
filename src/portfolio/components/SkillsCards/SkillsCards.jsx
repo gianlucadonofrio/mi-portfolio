@@ -30,7 +30,7 @@ export const SkillsCards = ({ languagePage }) => {
                 fontWeight: '600',
                 color: 'var(--color-text-projects)',
               }}
-              className="mt-4"
+              className="mt-4 p-2 text-center"
             >
               {card.title}
             </h5>

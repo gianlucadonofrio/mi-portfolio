@@ -120,6 +120,14 @@
   "projects__info": [
     {
       "id": 1,
+      "proyecto__title": "Rick and Morty App",
+      "proyecto__description": "This is a web application that allows you to search for characters from the Rick and Morty series, and see their information in detail, as well as their episodes, also you can add them to your favorites.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/ctd-esp-fe1-final",
+      "proyecto__url_web": "https://rick-and-morty-taupe-two.vercel.app/",
+      "proyecto__tecnologias": ["ReactJS", "Redux", "TypeScript", "JSDoc"]
+    },
+    {
+      "id": 2,
       "proyecto__title": "Calendar App",
       "proyecto__description": "Calendar App is a web application that allows you to create, edit and delete events. Just enter the date and time of the event, the title and a description. Keep track of your events and never forget anything 🗓.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/calendar-MERN-app",
@@ -127,20 +135,12 @@
       "proyecto__tecnologias": ["MongoDB", "Express", "ReactJS", "NodeJS"]
     },
     {
-      "id": 2,
-      "proyecto__title": "Journal App",
-      "proyecto__description": "Personal journal web application, where notes can be viewed, edited, created or deleted. It has a login and register system. Keep your notes safe! 📝.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
-      "proyecto__url_web": "https://journal-app-beige.vercel.app",
-      "proyecto__tecnologias": ["ReactJS", "Firebase", "Material UI"]
-    },
-    {
       "id": 3,
       "proyecto__title": "The Food Truck",
       "proyecto__description": "The Food Truck is a web application that allows you to order food. You can view the menu, add products to the cart, remove products from the cart, and place the order. It has a login and register system. Enjoy your food! 🍔.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
       "proyecto__url_web": "https://the-food-truck-vue-js.vercel.app/",
-      "proyecto__tecnologias": ["VueJS", "VueX", "Vuetify"]
+      "proyecto__tecnologias": ["VueJS", "VueX", "Vuetify", "Redux"]
     }
   ]
 }

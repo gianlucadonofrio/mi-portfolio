@@ -23,17 +23,14 @@ export const AboutMe = () => {
         </h1>
         <div className="vbar"></div>
       </div>
-      <div
-        className="container d-flex flex-column"
-        style={{ width: 'fit-content' }}
-      >
+      <div className=" d-flex flex-column" style={{ width: 'fit-content' }}>
         <div className="d-flex align-items-center flex-column flex-md-row">
           <p className="text-justify mt-3 pe-md-5 ">
             {languagePage.acerca_de_mi__text}
           </p>
         </div>
 
-        <div className="container-fluid p-0">
+        <div>
           <SkillsCards languagePage={languagePage} />
         </div>
       </div>

@@ -60,7 +60,7 @@ export const ContactMeForm = () => {
       id="contactMe"
       className="container d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center position-relative min-vh-100"
     >
-      <div className="container col-12 col-md-6 d-flex flex-column justify-content-center">
+      <div className=" col-12 col-md-6 d-flex flex-column justify-content-center">
         <h1
           className="d-flex flex-column justify-content-center align-items-start w-100 align-items-md-start p-md-2"
           style={{

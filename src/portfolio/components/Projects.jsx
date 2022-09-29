@@ -11,7 +11,7 @@ export const Projects = () => {
       className="container min-vh-100 d-flex flex-column justify-content-md-center align-items-center mt-5 mb-5"
     >
       <div
-        className="container-fluid d-flex flex-column align-items-center "
+        className="d-flex flex-column align-items-center "
         id="title_about_me"
       >
         <p style={{ color: 'var(--color-secondary-text)' }} className="m-0">
@@ -23,7 +23,7 @@ export const Projects = () => {
         <div className="vbar"></div>
       </div>
 
-      <div className="container-fluid d-flex flex-column justify-content-center">
+      <div className="d-flex flex-column justify-content-center">
         <ProjectsCards languagePage={languagePage} />
       </div>
     </div>

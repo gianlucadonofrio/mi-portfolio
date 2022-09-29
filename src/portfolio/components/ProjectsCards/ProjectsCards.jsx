@@ -2,7 +2,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
   return (
     <>
       {data.projects__info.map((project) => (
-        <div key={project.id} className="container-fluid card-project-row">
+        <div key={project.id} className="card-project-row">
           <div className="card mt-5 card-project ">
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-center">
               <div className=" d-flex justify-content-center col-lg-8">
