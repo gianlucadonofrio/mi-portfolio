@@ -129,15 +129,15 @@
     {
       "id": 2,
       "proyecto__title": "Calendar App",
-      "proyecto__description": "Calendar App es una aplicación web que te permite crear, editar y eliminar eventos. Solo ingrese la fecha y hora del evento, el título y una descripción. Lleva un registro de tus eventos y nunca olvides nada 🗓.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/calendar-MERN-app",
-      "proyecto__url_web": "https://calendar-app-two.vercel.app/",
+      "proyecto__description": "Aplicación web que te permite crear, editar y eliminar eventos. Solo ingrese la fecha y hora del evento, el título y una descripción. Lleva un registro de tus eventos y nunca olvides nada 🗓.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/10-calendar-app",
+      "proyecto__url_web": "https://calendar-api-nine.vercel.app",
       "proyecto__tecnologias": ["MongoDB", "Express", "ReactJS", "NodeJS"]
     },
     {
       "id": 3,
       "proyecto__title": "The Food Truck",
-      "proyecto__description": "The Food Truck es una aplicación web que te permite pedir comida. Puede ver el menú, agregar productos al carrito, eliminar productos del carrito y realizar el pedido. Cuenta con un sistema de inicio de sesión y registro. ¡Disfruta tu comida! 🍔.",
+      "proyecto__description": "Aplicación web que te permite pedir comida. Puede ver el menú, agregar productos al carrito, eliminar productos del carrito y realizar el pedido. Cuenta con un sistema de inicio de sesión y registro. ¡Disfruta tu comida! 🍔.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
       "proyecto__url_web": "https://the-food-truck-vue-js.vercel.app/",
       "proyecto__tecnologias": ["VueJS", "VueX", "Vuetify", "Redux"]
