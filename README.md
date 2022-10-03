@@ -1,8 +1,8 @@
 # Mi Portfolio
 
-## Live Web
+## Link a la app
 
-<a href="https://gianlucadonofrio.com" target="_blank">Link aquí</a>
+[https://www.gianlucadonofrio.com](https://www.gianlucadonofrio.com)
 
 # Getting Started with Create React App
 
