@@ -12,10 +12,6 @@
   --color-title-skills: #161b22;
   --color-text-projects: #1a2027;
   --color-card-shadow: rgba(255, 255, 255, 0.747);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 #aboutMe {
   scroll-margin-top: 20px;
@@ -47,7 +43,6 @@ body {
     #c850c0 46%,
     #ffcc70 100%
   );
-
   border-radius: 50%;
   border: none;
 }

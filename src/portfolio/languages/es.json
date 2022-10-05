@@ -3,10 +3,10 @@
   "navbar__proyectos": "Mis proyectos",
   "contactame": "Contáctame",
   "home__titulo": "Hola 👋🏼, soy",
-  "home__subtitulo": "Desarrollador de software, apasionado por el desarrollo Front-End y ReactJS 🚀.",
+  "home__subtitulo": "Desarrollador de software, apasionado por el desarrollo Frontend.",
   "home__curriculum": "Descargar CV",
   "acerca_de_mi__text_title": "Quién soy",
-  "acerca_de_mi__text": "Soy Desarrollador Web Fullstack, apasionado por el desarrollo Front-End y ReactJS 🚀. Me encanta la programación y la tecnología, siempre estoy explorando nuevas tecnologías y aprendiendo cosas nuevas. Me considero una persona responsable, autodidacta, con muchas ganas de aprender y mejorar día a día. Actualmente estoy en el segundo año de la carrera de Certified Tech Developer en Digital House. Busco mi primera experiencia laboral como desarrollador Front-End. Si quieres saber más sobre mí, puedes ver mi CV o contactar conmigo. ¡Gracias por visitar mi sitio web! 😊.",
+  "acerca_de_mi__text": "Soy Desarrollador Web Fullstack, apasionado por el desarrollo Frontend. Me encanta la programación y la tecnología, siempre estoy explorando nuevas tecnologías y aprendiendo cosas nuevas. Me considero una persona responsable, autodidacta, con muchas ganas de aprender y mejorar día a día. Actualmente estoy en el segundo año de la carrera de Certified Tech Developer en Digital House. Busco mi primera experiencia laboral como desarrollador Front-End. Si quieres saber más sobre mí, puedes ver mi CV o contactar conmigo. ¡Gracias por visitar mi sitio web! 😊",
   "acerca_de_mi__title_habilidades": "Mis habilidades",
   "skills__cards": [
     {
@@ -140,7 +140,7 @@
       "proyecto__description": "Aplicación web que te permite pedir comida. Puede ver el menú, agregar productos al carrito, eliminar productos del carrito y realizar el pedido. Cuenta con un sistema de inicio de sesión y registro. ¡Disfruta tu comida! 🍔.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
       "proyecto__url_web": "https://the-food-truck-vue-js.vercel.app/",
-      "proyecto__tecnologias": ["VueJS", "VueX", "Vuetify", "Redux"]
+      "proyecto__tecnologias": ["VueJS", "Vuetify", "Vuex"]
     }
   ]
 }
