@@ -22,8 +22,4 @@
   .skills-card-aboutme {
     width: 30%;
   }
-  .skills-card-aboutme:hover {
-    transform: scale(1.02);
-    transition: all 0.7s ease-in-out;
-  }
 }

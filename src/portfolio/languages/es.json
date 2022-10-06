@@ -131,7 +131,7 @@
       "proyecto__title": "Calendar App",
       "proyecto__description": "Aplicación web que te permite crear, editar y eliminar eventos. Solo ingrese la fecha y hora del evento, el título y una descripción. Lleva un registro de tus eventos y nunca olvides nada 🗓.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/10-calendar-app",
-      "proyecto__url_web": "https://calendar-api-nine.vercel.app",
+      "proyecto__url_web": "https://calendar-app-sooty.vercel.app",
       "proyecto__tecnologias": ["MongoDB", "Express", "ReactJS", "NodeJS"]
     },
     {
@@ -140,6 +140,14 @@
       "proyecto__description": "Aplicación web que te permite pedir comida. Puede ver el menú, agregar productos al carrito, eliminar productos del carrito y realizar el pedido. Cuenta con un sistema de inicio de sesión y registro. ¡Disfruta tu comida! 🍔.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
       "proyecto__url_web": "https://the-food-truck-vue-js.vercel.app/",
+      "proyecto__tecnologias": ["VueJS", "Vuetify", "Vuex"]
+    },
+    {
+      "id": 4,
+      "proyecto__title": "Journal App",
+      "proyecto__description": "Aplicación web que te permite crear, editar y eliminar notas. Solo ingrese el título y una descripción. Lleva un registro de tus notas y nunca olvides nada 📝.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
+      "proyecto__url_web": "https://calendar-api-nine.vercel.app",
       "proyecto__tecnologias": ["VueJS", "Vuetify", "Vuex"]
     }
   ]
