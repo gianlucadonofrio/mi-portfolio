@@ -147,8 +147,8 @@
       "proyecto__title": "Journal App",
       "proyecto__description": "Aplicación web que te permite crear, editar y eliminar notas. Solo ingrese el título y una descripción. Lleva un registro de tus notas y nunca olvides nada 📝.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
-      "proyecto__url_web": "https://calendar-api-nine.vercel.app",
-      "proyecto__tecnologias": ["VueJS", "Vuetify", "Vuex"]
+      "proyecto__url_web": "https://journal-app-chi-dusky.vercel.app/",
+      "proyecto__tecnologias": ["ReactJS", "Redux", "Material UI", "Firebase"]
     }
   ]
 }
