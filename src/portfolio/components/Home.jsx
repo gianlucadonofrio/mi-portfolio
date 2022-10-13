@@ -3,7 +3,7 @@ import '../../styles/home.css';
 import { LanguageContext } from '../context/LanguageContext';
 
 export const Home = () => {
-  const { languagePage } = useContext(LanguageContext);
+  const { languagePage, es } = useContext(LanguageContext);
   return (
     <div
       id="home"
@@ -41,7 +41,11 @@ export const Home = () => {
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
         <div className="container-fluid d-flex justify-content-center flex-wrap p-0 flex-md-nowrap gap-2">
           <a
-            href={require('../data/CV-Gianluca-Donofrio.pdf')}
+            href={
+              languagePage === es
+                ? require('../data/CV-Gianluca-Donofrio-SP.pdf')
+                : require('../data/CV-Gianluca-Donofrio-EN.pdf')
+            }
             target={'_blank'}
             rel="noreferrer"
             style={{ textDecoration: 'none' }}
