@@ -41,7 +41,7 @@ export const Home = () => {
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
         <div className="container-fluid d-flex justify-content-center flex-wrap p-0 flex-md-nowrap gap-2">
           <a
-            href="https://drive.google.com/file/d/1rcoc7DbS2r0EoiW5TnY9A6rY37kTFssg/view?usp=sharing"
+            href="https://drive.google.com/file/d/1gs458YVj06orqCuniu4GhsSkne8xn_uF/view?usp=sharing"
             target={'_blank'}
             rel="noreferrer"
             style={{ textDecoration: 'none' }}
