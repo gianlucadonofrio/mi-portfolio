@@ -4,7 +4,7 @@ import { LanguageContext } from '../context/LanguageContext';
 export const Footer = () => {
   const { languagePage } = useContext(LanguageContext);
   return (
-    <div className="w-100">
+    <section className="w-100">
       <hr />
       <div className="container d-flex flex-column align-items-center pt-3">
         <h2>{languagePage.contactame} :)</h2>
@@ -37,6 +37,6 @@ export const Footer = () => {
         </div>
       </div>
       <p className="container mt-3 p-3"> {languagePage.footer__texto}</p>
-    </div>
+    </section>
   );
 };

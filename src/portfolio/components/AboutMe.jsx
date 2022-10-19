@@ -7,7 +7,7 @@ export const AboutMe = () => {
   const { languagePage } = useContext(LanguageContext);
 
   return (
-    <div
+    <section
       id="aboutMe"
       className="container min-vh-100 d-flex flex-column justify-content-md-center align-items-center "
     >
@@ -34,6 +34,6 @@ export const AboutMe = () => {
           <SkillsCards languagePage={languagePage} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

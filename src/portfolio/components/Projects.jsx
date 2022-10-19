@@ -6,7 +6,7 @@ import { ProjectsCards } from './ProjectsCards/ProjectsCards';
 export const Projects = () => {
   const { languagePage } = useContext(LanguageContext);
   return (
-    <div
+    <section
       id="projects"
       className="container min-vh-100 d-flex flex-column justify-content-md-center align-items-center mt-5 mb-5"
     >
@@ -26,6 +26,6 @@ export const Projects = () => {
       <div className="d-flex flex-column justify-content-center">
         <ProjectsCards languagePage={languagePage} />
       </div>
-    </div>
+    </section>
   );
 };

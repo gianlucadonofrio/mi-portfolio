@@ -56,7 +56,7 @@ export const ContactMeForm = () => {
   };
 
   return (
-    <div
+    <section
       id="contactMe"
       className="container d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center position-relative min-vh-100"
     >
@@ -182,6 +182,6 @@ export const ContactMeForm = () => {
           <i className="fa-solid fa-arrow-down ps-2 btn-scrolldown"></i>
         </p>
       </div>
-    </div>
+    </section>
   );
 };

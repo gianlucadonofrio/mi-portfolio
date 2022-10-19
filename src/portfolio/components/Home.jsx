@@ -5,7 +5,7 @@ import { LanguageContext } from '../context/LanguageContext';
 export const Home = () => {
   const { languagePage } = useContext(LanguageContext);
   return (
-    <div
+    <section
       id="home"
       className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-0"
     >
@@ -41,7 +41,8 @@ export const Home = () => {
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
         <div className="container-fluid d-flex justify-content-center flex-wrap p-0 flex-md-nowrap gap-2">
           <a
-            href="https://drive.google.com/file/d/1gs458YVj06orqCuniu4GhsSkne8xn_uF/view?usp=sharing"
+            href={require('../CV/CV-Gianluca-Donofrio.pdf')}
+            download="CV-Gianluca-Donofrio.pdf"
             target={'_blank'}
             rel="noreferrer"
             style={{ textDecoration: 'none' }}
@@ -81,6 +82,6 @@ export const Home = () => {
           }}
         />
       </div>
-    </div>
+    </section>
   );
 };

@@ -1,6 +1,6 @@
 export const SkillsCards = ({ languagePage }) => {
   return (
-    <div className="skills-cards-container d-flex flex-column flex-md-row flex-wrap gap-4 justify-content-center">
+    <section className="skills-cards-container d-flex flex-column flex-md-row flex-wrap gap-4 justify-content-center">
       {languagePage.skills__cards.map((card) => (
         <div
           key={card.id}
@@ -57,6 +57,6 @@ export const SkillsCards = ({ languagePage }) => {
           </ul>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
