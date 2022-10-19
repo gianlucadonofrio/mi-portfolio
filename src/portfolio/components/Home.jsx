@@ -41,11 +41,10 @@ export const Home = () => {
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
         <div className="container-fluid d-flex justify-content-center flex-wrap p-0 flex-md-nowrap gap-2">
           <a
-            href={require('../data/CV-Gianluca-Donofrio-SP.pdf')}
+            href="https://drive.google.com/file/d/1rcoc7DbS2r0EoiW5TnY9A6rY37kTFssg/view?usp=sharing"
             target={'_blank'}
             rel="noreferrer"
             style={{ textDecoration: 'none' }}
-            download={'CV-Gianluca-Donofrio.pdf'}
           >
             <p className="btn__cv__contactme d-flex align-items-center justify-content-center">
               {languagePage.home__curriculum}
