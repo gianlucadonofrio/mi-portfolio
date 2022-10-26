@@ -74,7 +74,7 @@ export const Home = () => {
       </div>
       <div className="container-fluid">
         <img
-          src={require('../../assets/profile.png')}
+          src={require('../../assets/profile.webp')}
           alt="profile"
           className="img-profile img-fluid mt-2 mt-md-0"
           style={{

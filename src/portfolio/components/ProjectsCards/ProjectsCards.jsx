@@ -7,7 +7,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-center">
               <div className=" d-flex justify-content-center col-lg-8">
                 <img
-                  src={require(`../../../assets/projects/project-${project.id}.png`)}
+                  src={require(`../../../assets/projects/project-${project.id}.webp`)}
                   className="card-img-top rounded"
                   alt={project.proyecto__title}
                   style={{
