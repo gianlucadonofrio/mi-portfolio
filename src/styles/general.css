@@ -13,6 +13,13 @@
   --color-text-projects: #1a2027;
   --color-card-shadow: rgba(255, 255, 255, 0.747);
 }
+#home,
+#aboutMe,
+#projects,
+#contactMe {
+  background-color: var(--color-bg);
+}
+
 #aboutMe {
   scroll-margin-top: 20px;
 }
@@ -23,6 +30,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: 'Poppins', sans-serif;
+  font-display: swap;
 }
 .vbar {
   width: 100px;

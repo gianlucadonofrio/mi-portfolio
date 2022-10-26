@@ -1,6 +1,7 @@
 .img-profile {
   background-color: var(--color-background-image);
   border-radius: 100% 50% 100% 100%;
+  height: 100%;
   width: 100%;
 }
 .title__name {
