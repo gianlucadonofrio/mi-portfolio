@@ -12,6 +12,7 @@
   --color-title-skills: #161b22;
   --color-text-projects: #1a2027;
   --color-card-shadow: rgba(255, 255, 255, 0.747);
+  font-display: swap;
 }
 #home,
 #aboutMe,
@@ -30,7 +31,6 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: 'Poppins', sans-serif;
-  font-display: swap;
 }
 .vbar {
   width: 100px;
