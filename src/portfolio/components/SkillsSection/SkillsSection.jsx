@@ -2,7 +2,7 @@ export const SkillsSection = ({ languagePage }) => {
   return (
     <section>
       <h3
-        className=" mt-4"
+        className=" mt-1"
         style={{
           fontSize: '1.5rem',
           fontWeight: '600',
@@ -15,7 +15,7 @@ export const SkillsSection = ({ languagePage }) => {
         {languagePage.skills__cards.map((card) => (
           <div
             key={card.id}
-            className="d-flex col-md-6 mt-4  align-items-center justify-content-center gap-3"
+            className="d-flex col-md-6 mt-1 align-items-center justify-content-center gap-3"
           >
             <div
               className="d-flex align-items-center justify-content-center"

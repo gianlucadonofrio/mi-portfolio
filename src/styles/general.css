@@ -20,9 +20,10 @@
 #contactMe {
   background-color: var(--color-bg);
 }
-
-#projects,
 #aboutMe {
+  scroll-margin-top: 25px;
+}
+#projects {
   scroll-margin-top: 65px;
 }
 body {
