@@ -36,14 +36,6 @@ export const AboutMeText = () => {
             contactarme
           </a>{' '}
           conmigo si tiene alguna pregunta.
-          <br />
-          <strong
-            style={{
-              fontSize: '1.6rem',
-            }}
-          >
-            ¡Gracias por visitar mi sitio web! 😊
-          </strong>
         </p>
       ) : (
         <p>
@@ -79,14 +71,6 @@ export const AboutMeText = () => {
             contact me
           </a>{' '}
           if you have any questions.
-          <br />
-          <strong
-            style={{
-              fontSize: '1.6rem',
-            }}
-          >
-            Thank you for visiting my website! 😊
-          </strong>
         </p>
       )}
     </>

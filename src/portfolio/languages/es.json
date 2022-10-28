@@ -7,6 +7,7 @@
   "home__curriculum": "Descargar CV",
   "acerca_de_mi__text_title": "Quién soy",
   "acerca_de_mi__title_habilidades": "Mis habilidades",
+  "thanks": "Gracias por visitar mi sitio web! 😊",
   "skills__cards": [
     {
       "id": "frontend",
@@ -121,7 +122,7 @@
   "proyecto_text_titulo": "Algunos de mis proyectos.",
   "proyecto_titulo": "Mis proyectos",
   "contactme__subtitle": "Ahora o nunca!",
-  "contactme__text": "Si te interesa trabajar conmigo, o simplemente quieres saludar, no dudes en contactarme. ¡Estaré encantado de responderte! 🤗.",
+  "contactme__text": "Si quieres contactarme conmigo, puedes hacerlo a través de las redes sociales o llenando el formulario de contacto. Te responderé lo antes posible. ¡Gracias! 😊",
   "contactme__form__nombre": "Nombre",
   "contactme__form__email": "Correo electrónico",
   "contactme__form__asunto": "Asunto",
