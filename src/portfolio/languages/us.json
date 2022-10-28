@@ -6,15 +6,14 @@
   "home__subtitulo": "Full Stack Web Developer, passionate about Frontend development.",
   "home__curriculum": "Download CV",
   "acerca_de_mi__text_title": "Who I am",
-  "acerca_de_mi__text": "Full Stack Web Developer, I am currently studying a specialization in Frontend development at Digital House. I consider myself a self-taught person. I like to work in a team, and I adapt easily to changes.",
+  "acerca_de_mi__text": "I am a Full Stack Web Developer. I am currently studying a specialization in Frontend development at Digital House. I build websites that are responsive and user-friendly. Check out some of my work below.  I consider myself a self-taught person. I like to work in a team, and I adapt easily to changes. I'm open to job opportunities where I can learn and grow. I am a hard worker and I am always looking for new challenges. Feel free to contact me if you have any questions.",
   "acerca_de_mi__title_habilidades": "My skills",
   "skills__cards": [
     {
       "id": "frontend",
       "icon": "fa-code",
-      "img_code": "react.svg",
       "background_color": "#61DAFB",
-      "title": "Frontend Development",
+      "title": "Frontend",
       "skills": [
         {
           "id": 1,
@@ -45,9 +44,8 @@
     {
       "id": "backend",
       "icon": "fa-server",
-      "img_code": "java.svg",
       "background_color": "#5f819e",
-      "title": "Backend Development",
+      "title": "Backend ",
       "skills": [
         {
           "id": 1,
@@ -72,31 +70,51 @@
       ]
     },
     {
-      "id": "tools",
-      "icon": "fa-screwdriver-wrench",
-      "img_code": "git.svg",
+      "id": "testing",
+      "icon": "fa-vials",
       "background_color": "#F05032",
-      "title": "Tools",
+      "title": "Testing",
       "skills": [
         {
           "id": 1,
-          "skill": "Git"
+          "skill": "Jest"
         },
         {
           "id": 2,
-          "skill": "GitHub"
+          "skill": "Selenium"
         },
         {
           "id": 3,
+          "skill": "React Testing Library"
+        }
+      ]
+    },
+
+    {
+      "id": "tools",
+      "icon": "fa-screwdriver-wrench",
+      "background_color": "#F05032",
+      "title": "Herramientas",
+      "skills": [
+        {
+          "id": 1,
+          "skill": "GitHub"
+        },
+        {
+          "id": 2,
           "skill": "GitLab"
         },
         {
-          "id": 4,
+          "id": 3,
           "skill": "Postman"
         },
         {
+          "id": 4,
+          "skill": "Scrum"
+        },
+        {
           "id": 5,
-          "skill": "Jest"
+          "skill": "Kanban"
         }
       ]
     }

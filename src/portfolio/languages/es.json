@@ -5,16 +5,15 @@
   "home__titulo": "Hola 👋🏼, soy",
   "home__subtitulo": "Desarrollador Web Full Stack, apasionado por el desarrollo Frontend.",
   "home__curriculum": "Descargar CV",
-  "acerca_de_mi__text": "Desarrollador Web Full Stack, actualmente estoy estudiando la especialización en desarrollo Frontend en Digital House. Me considero una persona autodidacta. Me gusta trabajar en equipo, y me adapto fácilmente a los cambios.",
+  "acerca_de_mi__text": "Soy un desarrollador web Full Stack. Actualmente estoy estudiando una especialización en desarrollo Frontend en Digital House. Construyo sitios web que son responsivos y fáciles de usar. Mira algunos de mis trabajos a continuación.  Me considero una persona autodidacta. Me gusta trabajar en equipo y me adapto fácilmente a los cambios. Además, estoy abierto a oportunidades de trabajo donde pueda aprender y crecer. Soy muy trabajadora y siempre estoy buscando nuevos retos. No dude en ponerse en contacto conmigo si tiene alguna pregunta.",
   "acerca_de_mi__text_title": "Quién soy",
   "acerca_de_mi__title_habilidades": "Mis habilidades",
   "skills__cards": [
     {
       "id": "frontend",
       "icon": "fa-code",
-      "img_code": "react.svg",
       "background_color": "#61DAFB",
-      "title": "Desarrollado Frontend",
+      "title": "Frontend",
       "skills": [
         {
           "id": 1,
@@ -45,9 +44,8 @@
     {
       "id": "backend",
       "icon": "fa-server",
-      "img_code": "java.svg",
       "background_color": "#5f819e",
-      "title": "Desarrollado Backend",
+      "title": "Backend ",
       "skills": [
         {
           "id": 1,
@@ -72,31 +70,51 @@
       ]
     },
     {
+      "id": "testing",
+      "icon": "fa-vials",
+      "background_color": "#F05032",
+      "title": "Testing",
+      "skills": [
+        {
+          "id": 1,
+          "skill": "Jest"
+        },
+        {
+          "id": 2,
+          "skill": "Selenium"
+        },
+        {
+          "id": 3,
+          "skill": "React Testing Library"
+        }
+      ]
+    },
+
+    {
       "id": "tools",
       "icon": "fa-screwdriver-wrench",
-      "img_code": "git.svg",
       "background_color": "#F05032",
       "title": "Herramientas",
       "skills": [
         {
           "id": 1,
-          "skill": "Git"
-        },
-        {
-          "id": 2,
           "skill": "GitHub"
         },
         {
-          "id": 3,
+          "id": 2,
           "skill": "GitLab"
         },
         {
-          "id": 4,
+          "id": 3,
           "skill": "Postman"
         },
         {
+          "id": 4,
+          "skill": "Scrum"
+        },
+        {
           "id": 5,
-          "skill": "Jest"
+          "skill": "Kanban"
         }
       ]
     }
