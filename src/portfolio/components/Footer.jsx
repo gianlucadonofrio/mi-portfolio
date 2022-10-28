@@ -6,8 +6,8 @@ export const Footer = () => {
   return (
     <section className="w-100">
       <hr />
-      <div className="container d-flex flex-column align-items-center pt-3">
-        <h3 className="mt-2 ">{languagePage.thanks}</h3>
+      <div className="container d-flex flex-column align-items-center pt-3 ">
+        <h3 className="mt-2 p-4 text-center">{languagePage.thanks}</h3>
         <a
           href="#contactMe"
           className="mt-3"
@@ -21,7 +21,7 @@ export const Footer = () => {
         >
           {languagePage.contactame}
         </a>
-        <p>{languagePage.footer__subtitulo}</p>
+        <p className="p-4 text-center">{languagePage.footer__subtitulo}</p>
         <div className="d-flex justify-content-center flex-row">
           <a
             href="https://www.linkedin.com/in/gianlucadonofrio/"
