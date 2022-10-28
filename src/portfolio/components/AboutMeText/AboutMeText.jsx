@@ -33,7 +33,7 @@ export const AboutMeText = () => {
               fontWeight: '600',
             }}
           >
-            contactarme
+            contactarse
           </a>{' '}
           conmigo si tiene alguna pregunta.
         </p>
@@ -55,7 +55,7 @@ export const AboutMeText = () => {
           </a>{' '}
           section. <br />
           I am easy to adapt to changes, I am a very responsible person and
-          committed to my work.
+          committed to my job.
           <br />I am currently looking for my first job as a web developer,
           where I can apply my knowledge, learn and grow professionally. Do not
           hesitate to{' '}
