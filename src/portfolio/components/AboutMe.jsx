@@ -24,11 +24,11 @@ export const AboutMe = () => {
         </h1>
         <div className="vbar"></div>
       </div>
-      <div className=" d-flex flex-column p-3" style={{ width: 'fit-content' }}>
+      <div className=" d-flex flex-column" style={{ width: 'fit-content' }}>
         <span
-          className="d-flex align-items-center flex-column flex-md-row mt-4"
+          className="d-flex align-items-center flex-column flex-md-row mt-4 p-3"
           style={{
-            fontSize: '1.2rem',
+            fontSize: '1.3rem',
           }}
         >
           <AboutMeText />

@@ -2,23 +2,23 @@ export const SkillsSection = ({ languagePage }) => {
   return (
     <section>
       <h3
-        className=" mt-1"
+        className=" mt-1 ps-3"
         style={{
-          fontSize: '1.5rem',
+          fontSize: '2rem',
           fontWeight: '600',
         }}
       >
         {languagePage.acerca_de_mi__title_habilidades}
       </h3>
-      <div className="vbar"></div>
-      <div className="d-flex flex-wrap flex-column flex-md-row">
+      <div className="vbar ms-3"></div>
+      <div className="d-flex flex-column flex-md-row flex-wrap text-center">
         {languagePage.skills__cards.map((card) => (
           <div
             key={card.id}
-            className="d-flex col-md-6 mt-1 align-items-center justify-content-center gap-3"
+            className="d-flex col-md-6  flex-column mt-1 align-items-center justify-content-center gap-3 "
           >
             <div
-              className="d-flex align-items-center justify-content-center"
+              className="d-flex mt-4 justify-content-center"
               style={{
                 width: '25%',
               }}
@@ -27,7 +27,7 @@ export const SkillsSection = ({ languagePage }) => {
                 className={`fa-solid ${card.icon}`}
                 style={{
                   color: 'var(--color-buttons)',
-                  fontSize: '70px',
+                  fontSize: '100px',
                 }}
               ></i>
             </div>
@@ -42,6 +42,7 @@ export const SkillsSection = ({ languagePage }) => {
                   fontSize: '2rem',
                   fontWeight: '600',
                 }}
+                className="text-center"
               >
                 {card.title}
               </h5>
