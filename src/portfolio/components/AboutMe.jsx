@@ -28,7 +28,7 @@ export const AboutMe = () => {
         <span
           className="d-flex align-items-center flex-column flex-md-row mt-4 p-3"
           style={{
-            fontSize: '1.3rem',
+            fontSize: '1.2rem',
           }}
         >
           <AboutMeText />

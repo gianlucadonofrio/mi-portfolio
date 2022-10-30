@@ -86,7 +86,7 @@ export const ContactMeForm = () => {
           <i className="fa-solid fa-arrow-down ps-2 btn-scrolldown"></i>
         </p>
       </div>
-      <div className="container col-12 col-md-6">
+      <div className=" col-12 col-md-6">
         <form onSubmit={handleFormSubmit}>
           <div className="mb-3">
             <input
