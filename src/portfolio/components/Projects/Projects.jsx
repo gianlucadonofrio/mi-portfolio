@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import '../../styles/projects.css';
-import { LanguageContext } from '../context/LanguageContext';
-import { ProjectsCards } from './ProjectsCards/ProjectsCards';
+import '../../../styles/projects.css';
+import { LanguageContext } from '../../context/LanguageContext';
+import { ProjectsCards } from './ProjectsCards';
 
 export const Projects = () => {
   const { languagePage } = useContext(LanguageContext);

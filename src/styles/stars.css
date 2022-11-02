@@ -1,0 +1,88 @@
+/* STARTS BACKGROUND */
+.stars-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  overflow: clip;
+  height: 100vh;
+}
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--background-color-stars);
+  border-radius: 50%;
+  box-shadow: var(--stars-shadow);
+  animation: stars 4s linear infinite;
+  transition: 0.6s;
+}
+.star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 1px;
+  background-image: var(--stars-background-image);
+}
+@keyframes stars {
+  0% {
+    transform: rotate(315deg) translate(0);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(315deg) translate(-1600px);
+    opacity: 0;
+  }
+}
+.star1 {
+  top: -1em;
+  right: 42em;
+  left: initial;
+  animation-delay: 4s;
+  animation-duration: 19s;
+}
+.star2 {
+  top: -1em;
+  right: 19em;
+  left: initial;
+  animation-delay: 8s;
+  animation-duration: 14s;
+}
+.star3 {
+  top: -1em;
+  right: -2.5em;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 19s;
+}
+.star4 {
+  top: -1em;
+  right: -28.5em;
+  left: initial;
+  animation-delay: 3s;
+  animation-duration: 10s;
+}
+.star5 {
+  top: 53em;
+  right: -1em;
+  left: initial;
+  animation-delay: 8s;
+  animation-duration: 20s;
+}
+.star6 {
+  top: 90em;
+  right: -1em;
+  left: initial;
+  animation-delay: 9s;
+  animation-duration: 16s;
+}

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import '../../styles/home.css';
 import { LanguageContext } from '../context/LanguageContext';
+import { StarsSpans } from './StarsSpans';
 
 export const Home = () => {
   const { languagePage } = useContext(LanguageContext);
@@ -9,6 +10,7 @@ export const Home = () => {
       id="home"
       className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-0"
     >
+      <StarsSpans />
       <div
         className="d-flex flex-md-column align-items-center justify-content-end mb-5"
         style={{ width: 'fit-content' }}

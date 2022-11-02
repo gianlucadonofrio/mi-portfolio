@@ -65,15 +65,6 @@ export const Navbar = () => {
           Gianluca.
         </a>
         <div className="d-flex align-items-center">
-          {/* <button
-            onClick={changeMode}
-            className="btn-navbar-shadow button-change-mode navbar-toggler"
-            type="button"
-          >
-            <span className="material-symbols-outlined change-mode-icon">
-              {isDark}
-            </span>
-          </button> */}
           <button
             onClick={changeMode}
             className="button-change-mode navbar-toggler"

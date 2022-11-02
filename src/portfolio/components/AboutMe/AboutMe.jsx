@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import '../../styles/aboutMe.css';
-import { LanguageContext } from '../context/LanguageContext';
-import { AboutMeText } from './AboutMeText/AboutMeText';
-import { SkillsSection } from './SkillsSection/SkillsSection';
+import '../../../styles/aboutMe.css';
+import { LanguageContext } from '../../context/LanguageContext';
+import { AboutMeText } from './AboutMeText';
+import { SkillsSection } from './SkillsSection';
 
 export const AboutMe = () => {
   const { languagePage } = useContext(LanguageContext);

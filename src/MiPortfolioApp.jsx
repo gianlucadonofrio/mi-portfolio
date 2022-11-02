@@ -1,11 +1,11 @@
-import { BrowserRouter } from 'react-router-dom';
-import { AppRouter } from './router/AppRouter';
+import { LanguageProvider } from './portfolio/context/LanguageProvider';
+import { PortfolioPage } from './portfolio/pages/PortfolioPage';
 import './styles/general.css';
 
 export const MiPortfolioApp = () => {
   return (
-    <BrowserRouter>
-        <AppRouter />
-    </BrowserRouter>
+    <LanguageProvider>
+      <PortfolioPage />
+    </LanguageProvider>
   );
 };
