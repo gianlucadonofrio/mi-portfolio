@@ -26,9 +26,9 @@ export const AboutMe = () => {
       </div>
       <div className=" d-flex flex-column" style={{ width: 'fit-content' }}>
         <span
-          className="d-flex align-items-center flex-column flex-md-row mt-4 p-3"
+          className="d-flex align-items-center flex-column flex-md-row mt-4 p-3 "
           style={{
-            fontSize: '1.2rem',
+            fontSize: '1.1rem',
           }}
         >
           <AboutMeText />
