@@ -55,7 +55,6 @@ export const Footer = () => {
           fontWeight: '600',
         }}
       >
-        {' '}
         {languagePage.footer__texto}
       </p>
     </section>

@@ -72,14 +72,11 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid">
+      <div className="container-fluid img_profile_background">
         <img
           src={require('../../assets/profile.webp')}
           alt="profile"
           className="img-profile img-fluid mt-2 mt-md-0"
-          style={{
-            backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 68%)',
-          }}
         />
       </div>
     </section>

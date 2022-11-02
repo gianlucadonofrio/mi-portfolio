@@ -3,7 +3,6 @@
   --color-text: #f0f6fc;
   --color-navbar: #161b22;
   --color-text-navbar: #f0f6fc;
-  --color-background-image: #4158d0;
   --color-buttons: #604a84;
   --color-hover-buttons: #f0f6fc;
   --color-hover-text-buttons: #161b22;
@@ -12,14 +11,13 @@
   --color-title-skills: #161b22;
   --color-text-projects: #1a2027;
   --color-card-shadow: rgba(255, 255, 255, 0.747);
+  --background-color-stars: rgba(255, 255, 255, 0.7);
+  --stars-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.5),
+    0 0 10px 4px rgba(255, 255, 255, 0.2), 0 0 17px 7px rgba(255, 84, 98, 0.1);
+  --stars-background-image: linear-gradient(90deg, #ffffffca, transparent);
   font-display: swap;
 }
-#home,
-#aboutMe,
-#projects,
-#contactMe {
-  background-color: var(--color-bg);
-}
+
 #projects,
 #aboutMe {
   scroll-margin-top: 65px;
@@ -29,6 +27,7 @@ body {
   color: var(--color-text);
   font-family: 'Poppins', sans-serif;
 }
+
 .vbar {
   width: 100px;
   height: 3px;
@@ -56,6 +55,129 @@ body {
   transition: all 0.5s ease-in-out;
   border: none;
 }
+/* STARTS BACKGROUND */
+.stars-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: clip;
+}
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  z-index: -1;
+  background-color: var(--background-color-stars);
+  border-radius: 50%;
+  box-shadow: var(--stars-shadow);
+  animation: stars 4s linear infinite;
+  transition: 0.6s;
+}
+.star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 1px;
+  background-image: var(--stars-background-image);
+}
+@keyframes stars {
+  0% {
+    transform: rotate(315deg) translate(0);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(315deg) translate(-1600px);
+    opacity: 0;
+  }
+}
+.star1 {
+  top: -1em;
+  right: 42em;
+  left: initial;
+  animation-delay: 4s;
+  animation-duration: 19s;
+}
+.star2 {
+  top: -1em;
+  right: 19em;
+  left: initial;
+  animation-delay: 8s;
+  animation-duration: 14s;
+}
+.star3 {
+  top: -1em;
+  right: -2.5em;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 19s;
+}
+.star4 {
+  top: -1em;
+  right: -28.5em;
+  left: initial;
+  animation-delay: 3s;
+  animation-duration: 18s;
+}
+.star5 {
+  top: 53em;
+  right: -1em;
+  left: initial;
+  animation-delay: 8s;
+  animation-duration: 17s;
+}
+.star6 {
+  top: 90em;
+  right: -1em;
+  left: initial;
+  animation-delay: 9s;
+  animation-duration: 16s;
+}
+.star7 {
+  top: 130em;
+  right: -1em;
+  left: initial;
+  animation-delay: 10s;
+  animation-duration: 15s;
+}
+.star8 {
+  top: 170em;
+  right: -1em;
+  left: initial;
+  animation-delay: 11s;
+  animation-duration: 14s;
+}
+.star9 {
+  top: 210em;
+  right: -1em;
+  left: initial;
+  animation-delay: 12s;
+  animation-duration: 13s;
+}
+.star10 {
+  top: 250em;
+  right: -1em;
+  left: initial;
+  animation-delay: 13s;
+  animation-duration: 12s;
+}
+.star11 {
+  top: 290em;
+  right: -1em;
+  left: initial;
+  animation-delay: 14s;
+  animation-duration: 11s;
+}
 
 /*  LIGHT MODE*/
 @media (prefers-color-scheme: dark) {
@@ -67,5 +189,9 @@ body {
     --color-hover-buttons: #161b22;
     --color-hover-text-buttons: #f0f6fc;
     --color-text-projects: #f0f6fc;
+    --background-color-stars: rgba(0, 0, 0, 0.7);
+    --stars-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5),
+      0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 17px 7px rgba(0, 84, 98, 0.1);
+    --stars-background-image: linear-gradient(90deg, #545454ca, transparent);
   }
 }

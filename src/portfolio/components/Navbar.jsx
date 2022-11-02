@@ -6,17 +6,17 @@ import { LanguageContext } from '../context/LanguageContext';
 
 export const Navbar = () => {
   const collapseNavbar = useRef(null);
-  const [isDark, setIsDark] = useState('light_mode');
+  const [isDark, setIsDark] = useState('🌞');
   const [language, setLanguage] = useState('ES');
   const [languageCollapsed, setLanguageCollapsed] = useState('US');
   const { languagePage, setLanguagePage, us, es } = useContext(LanguageContext);
   const changeMode = () => {
-    if (isDark === 'light_mode') {
-      setIsDark('dark_mode');
+    if (isDark === '🌞') {
+      setIsDark('🌚');
       document.body.classList.toggle('light-theme');
       localStorage.setItem('theme', 'light');
     } else {
-      setIsDark('light_mode');
+      setIsDark('🌞');
       document.body.classList.toggle('light-theme');
       localStorage.setItem('theme', 'dark');
     }
@@ -41,7 +41,7 @@ export const Navbar = () => {
   useEffect(() => {
     if (localStorage.getItem('theme') === 'light') {
       document.body.classList.add('light-theme');
-      setIsDark('dark_mode');
+      setIsDark('🌚');
     }
     if (localStorage.getItem('lang') === 'en') {
       document.documentElement.setAttribute('lang', 'en');
@@ -65,7 +65,7 @@ export const Navbar = () => {
           Gianluca.
         </a>
         <div className="d-flex align-items-center">
-          <button
+          {/* <button
             onClick={changeMode}
             className="btn-navbar-shadow button-change-mode navbar-toggler"
             type="button"
@@ -73,8 +73,16 @@ export const Navbar = () => {
             <span className="material-symbols-outlined change-mode-icon">
               {isDark}
             </span>
+          </button> */}
+          <button
+            onClick={changeMode}
+            className="button-change-mode navbar-toggler"
+            type="button"
+          >
+            <span className="material-symbols-outlined change-mode-icon ">
+              {isDark}
+            </span>
           </button>
-
           <div className="dropdown w-100 pe-1">
             <button
               className="btn-navbar-shadow navbar-toggler text-light dropdown-toggle w-100"

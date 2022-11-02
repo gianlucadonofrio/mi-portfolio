@@ -8,6 +8,7 @@ import {
   Navbar,
   Projects,
 } from '../components';
+import { StarsSpans } from '../components/StarsSpans';
 
 export const PortfolioPage = () => {
   const buttonScrollTop = useRef(null);
@@ -28,7 +29,8 @@ export const PortfolioPage = () => {
   });
 
   return (
-    <div className="animate__animated animate__fadeIn">
+    <div className="stars-container">
+      <StarsSpans  />
       <Navbar />
       <Home />
       <AboutMe />
