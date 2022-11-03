@@ -155,11 +155,7 @@ export const ContactMeForm = () => {
               disabled={!!isLoading}
             >
               {isLoading ? (
-                <div className="spinner-border" role="status">
-                  <span className="sr-only">
-                    {languagePage.contactme__form__enviandoMensaje}
-                  </span>
-                </div>
+                <div className="spinner-border" role="status"></div>
               ) : (
                 <div className="d-flex justify-content-center align-items-center">
                   {languagePage.contactme__form__enviar}

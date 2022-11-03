@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
-import { useContext } from 'react';
-import { useState, useRef } from 'react';
+import { useEffect, useContext, useState, useRef } from 'react';
 import '../../styles/navbar.css';
 import { LanguageContext } from '../context/LanguageContext';
 
@@ -34,6 +32,30 @@ export const Navbar = () => {
     }
   };
 
+  const handleScroll = () => {
+    let lastScroll;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop === 0) {
+        navbar.classList.add('navbar-background-transparent');
+      }
+      if (scrollTop > lastScroll) {
+        navbar.style.top = '-80px';
+        navbar.classList.remove('navbar-background-transparent');
+      } else {
+        navbar.style.top = '0';
+      }
+      lastScroll = scrollTop;
+    });
+  };
+
+  useEffect(() => {
+    handleScroll();
+  });
+
   const changeLanguage = () => {
     if (document.documentElement.lang === 'es') {
       document.documentElement.setAttribute('lang', 'en');
@@ -48,7 +70,10 @@ export const Navbar = () => {
     }
   };
   return (
-    <nav className=" navbar navbar-expand-lg">
+    <nav
+      className="navbar navbar-expand-lg navbar-background-transparent"
+      id="navbar"
+    >
       <div className="container d-flex align-content-lg-center">
         <a
           className="navbar-brand"

@@ -3,10 +3,10 @@
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1.2rem;
-  cursor: pointer;
   height: 60px;
   background-color: var(--color-buttons);
   color: var(--color-text-buttons);
+  font-weight: 600;
 }
 .title__contactMe {
   font-weight: 600;
@@ -93,13 +93,15 @@
   }
 }
 /*  Animations*/
-.btn-submit:disabled {
-  background-color: var(--color-buttons);
-  color: var(--color-text-buttons);
+.btn-submit:disabled{
+  background-color: #ccc;
+  color: #000;
+  cursor: wait;
 }
 .btn-submit:hover {
-  background-color: var(--color-hover-buttons);
-  color: var(--color-hover-text-buttons);
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+  background-color: var(--color-buttons); 
 }
 @keyframes escribir {
   from {

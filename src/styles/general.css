@@ -1,26 +1,21 @@
 :root {
   --color-bg: #1b1e22;
   --color-text: #f0f6fc;
-  --color-bg-navbar: #1b1e22;
-  --color-text-navbar: #f0f6fc;
   --color-buttons: #604a84;
-  --color-hover-buttons: #f0f6fc;
-  --color-hover-text-buttons: #161b22;
   --color-secondary-text: #c2c2c2;
   --color-text-buttons: #f0f6fc;
   --menu-icon: invert(95%) sepia(8%) saturate(1094%) hue-rotate(183deg)
     brightness(104%) contrast(98%);
   --color-title-skills: #161b22;
   --color-text-projects: #1a2027;
-  --color-card-shadow: rgba(255, 255, 255, 0.747);
   --background-color-stars: rgba(255, 255, 255, 0.8);
   --stars-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.5),
     0 0 10px 4px rgba(255, 255, 255, 0.2), 0 0 17px 7px rgba(255, 84, 98, 0.1);
   --stars-background-image: linear-gradient(90deg, #c7c6c6ca, transparent);
-  font-display: swap;
 }
 html {
   scroll-behavior: smooth;
+  font-display: swap;
 }
 #aboutMe,
 #projects,
@@ -63,14 +58,8 @@ body {
 /*  LIGHT MODE*/
 @media (prefers-color-scheme: dark) {
   body.light-theme {
-    --color-bg: rgba(206, 235, 255, 0.1);
+    --color-bg: #f9fafb;
     --color-text: #1a2027;
-    --color-card-shadow: rgba(0, 0, 0, 0.4);
-    --color-bg-navbar: white;
-    --color-text-navbar: #1a2027;
-    --color-secondary-text: #5d5d5d;
-    --color-hover-buttons: #161b22;
-    --color-hover-text-buttons: #f0f6fc;
     --color-text-projects: #f0f6fc;
     --background-color-stars: rgba(0, 0, 0, 0.7);
     --stars-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5),

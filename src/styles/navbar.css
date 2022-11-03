@@ -57,6 +57,19 @@
   margin-top: 5px;
   margin-right: -1px;
 }
+.navbar-background-transparent {
+  background-color: transparent !important;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  transition: 0.3s;
+  z-index: 100;
+  background-color: var(--color-bg);
+}
 /* ANIMATION */
 .navbar-brand:hover {
   transform: scale(1.1);
