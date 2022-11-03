@@ -6,10 +6,10 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-0"
+      className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center"
     >
       <div
-        className="d-flex flex-md-column align-items-center justify-content-end mb-5"
+        className="d-flex flex-md-column align-items-center justify-content-end mt-5"
         style={{ width: 'fit-content' }}
       >
         <a
@@ -47,7 +47,7 @@ export const Home = () => {
         </a>
       </div>
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
-        <div className="container-fluid d-flex justify-content-center flex-wrap p-0 flex-md-nowrap gap-2">
+        <div className="container-fluid d-flex justify-content-center flex-wrap flex-md-nowrap">
           <a
             href={require('../CV/CV-Gianluca-Donofrio.pdf')}
             download="CV-Gianluca-Donofrio.pdf"
@@ -78,7 +78,6 @@ export const Home = () => {
                 style={{
                   width: '30px',
                   height: '30px',
-                  
                 }}
               />
             </p>

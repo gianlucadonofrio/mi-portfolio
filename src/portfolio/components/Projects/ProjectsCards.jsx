@@ -70,7 +70,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                 >
                   {project.proyecto__tecnologias.map((tecnologia) => (
                     <li key={tecnologia}>
-                      <small className="text-muted">{tecnologia}</small>
+                      <p className="text-technologies">{tecnologia}</p>
                     </li>
                   ))}
                 </ul>

@@ -5,18 +5,17 @@ export const ButtonToTop = () => {
   const buttonScrollTop = useRef(null);
 
   const scrollTop = () => {
-    if (
-      document.body.scrollTop > 100 ||
-      document.documentElement.scrollTop > 100
-    ) {
-      buttonScrollTop.current.style.display = 'block';
-    } else {
+    if (document.documentElement.scrollTop < 400) {
       buttonScrollTop.current.style.display = 'none';
+    } else {
+      buttonScrollTop.current.style.display = 'block';
     }
   };
-
   useEffect(() => {
-    window.onscroll = () => scrollTop();
+    window.addEventListener('scroll', scrollTop);
+    return () => {
+      window.removeEventListener('scroll', scrollTop);
+    };
   });
 
   return (
@@ -26,8 +25,12 @@ export const ButtonToTop = () => {
         document.documentElement.scrollTop = 0;
       }}
       ref={buttonScrollTop}
+      className="btn-scroll-top"
+      style={{
+        display: 'none',
+      }}
     >
-      <img src={'./icons/arrow-up.svg'} alt="Arrow Up Icon" className="btn-scroll-top"/>
+      <img src={'./icons/arrow-up.svg'} alt="Arrow Up Icon" />
     </button>
   );
 };

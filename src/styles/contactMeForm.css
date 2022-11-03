@@ -30,7 +30,7 @@
 .arrow-down-icon {
   -moz-animation: bounce 3s infinite;
   -webkit-animation: bounce 3s infinite;
-  animation: bounce 3s 3;
+  animation: bounce 4s infinite ease-in-out;
 }
 @-moz-keyframes bounce {
   0%,

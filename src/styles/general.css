@@ -25,7 +25,7 @@ html {
 #aboutMe,
 #projects,
 #contactMe {
-  padding-top: 70px;
+  padding-top: 30px;
 }
 body {
   background-color: var(--color-bg);
@@ -42,28 +42,18 @@ body {
 }
 .btn-scroll-top {
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   right: 20px;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
+  z-index: 100;
+  display: none;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 68%);
   border: none;
-  width: 55px;
-  height: 55px;
   border-radius: 50%;
-  animation: fadeIn 0.5s ease-in-out;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .btn-scroll-top:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;

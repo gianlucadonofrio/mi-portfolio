@@ -15,8 +15,17 @@
   display: none;
 }
 .menu-icon {
+  width: 25px;
+  height: 25px;
   filter: var(--menu-icon);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 }
+
 .buttons-navbar {
   border: 1px solid rgb(19, 47, 76);
   background-color: transparent;
@@ -58,7 +67,8 @@
   background-color: rgba(19, 47, 76, 0.4);
 }
 .nav-link:hover {
-  color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.03);
+  color: var(--color-text-navbar);
 }
 .dropdown-item:hover {
   background-color: transparent;

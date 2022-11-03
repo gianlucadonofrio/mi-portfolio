@@ -32,18 +32,16 @@
   text-align: center;
 }
 .btn__cv__contactme {
-  background-color: var(--color-buttons);
+  background: var(--color-buttons);
   color: var(--color-text-buttons);
   border-radius: 5px;
-  width: 165px;
-  height: 55px;
-  font-size: 1.1rem;
   font-weight: 600;
-  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+  font-size: 1.2rem;
 }
 .btn-socials {
-  background: linear-gradient(43deg, #4158d0 0%, #c850c0 68%);
-  border-radius: 50%;
   margin: 5px;
   width: 50px;
   height: 50px;
@@ -51,8 +49,8 @@
 
 /* ANIMATIONS */
 .btn__cv__contactme:hover {
-  background-color: var(--color-hover-buttons);
-  color: var(--color-hover-text-buttons);
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
 }
 @media screen and (min-width: 767px) {
   .title__name {
@@ -72,10 +70,5 @@
   }
   .title__description {
     font-size: 1.2rem;
-  }
-  .btn__cv__contactme {
-    font-size: 1.5rem;
-    width: 230px;
-    height: 70px;
   }
 }

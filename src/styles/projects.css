@@ -11,7 +11,10 @@
   padding: 15px;
   color: var(--color-text-buttons);
 }
-
+.text-technologies {
+  color:  var(--color-text);
+  font-size: 0.8rem;
+}
 @media screen and (min-width: 1024px) {
   .project-description {
     float: right;

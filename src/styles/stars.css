@@ -48,41 +48,41 @@
   top: -1em;
   right: 42em;
   left: initial;
-  animation-delay: 4s;
+  animation-delay: 1s;
   animation-duration: 19s;
 }
 .star2 {
   top: -1em;
   right: 19em;
   left: initial;
-  animation-delay: 8s;
+  animation-delay: 4s;
   animation-duration: 14s;
 }
 .star3 {
   top: -1em;
   right: -2.5em;
   left: initial;
-  animation-delay: 1s;
+  animation-delay: 7s;
   animation-duration: 19s;
 }
 .star4 {
   top: -1em;
   right: -28.5em;
   left: initial;
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-duration: 10s;
 }
 .star5 {
   top: 53em;
   right: -1em;
   left: initial;
-  animation-delay: 8s;
+  animation-delay: 10s;
   animation-duration: 20s;
 }
 .star6 {
   top: 90em;
   right: -1em;
   left: initial;
-  animation-delay: 9s;
+  animation-delay: 12s;
   animation-duration: 16s;
 }

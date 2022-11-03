@@ -35,7 +35,7 @@ export const AboutMe = () => {
           </div>
           <div className="d-flex justify-content-center align-items-center ms-3 col-lg-7">
             <span
-              className="d-flex align-items-center flex-column flex-md-row mt-4 p-3 "
+              className="d-flex align-items-center flex-column flex-md-row mt-4"
               style={{
                 fontSize: '1.2rem',
               }}

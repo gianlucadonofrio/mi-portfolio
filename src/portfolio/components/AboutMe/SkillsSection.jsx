@@ -15,9 +15,8 @@ export const SkillsSection = ({ languagePage }) => {
               <img
                 src={`./icons/${card.icon}`}
                 alt={card.alt}
-                className="img-fluid "
+                className="img-fluid"
                 style={{
-                  width: '100%',
                   height: '100%',
                 }}
               />
