@@ -24,22 +24,8 @@ export const AboutMeText = () => {
           <p>
             Soy una persona autodidacta, responsable y comprometida con mi
             trabajo. Constantemente estoy aprendiendo nuevas tecnologías y
-            herramientas para mejorar mis habilidades. Actualmente estoy
-            especializándome en el desarrollo Frontend en la carrera{' '}
-            <a
-              href="https://www.digitalhouse.com/ar/productos/programacion/certified-tech-developer"
-              style={{
-                textDecoration: 'none',
-                color: 'var(--color-buttons)',
-                fontStyle: 'italic',
-                fontWeight: '600',
-              }}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Certified Tech Developer
-            </a>{' '}
-            de Digital House.
+            herramientas para mejorar mis habilidades. De bajo, puede ver mis
+            habilidades y tecnologías que uso.
           </p>
           <p>
             No dude en{' '}
@@ -73,28 +59,13 @@ export const AboutMeText = () => {
               }}
             >
               projects
-            </a>
-            section.
+            </a>{' '}
+            ƒ section.
           </p>
           <p>
             I am an autodidact, responsible and committed person with my work. I
             am constantly learning new technologies and tools to improve my
-            skills. Currently I am specializing in Frontend development in the
-            course{' '}
-            <a
-              href="https://www.digitalhouse.com/ar/productos/programacion/certified-tech-developer"
-              style={{
-                textDecoration: 'none',
-                color: 'var(--color-buttons)',
-                fontStyle: 'italic',
-                fontWeight: '600',
-              }}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Certified Tech Developer
-            </a>{' '}
-            of Digital House.
+            skills. Below, you can see my skills and technologies that I use.
           </p>
           <p>
             Feel free to{' '}

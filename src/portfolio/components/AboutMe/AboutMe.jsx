@@ -25,14 +25,25 @@ export const AboutMe = () => {
         <div className="vbar"></div>
       </div>
       <div className=" d-flex flex-column" style={{ width: 'fit-content' }}>
-        <span
-          className="d-flex align-items-center flex-column flex-md-row mt-4 p-3 "
-          style={{
-            fontSize: '1.1rem',
-          }}
-        >
-          <AboutMeText />
-        </span>
+        <div className="d-flex flex-column flex-lg-row mb-4">
+          <div className="container-fluid d-flex justify-content-center align-items-center col-lg-5">
+            <img
+              src={require('../../../assets/profile.webp')}
+              alt="profile"
+              className="img-profile img-fluid mt-4"
+            />
+          </div>
+          <div className="d-flex justify-content-center align-items-center ms-3 col-lg-7">
+            <span
+              className="d-flex align-items-center flex-column flex-md-row mt-4 p-3 "
+              style={{
+                fontSize: '1.2rem',
+              }}
+            >
+              <AboutMeText />
+            </span>
+          </div>
+        </div>
         <SkillsSection languagePage={languagePage} />
       </div>
     </section>

@@ -1,6 +1,6 @@
 import '../../styles/stars.css';
 
-export const StarsSpans = () => {
+export const StarsBackground = () => {
   return (
     <div className="stars-container">
       <span className="star star1"></span>

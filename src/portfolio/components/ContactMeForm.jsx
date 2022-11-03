@@ -81,9 +81,25 @@ export const ContactMeForm = () => {
             marginBottom: '100px',
           }}
         >
-          <i className="fa-solid fa-computer-mouse pe-2 btn-scrolldown"></i>
+          <img
+            src={'./icons/mouse-2.svg'}
+            alt="Mouse Icon"
+            className="p-2"
+            style={{
+              width: '50px',
+              height: '50px',
+            }}
+          />
           scroll down
-          <i className="fa-solid fa-arrow-down ps-2 btn-scrolldown"></i>
+          <img
+            src={'./icons/arrow-down.svg'}
+            alt="Arrow Icon"
+            className="arrow-down-icon p-2"
+            style={{
+              width: '50px',
+              height: '50px',
+            }}
+          />
         </p>
       </div>
       <div className=" col-12 col-md-6">
@@ -147,7 +163,15 @@ export const ContactMeForm = () => {
               ) : (
                 <div className="d-flex justify-content-center align-items-center">
                   {languagePage.contactme__form__enviar}
-                  <i className="fa-solid fa-paper-plane ps-1 "></i>
+                  <img
+                    src={'./icons/send.svg'}
+                    alt="Send Icon"
+                    className="ps-1"
+                    style={{
+                      width: '30px',
+                      height: '30px',
+                    }}
+                  />
                 </div>
               )}
             </button>
@@ -177,9 +201,25 @@ export const ContactMeForm = () => {
           className="d-flex justify-content-center d-md-none align-items-center "
           style={{ fontSize: '1.3rem' }}
         >
-          <i className="fa-solid fa-computer-mouse pe-2 btn-scrolldown"></i>
+          <img
+            src={'./icons/mouse-2.svg'}
+            alt="Mouse Icon"
+            className="p-2"
+            style={{
+              width: '50px',
+              height: '50px',
+            }}
+          />
           scroll down
-          <i className="fa-solid fa-arrow-down ps-2 btn-scrolldown"></i>
+          <img
+            src={'./icons/arrow-down.svg'}
+            alt="Arrow Icon"
+            className="arrow-down-icon p-2"
+            style={{
+              width: '50px',
+              height: '50px',
+            }}
+          />
         </p>
       </div>
     </section>

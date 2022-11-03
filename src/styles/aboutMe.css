@@ -13,6 +13,34 @@
   row-gap: 2rem;
   margin-bottom: 20px;
 }
+.img-profile {
+  border-radius: 50%;
+  width: 320px;
+  height: 300px;
+  background: -webkit-linear-gradient(
+    -45deg,
+    #4158d0,
+    #c850c0,
+    #ffcc70,
+    #e73c7e
+  );
+  background-size: 500%;
+  -webkit-animation: gradient 5s ease infinite;
+  -moz-animation: gradient 5s ease infinite;
+  animation: gradient 30s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .skills-card-aboutme {
     width: 45%;

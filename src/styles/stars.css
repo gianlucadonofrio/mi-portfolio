@@ -4,9 +4,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -1;
   overflow: clip;
   height: 100vh;
+  z-index: -1;
 }
 .star {
   position: absolute;

@@ -1,8 +1,6 @@
 import { useContext } from 'react';
 import '../../styles/home.css';
 import { LanguageContext } from '../context/LanguageContext';
-import { StarsSpans } from './StarsSpans';
-
 export const Home = () => {
   const { languagePage } = useContext(LanguageContext);
   return (
@@ -10,7 +8,6 @@ export const Home = () => {
       id="home"
       className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-0"
     >
-      <StarsSpans />
       <div
         className="d-flex flex-md-column align-items-center justify-content-end mb-5"
         style={{ width: 'fit-content' }}
@@ -18,26 +15,35 @@ export const Home = () => {
         <a
           href="https://www.linkedin.com/in/gianlucadonofrio/"
           target={'_blank'}
-          className="btn-socials "
           rel="noreferrer"
         >
-          <i className="fa-brands fa-linkedin-in p-2"></i>
+          <img
+            src={'./icons/brand-linkedin.svg'}
+            alt="LinkedIn Icon"
+            className="btn-socials p-2"
+          />
         </a>
         <a
           href="https://github.com/gianlucadonofrio"
           target={'_blank'}
-          className="btn-socials"
           rel="noreferrer"
         >
-          <i className="fa-brands fa-github p-2"></i>
+          <img
+            src={'./icons/brand-github.svg'}
+            alt="GitHub Icon"
+            className="btn-socials p-2"
+          />
         </a>
         <a
           href="mailto: gian.donofrio2000@gmail.com"
           target={'_blank'}
-          className="btn-socials"
           rel="noreferrer"
         >
-          <i className="fa-solid fa-envelope p-2"></i>
+          <img
+            src={'./icons/mail.svg'}
+            alt="Mail Icon"
+            className="btn-socials p-2"
+          />
         </a>
       </div>
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
@@ -51,13 +57,30 @@ export const Home = () => {
           >
             <p className="btn__cv__contactme d-flex align-items-center justify-content-center">
               {languagePage.home__curriculum}
-              <i className="fa-solid fa-cloud-arrow-down ps-1"></i>
+              <img
+                src={'./icons/download.svg'}
+                alt="Download Icon"
+                className="ps-1"
+                style={{
+                  width: '30px',
+                  height: '30px',
+                }}
+              />
             </p>
           </a>
           <a href="#contactMe" style={{ textDecoration: 'none' }}>
             <p className="btn__cv__contactme d-flex align-items-center justify-content-center">
               {languagePage.contactame}
-              <i className="fa-solid fa-paper-plane ps-1"></i>
+              <img
+                src={'./icons/send.svg'}
+                alt="Send Icon"
+                className="ps-1"
+                style={{
+                  width: '30px',
+                  height: '30px',
+                  
+                }}
+              />
             </p>
           </a>
         </div>
@@ -73,13 +96,6 @@ export const Home = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="container-fluid img_profile_background">
-        <img
-          src={require('../../assets/profile.webp')}
-          alt="profile"
-          className="img-profile img-fluid mt-2 mt-md-0"
-        />
       </div>
     </section>
   );

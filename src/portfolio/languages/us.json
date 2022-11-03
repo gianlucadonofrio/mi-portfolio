@@ -11,7 +11,7 @@
   "skills__cards": [
     {
       "id": "frontend",
-      "icon": "fa-code",
+      "icon": "code.svg",
       "background_color": "#61DAFB",
       "title": "Frontend",
       "skills": [
@@ -43,7 +43,7 @@
     },
     {
       "id": "backend",
-      "icon": "fa-server",
+      "icon": "server.svg",
       "background_color": "#5f819e",
       "title": "Backend ",
       "skills": [
@@ -71,7 +71,7 @@
     },
     {
       "id": "testing",
-      "icon": "fa-vials",
+      "icon": "bug-off.svg",
       "background_color": "#F05032",
       "title": "Testing",
       "skills": [
@@ -92,9 +92,9 @@
 
     {
       "id": "tools",
-      "icon": "fa-screwdriver-wrench",
+      "icon": "tools.svg",
       "background_color": "#F05032",
-      "title": "Herramientas",
+      "title": "Tools",
       "skills": [
         {
           "id": 1,

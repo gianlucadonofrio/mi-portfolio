@@ -26,26 +26,36 @@ export const Footer = () => {
           <a
             href="https://www.linkedin.com/in/gianlucadonofrio/"
             target={'_blank'}
-            className="btn-socials"
             rel="noreferrer"
           >
-            <i className="fa-brands fa-linkedin-in p-2"></i>
+            <img
+              src={'./icons/brand-linkedin.svg'}
+              alt="LinkedIn Icon"
+              className="btn-socials p-2"
+            />
           </a>
           <a
             href="https://github.com/gianlucadonofrio"
             target={'_blank'}
-            className="btn-socials"
             rel="noreferrer"
           >
-            <i className="fa-brands fa-github p-2"></i>
+            <img
+              src={'./icons/brand-github.svg'}
+              alt="GitHub Icon"
+              className="btn-socials p-2"
+              
+            />
           </a>
           <a
             href="mailto: gian.donofrio2000@gmail.com"
             target={'_blank'}
-            className="btn-socials"
             rel="noreferrer"
           >
-            <i className="fa-solid fa-envelope p-2"></i>
+            <img
+              src={'./icons/mail.svg'}
+              alt="Mail Icon"
+              className="btn-socials p-2"
+            />
           </a>
         </div>
       </div>

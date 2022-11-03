@@ -6,17 +6,31 @@ import { LanguageContext } from '../context/LanguageContext';
 
 export const Navbar = () => {
   const collapseNavbar = useRef(null);
-  const [isDark, setIsDark] = useState('🌞');
-  const [language, setLanguage] = useState('ES');
-  const [languageCollapsed, setLanguageCollapsed] = useState('US');
+  const [isDark, setIsDark] = useState('🌚');
+  const [language, setLanguage] = useState('🇪🇸');
+  const [languageCollapsed, setLanguageCollapsed] = useState('🇺🇸');
   const { languagePage, setLanguagePage, us, es } = useContext(LanguageContext);
+
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-theme');
+      setIsDark('🌝');
+    }
+    if (localStorage.getItem('lang') === 'en') {
+      document.documentElement.setAttribute('lang', 'en');
+      setLanguage('🇺🇸');
+      setLanguageCollapsed('🇪🇸');
+      setLanguagePage(us);
+    }
+  }, [setLanguagePage, us]);
+
   const changeMode = () => {
-    if (isDark === '🌞') {
-      setIsDark('🌚');
+    if (isDark === '🌚') {
+      setIsDark('🌝');
       document.body.classList.toggle('light-theme');
       localStorage.setItem('theme', 'light');
     } else {
-      setIsDark('🌞');
+      setIsDark('🌚');
       document.body.classList.toggle('light-theme');
       localStorage.setItem('theme', 'dark');
     }
@@ -26,33 +40,19 @@ export const Navbar = () => {
     if (document.documentElement.lang === 'es') {
       document.documentElement.setAttribute('lang', 'en');
       localStorage.setItem('lang', 'en');
-      setLanguage('US');
-      setLanguageCollapsed('ES');
+      setLanguage('🇺🇸');
+      setLanguageCollapsed('🇪🇸');
       setLanguagePage(us);
     } else {
       document.documentElement.setAttribute('lang', 'es');
       localStorage.setItem('lang', 'es');
-      setLanguage('ES');
-      setLanguageCollapsed('US');
+      setLanguage('🇪🇸');
+      setLanguageCollapsed('🇺🇸');
       setLanguagePage(es);
     }
   };
-
-  useEffect(() => {
-    if (localStorage.getItem('theme') === 'light') {
-      document.body.classList.add('light-theme');
-      setIsDark('🌚');
-    }
-    if (localStorage.getItem('lang') === 'en') {
-      document.documentElement.setAttribute('lang', 'en');
-      setLanguage('US');
-      setLanguageCollapsed('ES');
-      setLanguagePage(us);
-    }
-  }, [setLanguagePage, us]);
-
   return (
-    <nav className="navbar navbar-expand-lg sticky-top">
+    <nav className=" navbar navbar-expand-lg">
       <div className="container d-flex align-content-lg-center">
         <a
           className="navbar-brand"
@@ -67,7 +67,7 @@ export const Navbar = () => {
         <div className="d-flex align-items-center">
           <button
             onClick={changeMode}
-            className="button-change-mode navbar-toggler"
+            className="buttons-navbar navbar-toggler"
             type="button"
           >
             <span className="material-symbols-outlined change-mode-icon ">
@@ -76,7 +76,7 @@ export const Navbar = () => {
           </button>
           <div className="dropdown w-100 pe-1">
             <button
-              className="btn-navbar-shadow navbar-toggler text-light dropdown-toggle w-100"
+              className="btn-navbar-shadow navbar-toggler text-light dropdown-toggle w-100 buttons-navbar "
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -85,18 +85,30 @@ export const Navbar = () => {
               {language}
             </button>
             <ul
-              className="dropdown-menu dropdown-menu-end mt-2"
-              style={{ minWidth: '100%' }}
+              className="dropdown-menu dropdown-menu-end  menu-language"
+              style={{
+                minWidth: '60px',
+              }}
             >
-              <li>
-                <button className="dropdown-item" onClick={changeLanguage}>
+              <li
+                  style={{
+                  textAlign: 'center',
+                }}
+              >
+                <button
+                  className="dropdown-item"
+                  onClick={changeLanguage}
+                  style={{
+                    fontSize: '18px',
+                  }}
+                >
                   {languageCollapsed}
                 </button>
               </li>
             </ul>
           </div>
           <button
-            className="btn-navbar-shadow navbar-toggler"
+            className="btn-navbar-shadow navbar-toggler buttons-navbar "
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -104,7 +116,15 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="material-symbols-outlined navbar-icon">menu</span>
+            <img
+              src={'./icons/menu.svg'}
+              alt="Menu Icon"
+              className="menu-icon"
+              style={{
+                width: '25px',
+                height: '25px',
+              }}
+            />
           </button>
         </div>
 
@@ -149,7 +169,7 @@ export const Navbar = () => {
             </li>
             <li className="dropdown nav-item d-none d-lg-block pe-1">
               <button
-                className="button-change-mode btn-navbar-shadow text-light dropdown-toggle w-100"
+                className="buttons-navbar btn-navbar-shadow text-light dropdown-toggle w-100"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -157,12 +177,12 @@ export const Navbar = () => {
               >
                 {language}
               </button>
-              <ul
-                className="dropdown-menu dropdown-menu-end menu-language"
-                style={{ minWidth: '100%' }}
-              >
+              <ul className="dropdown-menu dropdown-menu-end">
                 <li>
-                  <button className="dropdown-item" onClick={changeLanguage}>
+                  <button
+                    className="dropdown-item menu-language"
+                    onClick={changeLanguage}
+                  >
                     {languageCollapsed}
                   </button>
                 </li>
@@ -171,7 +191,7 @@ export const Navbar = () => {
             <li className="nav-item d-none d-lg-block">
               <button
                 onClick={changeMode}
-                className="button-change-mode"
+                className="buttons-navbar"
                 type="button"
               >
                 <span className="material-symbols-outlined change-mode-icon">

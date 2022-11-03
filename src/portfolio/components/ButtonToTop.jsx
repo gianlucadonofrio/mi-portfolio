@@ -21,14 +21,13 @@ export const ButtonToTop = () => {
 
   return (
     <button
-      className="btn btn-lg btn-scroll-top animate__animated animate__fadeIn"
       onClick={() => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }}
       ref={buttonScrollTop}
     >
-      <i className="fa-solid fa-arrow-up"></i>
+      <img src={'./icons/arrow-up.svg'} alt="Arrow Up Icon" className="btn-scroll-top"/>
     </button>
   );
 };

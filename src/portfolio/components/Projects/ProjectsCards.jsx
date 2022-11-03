@@ -44,18 +44,24 @@ export const ProjectsCards = ({ languagePage: data }) => {
                   <a
                     href={project.proyecto__url_github}
                     target={'_blank'}
-                    className="btn-socials"
                     rel="noreferrer"
                   >
-                    <i className="fa-brands fa-github"></i>
+                    <img
+                      src={'./icons/brand-github.svg'}
+                      alt="GitHub Icon"
+                      className="btn-socials p-2"
+                    />
                   </a>
                   <a
                     href={project.proyecto__url_web}
                     target={'_blank'}
-                    className="btn-socials"
                     rel="noreferrer"
                   >
-                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                    <img
+                      src={'./icons/world-www.svg'}
+                      alt="Web Icon"
+                      className="btn-socials p-2"
+                    />
                   </a>
                 </div>
                 <ul
