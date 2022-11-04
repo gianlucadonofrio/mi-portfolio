@@ -2,7 +2,7 @@
   --color-bg: #202124;
   --color-text: #f0f6fc;
   --color-icons-skills-and-text-important: #e73c7e;
-  --nav-shadow: #091725;
+  --nav-shadow: #141719;
   --background-logo: #f0f6fc;
   --color-text-nav: #f0f6fc;
   --color-buttons: #2c333f;
@@ -65,7 +65,7 @@ body {
 body.light-theme {
   --color-bg: #ffffff;
   --color-text: #1a2027;
-  --nav-shadow: #e7ebf0;
+  --nav-shadow: #d5d6d8;
   --background-logo: #2c333f;
   --color-buttons: #ffffff;
   --border-buttons: #d2d3d7;
