@@ -37,18 +37,22 @@ export const Navbar = () => {
     const navbar = document.getElementById('navbar');
 
     window.addEventListener('scroll', () => {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
+      let scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        0;
       if (scrollTop === 0) {
         navbar.classList.add('navbar-background-transparent');
       }
+
       if (scrollTop > lastScroll) {
         navbar.style.top = '-80px';
         navbar.classList.remove('navbar-background-transparent');
       } else {
         navbar.style.top = '0';
       }
-      lastScroll = scrollTop;
+      lastScroll = scrollTop <= 0 ? 0 : scrollTop;
     });
   };
 
