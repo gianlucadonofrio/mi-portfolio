@@ -13,7 +13,7 @@ export const Footer = () => {
           className="mt-3"
           style={{
             textDecoration: 'none',
-            color: 'var(--color-buttons)',
+            color: 'var(--color-icons-skills-and-text-important)',
             fontStyle: 'italic',
             fontWeight: '600',
             fontSize: '2rem',
@@ -43,7 +43,6 @@ export const Footer = () => {
               src={'./icons/brand-github.svg'}
               alt="GitHub Icon"
               className="btn-socials p-2"
-              
             />
           </a>
           <a

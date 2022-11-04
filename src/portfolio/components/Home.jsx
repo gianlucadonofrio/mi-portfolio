@@ -9,7 +9,7 @@ export const Home = () => {
       className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center"
     >
       <div
-        className="d-flex flex-md-column align-items-center justify-content-end mt-5"
+        className="d-flex flex-md-column align-items-center justify-content-end mt-3"
         style={{ width: 'fit-content' }}
       >
         <a
@@ -47,7 +47,7 @@ export const Home = () => {
         </a>
       </div>
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
-        <div className="container-fluid d-flex justify-content-center flex-wrap flex-md-nowrap">
+        <div className="container-fluid d-flex justify-content-center flex-wrap flex-md-nowrap mt-4">
           <a
             href={require('../CV/CV-Gianluca-Donofrio.pdf')}
             download="CV-Gianluca-Donofrio.pdf"
@@ -60,11 +60,7 @@ export const Home = () => {
               <img
                 src={'./icons/download.svg'}
                 alt="Download Icon"
-                className="ps-1"
-                style={{
-                  width: '30px',
-                  height: '30px',
-                }}
+                className="ps-1 cv_contactme__icon"
               />
             </p>
           </a>
@@ -74,25 +70,20 @@ export const Home = () => {
               <img
                 src={'./icons/send.svg'}
                 alt="Send Icon"
-                className="ps-1"
-                style={{
-                  width: '30px',
-                  height: '30px',
-                }}
+                className="ps-1 cv_contactme__icon"
+                
               />
             </p>
           </a>
         </div>
         <div className="d-flex flex-row align-items-center">
           <div className="d-flex flex-column align-items-center justify-content-center">
-            <h1 className="w-100 text-center ps-md-3 mt-2">
-              {languagePage.home__titulo}
-              <br />
-              <span className="title__name"> Gianluca.</span>
+            <p className="title__description">{languagePage.home__titulo}</p>
+            <h1 className="title__name">
+              Gianluca
+              <span>D'Onofrio</span>
             </h1>
-            <p className="title__description ps-3">
-              {languagePage.home__subtitulo}
-            </p>
+            <p className="title__description">{languagePage.home__subtitulo}</p>
           </div>
         </div>
       </div>

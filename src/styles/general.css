@@ -1,11 +1,17 @@
 :root {
-  --color-bg: #1b1e22;
+  --color-bg: #202124;
   --color-text: #f0f6fc;
-  --color-buttons: #604a84;
-  --color-secondary-text: #c2c2c2;
-  --color-text-buttons: #f0f6fc;
-  --menu-icon: invert(95%) sepia(8%) saturate(1094%) hue-rotate(183deg)
-    brightness(104%) contrast(98%);
+  --color-icons-skills-and-text-important: #e73c7e;
+  --nav-shadow: #091725;
+  --background-logo: #f0f6fc;
+  --color-text-nav: #f0f6fc;
+  --color-buttons: #2c333f;
+  --border-buttons: #585b63;
+  --color-text-buttons: #f8faff;
+  --color-icons-buttons: invert(94%) sepia(11%) saturate(286%)
+    hue-rotate(187deg) brightness(102%) contrast(98%);
+  --color-secondary-text: #e3e3e3;
+  --menu-icon: invert(1);
   --color-title-skills: #161b22;
   --color-text-projects: #1a2027;
   --background-color-stars: rgba(255, 255, 255, 0.8);
@@ -33,7 +39,7 @@ body {
   width: 100px;
   height: 3px;
   border-radius: 5px;
-  background-color: var(--color-buttons);
+  background-color: var(--color-icons-skills-and-text-important);
 }
 .btn-scroll-top {
   position: fixed;
@@ -41,7 +47,7 @@ body {
   right: 20px;
   z-index: 100;
   display: none;
-  background: linear-gradient(43deg, #4158d0 0%, #c850c0 68%);
+  background-color: var(--color-icons-skills-and-text-important);
   border: none;
   border-radius: 50%;
   padding: 10px;
@@ -55,17 +61,23 @@ body {
   border: none;
   color: white;
 }
-/*  LIGHT MODE*/
-@media (prefers-color-scheme: dark) {
-  body.light-theme {
-    --color-bg: #f9fafb;
-    --color-text: #1a2027;
-    --color-text-projects: #f0f6fc;
-    --background-color-stars: rgba(0, 0, 0, 0.7);
-    --stars-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5),
-      0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 17px 7px rgba(0, 84, 98, 0.1);
-    --stars-background-image: linear-gradient(90deg, #545454ca, transparent);
-    --menu-icon: invert(0%) sepia(96%) saturate(14%) hue-rotate(322deg)
-      brightness(95%) contrast(99%);
-  }
+
+body.light-theme {
+  --color-bg: #ffffff;
+  --color-text: #1a2027;
+  --nav-shadow: #e7ebf0;
+  --background-logo: #2c333f;
+  --color-buttons: #ffffff;
+  --border-buttons: #d2d3d7;
+  --color-secondary-text: #4d4d4d;
+  --color-icons-buttons: invert(9%) sepia(34%) saturate(440%) hue-rotate(172deg)
+    brightness(95%) contrast(92%);
+  --color-text-buttons: #1a2027;
+  --color-text-projects: #f0f6fc;
+  --background-color-stars: rgba(0, 0, 0, 0.7);
+  --stars-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5),
+    0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 17px 7px rgba(0, 84, 98, 0.1);
+  --stars-background-image: linear-gradient(90deg, #545454ca, transparent);
+  --menu-icon: invert(0%) sepia(96%) saturate(14%) hue-rotate(322deg)
+    brightness(95%) contrast(99%);
 }

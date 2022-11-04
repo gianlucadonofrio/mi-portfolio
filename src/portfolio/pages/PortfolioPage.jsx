@@ -11,7 +11,7 @@ import { AboutMe } from '../components/AboutMe/AboutMe';
 
 export const PortfolioPage = () => {
   return (
-    <>
+    <div className='container'>
       <Navbar />
       <StarsBackground />
       <Home />
@@ -20,6 +20,6 @@ export const PortfolioPage = () => {
       <ContactMeForm />
       <Footer />
       <ButtonToTop />
-    </>
+    </div>
   );
 };

@@ -1,19 +1,23 @@
 export const AboutMeText = () => {
+  const textStyles = {
+    textDecoration: 'none',
+    color: 'var( --color-icons-skills-and-text-important)',
+    fontStyle: 'italic',
+    fontWeight: '600',
+  };
+
   return (
     <>
       {document.documentElement.lang === 'es' ? (
         <div>
           <p>
-            Soy desarrollador <strong>Web Full Stack</strong> 🚀. Me encanta
-            crear sitios web que brinden una experiencia de usuario única y
+            Soy desarrollador <strong>Web Full Stack</strong>. Me encanta crear
+            sitios web que brinden una experiencia de usuario única y
             satisfactoria. Puedes ver algunos de mis proyectos en la sección de
             <a
               href="#projects"
               style={{
-                textDecoration: 'none',
-                color: 'var(--color-buttons)',
-                fontStyle: 'italic',
-                fontWeight: '600',
+                ...textStyles,
               }}
             >
               {' '}
@@ -32,10 +36,7 @@ export const AboutMeText = () => {
             <a
               href="#contactMe"
               style={{
-                textDecoration: 'none',
-                color: 'var(--color-buttons)',
-                fontStyle: 'italic',
-                fontWeight: '600',
+                ...textStyles,
               }}
             >
               contactarse
@@ -46,21 +47,18 @@ export const AboutMeText = () => {
       ) : (
         <div>
           <p>
-            I am a <strong>Full Stack Web Developer</strong> 🚀. I love creating
+            I am a <strong>Full Stack Web Developer</strong>. I love creating
             websites that provide a unique and satisfying user experience. You
             can see some of my projects in the{' '}
             <a
               href="#projects"
               style={{
-                textDecoration: 'none',
-                color: 'var(--color-buttons)',
-                fontStyle: 'italic',
-                fontWeight: '600',
+                ...textStyles,
               }}
             >
               projects
             </a>{' '}
-            ƒ section.
+            section.
           </p>
           <p>
             I am an autodidact, responsible and committed person with my work. I
@@ -72,10 +70,7 @@ export const AboutMeText = () => {
             <a
               href="#contactMe"
               style={{
-                textDecoration: 'none',
-                color: 'var(--color-buttons)',
-                fontStyle: 'italic',
-                fontWeight: '600',
+                ...textStyles,
               }}
             >
               contact me

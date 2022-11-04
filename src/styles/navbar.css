@@ -1,22 +1,35 @@
-.navbar-brand,
-.nav-link {
-  color: var(--color-text-navbar);
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 100;
+  background-color: var(--color-bg) !important;
+  box-shadow: 0 0 10px 4px var(--nav-shadow);
 }
-.nav-link {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.navbar {
-  color: var(--color-text-navbar);
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-bg);
+  background-color: var(--background-logo);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-.dropdown-toggle::after {
-  display: none;
+.nav-link {
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+.menu-icon-button {
+  width: 50px;
+  height: 45px;
+  border: 1px solid var(--border-buttons);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-icon {
-  width: 25px;
-  height: 25px;
   filter: var(--menu-icon);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -25,63 +38,40 @@
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
 }
-
 .buttons-navbar {
-  border: 1px solid rgb(19, 47, 76);
-  background-color: transparent;
-  padding: 5px 10px;
+  background: transparent;
+  border: 1px solid var(--border-buttons);
+  font-size: 1.4rem;
+  margin-right: 5px;
+  width: 45px;
+  height: 45px;
   border-radius: 5px;
-  margin: 0 5px;
-  height: 40px;
-  width: 50px;
-}
-.navbar-toggler {
-  border: 1px solid rgb(19, 47, 76);
-  height: 40px;
-  width: 50px;
-  border-radius: 5px;
-  color: white;
-}
-.navbar-icon {
-  color: var(--color-text-navbar);
+  cursor: pointer;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-.btn-navbar-shadow:focus {
-  box-shadow: none !important;
+
+@media screen and (max-width: 991px) {
+  .nav-link {
+    margin: 20px 0;
+    font-weight: 600;
+  }
 }
-.menu-language {
-  background-color: white;
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-right: -1px;
-}
-.navbar-background-transparent {
-  background-color: transparent !important;
-}
-#navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: 0.3s;
-  z-index: 100;
-  background-color: var(--color-bg);
-}
-/* ANIMATION */
-.navbar-brand:hover {
-  transform: scale(1.1);
-  color: var(--color-text-navbar);
-  transition: 0.5s;
-}
-.buttons-navbar:hover {
-  background-color: rgba(19, 47, 76, 0.4);
-}
-.nav-link:hover {
-  transform: scale(1.03);
-  color: var(--color-text-navbar);
-}
-.dropdown-item:hover {
-  background-color: transparent;
+
+@media screen and (min-width: 986px) {
+  .buttons-navbar:hover {
+    border: 2px solid var(--color-text);
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar-brand:hover {
+    color: var(--color-bg);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+  }
+  .nav-link:hover {
+    color: var(--color-text);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+  }
 }

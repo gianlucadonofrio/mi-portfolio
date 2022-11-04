@@ -162,11 +162,7 @@ export const ContactMeForm = () => {
                   <img
                     src={'./icons/send.svg'}
                     alt="Send Icon"
-                    className="ps-1"
-                    style={{
-                      width: '30px',
-                      height: '30px',
-                    }}
+                    className="ms-2 cv_contactme__icon"
                   />
                 </div>
               )}

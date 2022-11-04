@@ -6,6 +6,7 @@ export const Navbar = () => {
   const collapseNavbar = useRef(null);
   const [isDark, setIsDark] = useState('🌚');
   const [language, setLanguage] = useState('🇪🇸');
+  const [isCollapsed, setIsCollapsed] = useState(false);
   const { languagePage, setLanguagePage, us, es } = useContext(LanguageContext);
 
   useEffect(() => {
@@ -31,7 +32,6 @@ export const Navbar = () => {
       localStorage.setItem('theme', 'dark');
     }
   };
-
   const handleScroll = () => {
     let lastScroll;
     const navbar = document.getElementById('navbar');
@@ -49,6 +49,8 @@ export const Navbar = () => {
       if (scrollTop > lastScroll) {
         navbar.style.top = '-80px';
         navbar.classList.remove('navbar-background-transparent');
+        collapseNavbar.current.classList.remove('show');
+        setIsCollapsed(false);
       } else {
         navbar.style.top = '0';
       }
@@ -82,17 +84,16 @@ export const Navbar = () => {
         <a
           className="navbar-brand"
           href="/"
-          style={{ fontWeight: 'semi-bold', fontSize: '22px' }}
           onClick={() => {
             collapseNavbar.current.classList.remove('show');
           }}
         >
-          Gianluca.
+          Gian.
         </a>
         <div className="d-flex align-items-center">
           <button
             onClick={changeMode}
-            className="buttons-navbar navbar-toggler"
+            className="buttons-navbar d-lg-none"
             type="button"
           >
             {isDark}
@@ -114,19 +115,26 @@ export const Navbar = () => {
             </button>
           )}
           <button
-            className="navbar-toggler"
+            className="navbar-toggler menu-icon-button"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={() => {
+              setIsCollapsed(!isCollapsed);
+            }}
           >
-            <img
-              src={'./icons/menu.svg'}
-              alt="Menu Icon"
-              className="menu-icon"
-            />
+            {isCollapsed ? (
+              <img
+                src={'./icons/x.svg'}
+                alt="quit-menu"
+                className="menu-icon"
+              />
+            ) : (
+              <img src={'./icons/menu.svg'} alt="menu" className="menu-icon" />
+            )}
           </button>
         </div>
 
@@ -135,7 +143,7 @@ export const Navbar = () => {
           ref={collapseNavbar}
           id="navbarNav"
         >
-          <ul className="navbar-nav d-lg-flex align-items-lg-center">
+          <ul className="navbar-nav d-flex align-items-center gap-2">
             <li className="nav-item">
               <a
                 className="nav-link"
