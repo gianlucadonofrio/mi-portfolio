@@ -25,7 +25,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                   zIndex: '2',
                 }}
               >
-                <h5
+                <p
                   className="card-title"
                   style={{
                     fontSize: '2rem',
@@ -33,8 +33,8 @@ export const ProjectsCards = ({ languagePage: data }) => {
                   }}
                 >
                   {project.proyecto__title}
-                </h5>
-                <p className="card-text project-description mt-3" style={{}}>
+                </p>
+                <p className="card-text project-description mt-3">
                   {project.proyecto__description}
                 </p>
                 <div
@@ -45,23 +45,17 @@ export const ProjectsCards = ({ languagePage: data }) => {
                     href={project.proyecto__url_github}
                     target={'_blank'}
                     rel="noreferrer"
+                    aria-label="github"
                   >
-                    <img
-                      src={'./icons/brand-github.svg'}
-                      alt="GitHub Icon"
-                      className="btn-socials p-2"
-                    />
+                    <i className="fa-brands fa-github-alt icon-social"></i>
                   </a>
                   <a
                     href={project.proyecto__url_web}
                     target={'_blank'}
                     rel="noreferrer"
+                    aria-label="web"
                   >
-                    <img
-                      src={'./icons/external-link.svg'}
-                      alt="Web Icon"
-                      className="btn-socials p-2"
-                    />
+                    <i className="fa-solid fa-arrow-up-right-from-square icon-social"></i>
                   </a>
                 </div>
                 <ul

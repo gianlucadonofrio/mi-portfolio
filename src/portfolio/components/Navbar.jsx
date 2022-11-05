@@ -6,7 +6,6 @@ export const Navbar = () => {
   const collapseNavbar = useRef(null);
   const [isDark, setIsDark] = useState('🌚');
   const [language, setLanguage] = useState('🇪🇸');
-  const [isCollapsed, setIsCollapsed] = useState(false);
   const { languagePage, setLanguagePage, us, es } = useContext(LanguageContext);
 
   useEffect(() => {
@@ -50,7 +49,6 @@ export const Navbar = () => {
         navbar.style.top = '-80px';
         navbar.classList.remove('navbar-background-transparent');
         collapseNavbar.current.classList.remove('show');
-        setIsCollapsed(false);
       } else {
         navbar.style.top = '0';
       }
@@ -80,16 +78,30 @@ export const Navbar = () => {
       className="navbar navbar-expand-lg navbar-background-transparent"
       id="navbar"
     >
-      <div className="container d-flex align-content-lg-center">
-        <a
-          className="navbar-brand"
-          href="/"
-          onClick={() => {
-            collapseNavbar.current.classList.remove('show');
-          }}
-        >
-          Gian.
-        </a>
+      <div className="container d-flex align-content-lg-center h-100">
+        <div className="d-flex align-items-center gap-2">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i className="fa-solid fa-bars menu-icon-button"></i>
+          </button>
+          <a
+            className="navbar-brand"
+            href="/"
+            onClick={() => {
+              collapseNavbar.current.classList.remove('show');
+            }}
+            aria-label="Home"
+          >
+            Gianluca.
+          </a>
+        </div>
         <div className="d-flex align-items-center">
           <button
             onClick={changeMode}
@@ -114,36 +126,14 @@ export const Navbar = () => {
               {language}
             </button>
           )}
-          <button
-            className="navbar-toggler menu-icon-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            onClick={() => {
-              setIsCollapsed(!isCollapsed);
-            }}
-          >
-            {isCollapsed ? (
-              <img
-                src={'./icons/x.svg'}
-                alt="quit-menu"
-                className="menu-icon"
-              />
-            ) : (
-              <img src={'./icons/menu.svg'} alt="menu" className="menu-icon" />
-            )}
-          </button>
         </div>
 
         <div
-          className="collapse navbar-collapse d-lg-flex justify-content-lg-end"
+          className="collapse navbar-collapse d-lg-flex justify-content-lg-end h-100"
           ref={collapseNavbar}
           id="navbarNav"
         >
-          <ul className="navbar-nav d-flex align-items-center gap-2">
+          <ul className="navbar-nav d-flex align-items-center h-100">
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -151,6 +141,7 @@ export const Navbar = () => {
                 onClick={() => {
                   collapseNavbar.current.classList.remove('show');
                 }}
+                aria-label="About me"
               >
                 {languagePage.acerca_de_mi}
               </a>
@@ -162,6 +153,7 @@ export const Navbar = () => {
                 onClick={() => {
                   collapseNavbar.current.classList.remove('show');
                 }}
+                aria-label="Projects"
               >
                 {languagePage.navbar__proyectos}
               </a>
@@ -173,11 +165,12 @@ export const Navbar = () => {
                 onClick={() => {
                   collapseNavbar.current.classList.remove('show');
                 }}
+                aria-label="Contact me"
               >
                 {languagePage.contactame}
               </a>
             </li>
-            <li className="nav-item d-none d-lg-block">
+            <li className="nav-item d-none d-lg-flex align-items-center">
               {language === '🇺🇸' ? (
                 <button onClick={changeLanguage} className="buttons-navbar">
                   {language}
@@ -188,7 +181,7 @@ export const Navbar = () => {
                 </button>
               )}
             </li>
-            <li className="nav-item d-none d-lg-block">
+            <li className="nav-item d-none d-lg-flex align-items-center">
               <button
                 onClick={changeMode}
                 className="buttons-navbar"

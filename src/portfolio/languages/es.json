@@ -3,7 +3,7 @@
   "navbar__proyectos": "Mis proyectos",
   "contactame": "Contáctame",
   "home__titulo": "Hola 👋🏼, soy",
-  "home__subtitulo": "Desarrollador Web Full Stack 🚀, apasionado por el desarrollo Frontend.",
+  "home__subtitulo": "Desarrollador Full Stack, apasionado por el desarrollo Frontend.",
   "home__curriculum": "Descargar CV",
   "acerca_de_mi__text_title": "Quién soy",
   "acerca_de_mi__title_habilidades": "Mis habilidades",
@@ -11,8 +11,7 @@
   "skills__cards": [
     {
       "id": "frontend",
-      "icon": "code.svg",
-      "background_color": "#61DAFB",
+      "icon": "fa-code",
       "title": "Frontend",
       "skills": [
         {
@@ -43,7 +42,7 @@
     },
     {
       "id": "backend",
-      "icon": "server.svg",
+      "icon": "fa-server",
       "background_color": "#5f819e",
       "title": "Backend ",
       "skills": [
@@ -71,7 +70,7 @@
     },
     {
       "id": "testing",
-      "icon": "bug-off.svg",
+      "icon": "fa-vials",
       "background_color": "#F05032",
       "title": "Testing",
       "skills": [
@@ -92,7 +91,7 @@
 
     {
       "id": "tools",
-      "icon": "tools.svg",
+      "icon": "fa-gear",
       "background_color": "#F05032",
       "title": "Herramientas",
       "skills": [

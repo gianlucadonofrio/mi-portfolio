@@ -7,71 +7,66 @@
   z-index: 100;
   background-color: var(--color-bg) !important;
   box-shadow: 0 0 10px 4px var(--nav-shadow);
+  padding: 0;
 }
 .navbar-brand {
   font-size: 1.7rem;
   font-weight: 600;
-  color: var(--color-bg);
-  background-color: var(--background-logo);
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.nav-link {
-  font-size: 1.1rem;
   color: var(--color-text);
 }
+.nav-item {
+  height: 100%;
+}
+.nav-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: var(--color-nav-items);
+  padding: 20px 0;
+}
+
 .menu-icon-button {
-  width: 50px;
-  height: 45px;
-  border: 1px solid var(--border-buttons);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.6rem;
+  color: var(--color-nav-items);
 }
-.menu-icon {
-  filter: var(--menu-icon);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  transform: translate3d(0, 0, 0);
+.navbar-toggler {
+  border: none;
 }
 .buttons-navbar {
-  background: transparent;
-  border: 1px solid var(--border-buttons);
-  font-size: 1.4rem;
-  margin-right: 5px;
-  width: 45px;
-  height: 45px;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  width: 50px;
+  font-size: 1.6rem;
+  height: 50px;
+}
+.nav-link:hover {
+  background-color: var(--color-nav-hover);
+  color: var(--color-text);
+  transition: all 0.2s ease-in-out;
+}
+.buttons-navbar:hover {
+  background-color: var(--color-nav-hover);
+  border: none;
+  border-radius: 100%;
 }
 
-@media screen and (max-width: 991px) {
-  .nav-link {
-    margin: 20px 0;
-    font-weight: 600;
+@media screen and (max-width: 992px) {
+  #navbar{
+    padding: 6px;
   }
 }
 
-@media screen and (min-width: 986px) {
-  .buttons-navbar:hover {
-    border: 2px solid var(--color-text);
-    transition: all 0.2s ease-in-out;
-  }
+@media screen and (min-width: 992px) {
   .navbar-brand:hover {
-    color: var(--color-bg);
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.05);
-  }
-  .nav-link:hover {
+    transform: scale(1.1);
     color: var(--color-text);
     transition: all 0.2s ease-in-out;
-    transform: scale(1.05);
   }
 }

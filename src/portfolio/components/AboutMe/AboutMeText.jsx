@@ -1,7 +1,7 @@
 export const AboutMeText = () => {
   const textStyles = {
     textDecoration: 'none',
-    color: 'var( --color-icons-skills-and-text-important)',
+    color: 'var(--text-color)',
     fontStyle: 'italic',
     fontWeight: '600',
   };
@@ -11,14 +11,15 @@ export const AboutMeText = () => {
       {document.documentElement.lang === 'es' ? (
         <div>
           <p>
-            Soy desarrollador <strong>Web Full Stack</strong>. Me encanta crear
-            sitios web que brinden una experiencia de usuario única y
-            satisfactoria. Puedes ver algunos de mis proyectos en la sección de
+            Me encanta crear sitios web que brinden una experiencia de usuario
+            única y satisfactoria. Puedes ver algunos de mis proyectos en la
+            sección de
             <a
               href="#projects"
               style={{
                 ...textStyles,
               }}
+              aria-label="projects"
             >
               {' '}
               proyectos.
@@ -38,6 +39,7 @@ export const AboutMeText = () => {
               style={{
                 ...textStyles,
               }}
+              aria-label="contact me"
             >
               contactarse
             </a>{' '}
@@ -47,14 +49,14 @@ export const AboutMeText = () => {
       ) : (
         <div>
           <p>
-            I am a <strong>Full Stack Web Developer</strong>. I love creating
-            websites that provide a unique and satisfying user experience. You
-            can see some of my projects in the{' '}
+            I love creating websites that provide a unique and satisfying user
+            experience. You can see some of my projects in the{' '}
             <a
               href="#projects"
               style={{
                 ...textStyles,
               }}
+              aria-label="projects"
             >
               projects
             </a>{' '}
@@ -72,6 +74,7 @@ export const AboutMeText = () => {
               style={{
                 ...textStyles,
               }}
+              aria-label="contact me"
             >
               contact me
             </a>{' '}

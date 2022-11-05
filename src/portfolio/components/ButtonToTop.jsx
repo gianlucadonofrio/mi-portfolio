@@ -30,7 +30,7 @@ export const ButtonToTop = () => {
         display: 'none',
       }}
     >
-      <img src={'./icons/arrow-up.svg'} alt="Arrow Up Icon" />
+      <i className="fa-solid fa-arrow-up"></i>
     </button>
   );
 };

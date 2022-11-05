@@ -1,45 +1,43 @@
 :root {
+  /*   Text and Background Styles*/
   --color-bg: #202124;
-  --color-text: #f0f6fc;
-  --color-icons-skills-and-text-important: #e73c7e;
-  --nav-shadow: #141719;
-  --background-logo: #f0f6fc;
-  --color-text-nav: #f0f6fc;
-  --color-buttons: #2c333f;
-  --border-buttons: #585b63;
-  --color-text-buttons: #f8faff;
-  --color-icons-buttons: invert(94%) sepia(11%) saturate(286%)
-    hue-rotate(187deg) brightness(102%) contrast(98%);
+  --color-text: #e8eaed;
   --color-secondary-text: #e3e3e3;
-  --menu-icon: invert(1);
-  --color-title-skills: #161b22;
-  --color-text-projects: #1a2027;
+
+  /*   Navbar Styles*/
+  --nav-shadow: #141719;
+  --color-nav-items: #9aa0a6;
+  --color-nav-hover: rgba(232, 234, 237, 0.04);
+
+  /*   Buttons and Icon Styles*/
+  --color-buttons: #604a84;
+  --color-text-buttons: #f8faff;
+
+  /*   Stars Styles*/
   --background-color-stars: rgba(255, 255, 255, 0.8);
   --stars-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.5),
     0 0 10px 4px rgba(255, 255, 255, 0.2), 0 0 17px 7px rgba(255, 84, 98, 0.1);
   --stars-background-image: linear-gradient(90deg, #c7c6c6ca, transparent);
-}
-html {
-  scroll-behavior: smooth;
-  font-display: swap;
 }
 #aboutMe,
 #projects,
 #contactMe {
   padding-top: 30px;
 }
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  z-index: 10;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
+  font-display: swap;
+  height: 100%;
 }
-
 .vbar {
   width: 100px;
   height: 3px;
   border-radius: 5px;
-  background-color: var(--color-icons-skills-and-text-important);
+  background-color: var(--color-buttons);
 }
 .btn-scroll-top {
   position: fixed;
@@ -47,37 +45,35 @@ body {
   right: 20px;
   z-index: 100;
   display: none;
-  background-color: var(--color-icons-skills-and-text-important);
+  background-color: var(--color-buttons);
   border: none;
   border-radius: 50%;
-  padding: 10px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-scroll-top:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
-  border: none;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
   color: white;
 }
 
+.btn-scroll-top:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
 body.light-theme {
-  --color-bg: #ffffff;
-  --color-text: #1a2027;
-  --nav-shadow: #d5d6d8;
-  --background-logo: #2c333f;
-  --color-buttons: #ffffff;
-  --border-buttons: #d2d3d7;
+  /*   Text and Background Styles*/
+  --color-bg: #fff;
+  --color-text: #0f0f0f;
   --color-secondary-text: #4d4d4d;
-  --color-icons-buttons: invert(9%) sepia(34%) saturate(440%) hue-rotate(172deg)
-    brightness(95%) contrast(92%);
-  --color-text-buttons: #1a2027;
-  --color-text-projects: #f0f6fc;
+
+  /*   Navbar Styles*/
+  --nav-shadow: #d5d6d8;
+  --color-nav-items: #5f6368;
+  --color-nav-hover: rgba(32, 33, 36, 0.04);
+
+  /*   Stars Styles*/
   --background-color-stars: rgba(0, 0, 0, 0.7);
   --stars-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5),
     0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 17px 7px rgba(0, 84, 98, 0.1);
   --stars-background-image: linear-gradient(90deg, #545454ca, transparent);
-  --menu-icon: invert(0%) sepia(96%) saturate(14%) hue-rotate(322deg)
-    brightness(95%) contrast(99%);
 }

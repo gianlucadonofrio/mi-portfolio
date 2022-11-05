@@ -9,19 +9,11 @@ export const SkillsSection = ({ languagePage }) => {
           >
             <div
               style={{
-                height: '150px',
-                width: '100%',
+                color: 'var(--color-buttons)',
+                fontSize: '120px',
               }}
             >
-              <img
-                src={`./icons/${card.icon}`}
-                alt={`Icon ${card.title}`}
-                className="img-fluid"
-                style={{
-                  height: '100%',
-                  width: '100%',
-                }}
-              />
+              <i className={`fa-solid ${card.icon}`}></i>
             </div>
             <div
               className="d-flex flex-column"
@@ -29,15 +21,15 @@ export const SkillsSection = ({ languagePage }) => {
                 width: '75%',
               }}
             >
-              <h5
+              <p
                 style={{
-                  fontSize: '2rem',
+                  fontSize: '2.3rem',
                   fontWeight: '600',
                 }}
                 className="text-center"
               >
                 {card.title}
-              </h5>
+              </p>
               <p
                 style={{
                   fontSize: '1.6rem',

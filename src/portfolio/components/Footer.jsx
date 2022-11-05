@@ -7,17 +7,20 @@ export const Footer = () => {
     <section className="w-100">
       <hr />
       <div className="container d-flex flex-column align-items-center pt-3 ">
-        <h3 className="mt-2 p-4 text-center">{languagePage.thanks}</h3>
+        <p className="mt-2 p-4 text-center" style={{
+          fontSize: '1.6rem',
+        }}>{languagePage.thanks}</p>
         <a
           href="#contactMe"
           className="mt-3"
           style={{
             textDecoration: 'none',
-            color: 'var(--color-icons-skills-and-text-important)',
+            color: 'var(--color-buttons)',
             fontStyle: 'italic',
             fontWeight: '600',
             fontSize: '2rem',
           }}
+          aria-label="contact"
         >
           {languagePage.contactame}
         </a>
@@ -27,34 +30,25 @@ export const Footer = () => {
             href="https://www.linkedin.com/in/gianlucadonofrio/"
             target={'_blank'}
             rel="noreferrer"
+            aria-label="linkedin"
           >
-            <img
-              src={'./icons/brand-linkedin.svg'}
-              alt="LinkedIn Icon"
-              className="btn-socials p-2"
-            />
+            <i className="fa-brands fa-linkedin-in icon-social"></i>
           </a>
           <a
             href="https://github.com/gianlucadonofrio"
             target={'_blank'}
             rel="noreferrer"
+            aria-label="github"
           >
-            <img
-              src={'./icons/brand-github.svg'}
-              alt="GitHub Icon"
-              className="btn-socials p-2"
-            />
+            <i className="fa-brands fa-github-alt icon-social"></i>
           </a>
           <a
             href="mailto: gian.donofrio2000@gmail.com"
             target={'_blank'}
             rel="noreferrer"
+            aria-label="email"
           >
-            <img
-              src={'./icons/mail.svg'}
-              alt="Mail Icon"
-              className="btn-socials p-2"
-            />
+            <i className="fa-regular fa-envelope icon-social"></i>
           </a>
         </div>
       </div>

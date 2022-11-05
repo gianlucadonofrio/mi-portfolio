@@ -9,6 +9,10 @@ const contactMeFormFields = {
   subjet: '',
   message: '',
 };
+const styleIconsScrollDown = {
+  fontSize: '1.6rem',
+  color: 'var(--color-buttons)',
+};
 
 export const ContactMeForm = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -69,7 +73,7 @@ export const ContactMeForm = () => {
           }}
         >
           {languagePage.contactme__subtitle}
-          <span className="title__contactMe ">
+          <span className="title__contactMe">
             {languagePage.contactame}.&#160;<span>&#160;</span>
           </span>
         </h1>
@@ -81,25 +85,15 @@ export const ContactMeForm = () => {
             marginBottom: '100px',
           }}
         >
-          <img
-            src={'./icons/mouse-2.svg'}
-            alt="Mouse Icon"
-            className="p-2"
-            style={{
-              width: '50px',
-              height: '50px',
-            }}
-          />
+          <i
+            className="fa-solid fa-computer-mouse pe-2"
+            style={{ ...styleIconsScrollDown }}
+          ></i>
           scroll down
-          <img
-            src={'./icons/arrow-down.svg'}
-            alt="Arrow Icon"
-            className="arrow-down-icon p-2"
-            style={{
-              width: '50px',
-              height: '50px',
-            }}
-          />
+          <i
+            className="fa-solid fa-arrow-down arrow-down-icon p-2"
+            style={{ ...styleIconsScrollDown }}
+          ></i>
         </p>
       </div>
       <div className=" col-12 col-md-6">
@@ -151,19 +145,18 @@ export const ContactMeForm = () => {
           <div className="w-100 d-flex justify-content-end mt-2">
             <button
               type="submit"
-              className="btn btn-submit w-100"
+              className="btn btn-media w-100"
               disabled={!!isLoading}
+              style={{
+                margin: '0',
+              }}
             >
               {isLoading ? (
                 <div className="spinner-border" role="status"></div>
               ) : (
                 <div className="d-flex justify-content-center align-items-center">
                   {languagePage.contactme__form__enviar}
-                  <img
-                    src={'./icons/send.svg'}
-                    alt="Send Icon"
-                    className="ms-2 cv_contactme__icon"
-                  />
+                  <i className="fa-solid fa-paper-plane ms-2"></i>
                 </div>
               )}
             </button>
@@ -190,28 +183,18 @@ export const ContactMeForm = () => {
           </div>
         </form>
         <p
-          className="d-flex justify-content-center d-md-none align-items-center "
+          className="d-flex justify-content-center d-md-none align-items-center mt-2"
           style={{ fontSize: '1.3rem' }}
         >
-          <img
-            src={'./icons/mouse-2.svg'}
-            alt="Mouse Icon"
-            className="p-2"
-            style={{
-              width: '50px',
-              height: '50px',
-            }}
-          />
+          <i
+            className="fa-solid fa-computer-mouse pe-2"
+            style={{ ...styleIconsScrollDown }}
+          ></i>
           scroll down
-          <img
-            src={'./icons/arrow-down.svg'}
-            alt="Arrow Icon"
-            className="arrow-down-icon p-2"
-            style={{
-              width: '50px',
-              height: '50px',
-            }}
-          />
+          <i
+            className="fa-solid fa-arrow-down arrow-down-icon p-2"
+            style={{ ...styleIconsScrollDown }}
+          ></i>
         </p>
       </div>
     </section>

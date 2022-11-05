@@ -6,73 +6,61 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center"
+      className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center mt-3"
     >
       <div
-        className="d-flex flex-md-column align-items-center justify-content-end mt-3"
+        className="d-flex flex-md-column mt-3 align-items-center justify-content-center"
         style={{ width: 'fit-content' }}
       >
         <a
           href="https://www.linkedin.com/in/gianlucadonofrio/"
           target={'_blank'}
           rel="noreferrer"
+          aria-label="linkedin"
         >
-          <img
-            src={'./icons/brand-linkedin.svg'}
-            alt="LinkedIn Icon"
-            className="btn-socials p-2"
-          />
+          <i className="fa-brands fa-linkedin-in icon-social"></i>
         </a>
         <a
           href="https://github.com/gianlucadonofrio"
           target={'_blank'}
           rel="noreferrer"
+          aria-label="github"
         >
-          <img
-            src={'./icons/brand-github.svg'}
-            alt="GitHub Icon"
-            className="btn-socials p-2"
-          />
+          <i className="fa-brands fa-github-alt icon-social"></i>
         </a>
         <a
           href="mailto: gian.donofrio2000@gmail.com"
           target={'_blank'}
           rel="noreferrer"
+          aria-label="email"
         >
-          <img
-            src={'./icons/mail.svg'}
-            alt="Mail Icon"
-            className="btn-socials p-2"
-          />
+          <i className="fa-regular fa-envelope icon-social"></i>
         </a>
       </div>
       <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
-        <div className="container-fluid d-flex justify-content-center flex-wrap flex-md-nowrap mt-4">
+        <div className="container-fluid d-flex justify-content-center flex-wrap flex-md-nowrap ">
           <a
             href={require('../CV/CV-Gianluca-Donofrio.pdf')}
             download="CV-Gianluca-Donofrio.pdf"
             target={'_blank'}
             rel="noreferrer"
+            aria-label="download cv"
             style={{ textDecoration: 'none' }}
           >
-            <p className="btn__cv__contactme d-flex align-items-center justify-content-center">
+            <p className="d-flex align-items-center justify-content-center btn-media">
               {languagePage.home__curriculum}
-              <img
-                src={'./icons/download.svg'}
-                alt="Download Icon"
-                className="ps-1 cv_contactme__icon"
-              />
+              <i className="fa-solid fa-download ps-2"></i>
             </p>
           </a>
-          <a href="#contactMe" style={{ textDecoration: 'none' }}>
-            <p className="btn__cv__contactme d-flex align-items-center justify-content-center">
+
+          <a
+            href="#contactMe"
+            style={{ textDecoration: 'none' }}
+            aria-label="contact me"
+          >
+            <p className="d-flex align-items-center justify-content-center btn-media">
               {languagePage.contactame}
-              <img
-                src={'./icons/send.svg'}
-                alt="Send Icon"
-                className="ps-1 cv_contactme__icon"
-                
-              />
+              <i className="fa-solid fa-paper-plane ps-2"></i>
             </p>
           </a>
         </div>
@@ -81,7 +69,7 @@ export const Home = () => {
             <p className="title__description">{languagePage.home__titulo}</p>
             <h1 className="title__name">
               Gianluca
-              <span>D'Onofrio</span>
+              <span>D'Onofrio.</span>
             </h1>
             <p className="title__description">{languagePage.home__subtitulo}</p>
           </div>
