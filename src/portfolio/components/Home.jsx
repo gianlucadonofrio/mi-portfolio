@@ -71,7 +71,9 @@ export const Home = () => {
               Gianluca
               <span>D'Onofrio.</span>
             </h1>
-            <p className="title__description">{languagePage.home__subtitulo}</p>
+            <p className="title__description ps-4">
+              {languagePage.home__subtitulo}
+            </p>
           </div>
         </div>
       </div>

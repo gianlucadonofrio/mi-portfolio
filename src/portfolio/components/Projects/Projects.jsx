@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import '../../../styles/projects.css';
 import { LanguageContext } from '../../context/LanguageContext';
+import { OthersProjects } from './OthersProjects';
 import { ProjectsCards } from './ProjectsCards';
 
 export const Projects = () => {
@@ -25,6 +26,9 @@ export const Projects = () => {
 
       <div className="d-flex flex-column justify-content-center">
         <ProjectsCards languagePage={languagePage} />
+      </div>
+      <div className="container ">
+        <OthersProjects languagePage={languagePage} />
       </div>
     </section>
   );

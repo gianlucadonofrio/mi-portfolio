@@ -26,23 +26,9 @@
 }
 
 .icon-social {
-  color: var(--color-text);
-  font-size: 2.3rem;
-  margin: 0.6rem;
-  background-color: #ffffff;
-  background-image: linear-gradient(
-    45deg,
-    #ffffff 0%,
-    #6284ff 50%,
-    #ff0000 100%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-size: 200%;
-  background-clip: text;
-  -webkit-animation: gradient 5s ease infinite;
-  -moz-animation: gradient 5s ease infinite;
-  animation: gradient 5s ease infinite;
+  font-size: 2.4rem;
+  margin: 0.7rem;
+  color: var(--color-text-technologies);
 }
 .btn-media {
   display: flex;
@@ -71,20 +57,15 @@
     background-position: 0% 50%;
   }
 }
-
-.icon-social-box:hover {
-  border: none;
-  border-radius: 100%;
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
-}
-
-.btn-media:hover,
-.icon-social:hover {
+.btn-media:hover {
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
 }
-
+.icon-social:hover {
+  transform: translateY(-5px);
+  transition: all 0.2s ease-in-out;
+  color: var(--color-buttons);
+}
 @media screen and (min-width: 768px) {
   .title__name {
     font-size: 5rem;
