@@ -10,7 +10,6 @@ export const Navbar = () => {
   const [handleTheme, themeIcon] = useTheme('light');
   const [languageIcon, handleLanguage] = useLanguage('en');
   const { languagePage } = useContext(LanguageContext);
-
   const handleScroll = () => {
     let lastScroll;
 
@@ -20,9 +19,15 @@ export const Navbar = () => {
         document.documentElement.scrollTop ||
         document.body.scrollTop ||
         0;
+
+      if (scrollTop === 0) {
+        navbar.current?.classList.add('background-navbar');
+      }
+
       if (scrollTop > lastScroll) {
         navbar.current.style.top = '-80px';
         collapseNavbar.current.classList.remove('show');
+        navbar.current?.classList.remove('background-navbar');
       } else {
         navbar.current.style.top = '0';
       }
@@ -36,7 +41,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="navbar navbar-expand-lg "
+      className="navbar navbar-expand-lg background-navbar"
       id="navbar"
       ref={navbar}
     >
@@ -50,6 +55,9 @@ export const Navbar = () => {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={() =>
+              navbar.current?.classList.remove('background-navbar')
+            }
           >
             <i className="fa-solid fa-bars menu-icon-button"></i>
           </button>

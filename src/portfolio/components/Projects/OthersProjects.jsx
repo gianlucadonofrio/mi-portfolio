@@ -9,11 +9,11 @@ export const OthersProjects = ({ languagePage: data }) => {
         <h1
           className="text-center"
           style={{
-            fontSize: '2rem',
+            fontSize: '2.3rem',
             fontWeight: '600  ',
           }}
         >
-          {data.others__projects__title}{' '}
+          {data.others__projects__title}
         </h1>
         <div className="vbar"></div>
       </div>

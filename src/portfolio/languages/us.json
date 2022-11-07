@@ -147,7 +147,7 @@
     {
       "id": 2,
       "proyecto__title": "Calendar App",
-      "proyecto__description": "This is a web application that allows you to create, edit and delete events. Just enter the date and time of the event, the title and a description. Keep track of your events and never forget anything 🗓.",
+      "proyecto__description": "This is a web application that allows you to create, edit and delete events. Just enter the date and time of the event, the title and a description. Keep track of your events and never forget anything.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/10-calendar-app",
       "proyecto__url_web": "https://calendar-app-sooty.vercel.app",
       "proyecto__tecnologias": ["MongoDB", "Express", "ReactJS", "NodeJS"]
@@ -155,7 +155,7 @@
     {
       "id": 3,
       "proyecto__title": "The Food Truck",
-      "proyecto__description": "This is a web application that allows you to order food. You can view the menu, add products to the cart, remove products from the cart, and place the order. It has a login and register system. Enjoy your food! 🍔.",
+      "proyecto__description": "This is a web application that allows you to order food. You can view the menu, add products to the cart, remove products from the cart, and place the order. It has a login and register system. Enjoy your food!",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
       "proyecto__url_web": "https://the-food-truck-vue-js.vercel.app/",
       "proyecto__tecnologias": ["VueJS", "Vuetify", "Vuex"]
@@ -165,26 +165,47 @@
   "others__projects": [
     {
       "id": 1,
-      "proyecto__title": "Journal App",
-      "proyecto__description": "This is a web application that allows you to create, edit and delete notes. Just enter the title and a description. Keep track of your notes and never forget anything 📝.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
+      "proyecto__title": "Digital Booking App",
+      "proyecto__description": "Certified Tech Developer final project, done in a team. Booking web application for accommodation. It allows you to create, edit and delete accommodations, reservations and users. It has a login and registration system.",
       "proyecto__url_web": "https://journal-app-chi-dusky.vercel.app/",
       "proyecto__tecnologias": ["ReactJS", "Redux", "Material UI", "Firebase"]
     },
     {
       "id": 2,
+      "proyecto__title": "Journal App",
+      "proyecto__description": "This is a web application that allows you to create, edit and delete notes. Just enter the title and a description. Keep track of your notes and never forget anything.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
+      "proyecto__url_web": "https://journal-app-chi-dusky.vercel.app/",
+      "proyecto__tecnologias": ["ReactJS", "Redux", "Material UI", "Firebase"]
+    },
+    {
+      "id": 3,
       "proyecto__title": "API Dental Clinic",
-      "proyecto__description": "The project is a REST API of a dental clinic, where you can add, delete, update or list patients, dentists and appointments! 🦷.",
+      "proyecto__description": "The project is a REST API of a dental clinic, where you can add, delete, update or list patients, dentists and appointments!",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/finalProject-dentalClinic",
       "proyecto__tecnologias": ["Java", "Spring Boot", "H2 Database", "Log4j"]
     },
     {
-      "id": 3,
+      "id": 4,
       "proyecto__title": "Instagram Post Clone",
-      "proyecto__description": "Instagram post clone. It has a slider with images, a like button and a comment section. Enjoy it! 📸",
+      "proyecto__description": "Instagram post clone. It has a slider with images, a like button and a comment section. Enjoy it!",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/post-instagram-clone",
       "proyecto__url_web": "https://gianlucadonofrio.github.io/post-instagram-clone/",
       "proyecto__tecnologias": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 5,
+      "proyecto__title": "Mailer App",
+      "proyecto__description": "This is a web application that allows you to send emails. Just enter the email, the subject and a description. Send your emails!",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/mailer-app-python",
+      "proyecto__tecnologias": ["Python", "Flask", "HTML", "CSS"]
+    },
+    {
+      "id": 6,
+      "proyecto__title": "Todoer App",
+      "proyecto__description": "This is a web application that allows you to create, edit and delete tasks. Just enter the title and a description. Keep track of your tasks and never forget anything.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/todoer-app-python",
+      "proyecto__tecnologias": ["Python", "Flask", "HTML", "CSS"]
     }
   ]
 }

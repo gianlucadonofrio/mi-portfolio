@@ -164,6 +164,20 @@
   "others__projects": [
     {
       "id": 1,
+      "proyecto__title": "Digital Booking App",
+      "proyecto__description": "Proyecto final de Certified Tech Developer, realizado en equipo. Aplicación web de reservas para alojamientos. Permite crear, editar y eliminar alojamientos, reservas y usuarios. Cuenta con un sistema de inicio de sesión y registro.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/digital-booking-app",
+      "proyecto__tecnologias": [
+        "Java",
+        "Spring Boot",
+        "JWT",
+        "MySQL",
+        "AWS",
+        "ReactJS"
+      ]
+    },
+    {
+      "id": 2,
       "proyecto__title": "Journal App",
       "proyecto__description": "Aplicación web que te permite crear, editar y eliminar notas. Solo ingrese el título y una descripción. Lleva un registro de tus notas y nunca olvides nada.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
@@ -171,14 +185,14 @@
       "proyecto__tecnologias": ["ReactJS", "Redux", "Material UI", "Firebase"]
     },
     {
-      "id": 2,
+      "id": 3,
       "proyecto__title": "API Dental Clinic",
       "proyecto__description": "API REST que permite gestionar pacientes, turnos y tratamientos de una clínica dental. Cuenta con un sistema de inicio de sesión y registro. ¡Disfruta tu clínica!",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/finalProject-dentalClinic",
       "proyecto__tecnologias": ["Java", "Spring Boot", "H2 Database", "Log4j"]
     },
     {
-      "id": 3,
+      "id": 4,
       "proyecto__title": "Instagram Post Clone",
       "proyecto__description": "Post de Instagram clonado. Cuenta con un slider de imágenes, un botón de like y una caja de comentarios. ¡Disfruta tu post!",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/post-instagram-clone",
@@ -186,14 +200,14 @@
       "proyecto__tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     {
-      "id": 4,
+      "id": 5,
       "proyecto__title": "Mailer App",
       "proyecto__description": "Aplicación web que te permite enviar correos electrónicos. Solo ingrese el destinatario, el asunto y el mensaje. ¡Disfruta tu correo!",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/mailer-app-python",
       "proyecto__tecnologias": ["Python", "Flask", "HTML", "CSS"]
     },
     {
-      "id": 5,
+      "id": 6,
       "proyecto__title": "Todoer App",
       "proyecto__description": "Aplicación web que te permite crear, editar y eliminar tareas. Disfruta de tu lista de tareas.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/todoer-app-python",

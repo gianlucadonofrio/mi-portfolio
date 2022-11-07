@@ -12,6 +12,10 @@
   font-weight: 600;
   color: var(--color-text);
 }
+.background-navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
 .nav-item {
   height: 100%;
 }
