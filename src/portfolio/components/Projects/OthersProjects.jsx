@@ -31,7 +31,7 @@ export const OthersProjects = ({ languagePage: data }) => {
             <div
               className="d-flex justify-content-between align-items-center w-100"
               style={{
-                height: '60px',
+                height: '80px',
               }}
             >
               <i className="fa-regular fa-folder icon-others-projects"></i>
