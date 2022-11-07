@@ -15,12 +15,15 @@ export const Footer = () => {
           className="mt-3"
           style={{
             textDecoration: 'none',
-            color: 'var(--color-buttons)',
+            color: 'White',
             fontStyle: 'italic',
             fontWeight: '600',
+            padding: '0.5rem 1rem',
+            borderRadius: '0.5rem',
             fontSize: '2rem',
+            backgroundColor: 'var(--color-buttons)',
           }}
-          aria-label="contact"
+          aria-label="contactme"
         >
           {languagePage.contactame}
         </a>

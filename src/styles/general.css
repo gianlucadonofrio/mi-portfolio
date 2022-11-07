@@ -20,10 +20,10 @@
   --stars-background-image: linear-gradient(90deg, #c7c6c6ca, transparent);
 
   /*   Others Projects Styles*/
-  --bg-color-others-projects-cards: #0d1016a5;
+  --bg-color-others-projects-cards: transparent;
   --box-shadow-others-projects-cards: 0 3px 6px #010409;
   --border-other-projects-cards: #21262d;
-  --color-text-technologies: #6e7681;
+  --color-text-technologies: #A8ACB3;
 }
 [data-theme='light'] {
   /*   Text and Background Styles*/

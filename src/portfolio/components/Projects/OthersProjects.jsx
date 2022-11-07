@@ -40,6 +40,7 @@ export const OthersProjects = ({ languagePage: data }) => {
                   href={project.proyecto__url_github}
                   target={'_blank'}
                   rel="noreferrer"
+                  role={'button'}
                   aria-label="github"
                 >
                   <i
@@ -52,7 +53,8 @@ export const OthersProjects = ({ languagePage: data }) => {
                     href={project.proyecto__url_web}
                     target={'_blank'}
                     rel="noreferrer"
-                    aria-label="web"
+                    role={'button'}
+                    aria-label="web-other-project"
                   >
                     <i
                       className="fa-solid fa-arrow-up-right-from-square icon-social"
@@ -63,7 +65,7 @@ export const OthersProjects = ({ languagePage: data }) => {
               </div>
             </div>
             <div className="d-flex flex-column justify-content-center h-100 align-items-start">
-              <h3
+              <p
                 className="mt-2"
                 style={{
                   fontSize: '1.5rem',
@@ -71,7 +73,7 @@ export const OthersProjects = ({ languagePage: data }) => {
                 }}
               >
                 {project.proyecto__title}
-              </h3>
+              </p>
               <p
                 style={{
                   fontSize: '1rem',

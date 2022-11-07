@@ -28,7 +28,6 @@
   border: 1px solid var(--color-secondary-text);
   border-radius: 5px;
   box-shadow: var(--box-shadow-others-projects-cards);
-  background-color: var(--bg-color-others-projects-cards);
   border: 1px solid var(--border-other-projects-cards);
 }
 .icon-others-projects {

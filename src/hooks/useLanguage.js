@@ -3,14 +3,14 @@ import { LanguageContext } from '../portfolio/context/LanguageContext';
 
 export const useLanguage = () => {
   const [languageIcon, setLanguageIcon] = useState('🇺🇸');
-  const { setLanguagePage, us, es } = useContext(LanguageContext);
+  const { setLanguagePage, en, es } = useContext(LanguageContext);
 
   const handleLanguage = () => {
     if (document.documentElement.lang === 'es') {
       setLanguageIcon('🇺🇸');
-      setLanguagePage(us);
-      document.documentElement.lang = 'us';
-      localStorage.setItem('language', 'us');
+      setLanguagePage(en);
+      document.documentElement.lang = 'en';
+      localStorage.setItem('language', 'en');
     } else {
       setLanguageIcon('🇪🇸');
       setLanguagePage(es);
@@ -26,10 +26,10 @@ export const useLanguage = () => {
       document.documentElement.lang = 'es';
     } else {
       setLanguageIcon('🇺🇸');
-      setLanguagePage(us);
-      document.documentElement.lang = 'us';
+      setLanguagePage(en);
+      document.documentElement.lang = 'en';
     }
-  }, [us, es, setLanguagePage]);
+  }, [en, es, setLanguagePage]);
 
   return [languageIcon, handleLanguage];
 };
