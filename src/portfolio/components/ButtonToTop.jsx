@@ -30,7 +30,7 @@ export const ButtonToTop = () => {
         display: 'none',
       }}
     >
-      <i className="fa-solid fa-arrow-up"></i>
+      <i className="fa-solid fa-arrow-up arrow-up-icon"></i>
     </button>
   );
 };

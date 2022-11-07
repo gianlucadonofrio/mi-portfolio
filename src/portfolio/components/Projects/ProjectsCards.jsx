@@ -28,7 +28,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                 <p
                   className="card-title"
                   style={{
-                    fontSize: '2rem',
+                    fontSize: '2.5rem',
                     fontWeight: '600',
                   }}
                 >

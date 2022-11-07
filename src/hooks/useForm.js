@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const useForm = (initalForm = {}) => {
+export const useForm = (initalForm) => {
   const [formState, setFormState] = useState(initalForm);
 
   const onResetForm = () => {

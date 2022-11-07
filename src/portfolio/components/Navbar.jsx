@@ -1,39 +1,18 @@
-import { useEffect, useContext, useState, useRef } from 'react';
+import { useEffect, useRef, useContext } from 'react';
+import { useLanguage } from '../../hooks/useLanguage';
+import { useTheme } from '../../hooks/useTheme';
 import '../../styles/navbar.css';
 import { LanguageContext } from '../context/LanguageContext';
 
 export const Navbar = () => {
   const collapseNavbar = useRef(null);
-  const [isDark, setIsDark] = useState('🌚');
-  const [language, setLanguage] = useState('🇪🇸');
-  const { languagePage, setLanguagePage, us, es } = useContext(LanguageContext);
+  const navbar = useRef(null);
+  const [handleTheme, themeIcon] = useTheme('light');
+  const [languageIcon, handleLanguage] = useLanguage('en');
+  const { languagePage } = useContext(LanguageContext);
 
-  useEffect(() => {
-    if (localStorage.getItem('theme') === 'light') {
-      document.body.classList.add('light-theme');
-      setIsDark('🌝');
-    }
-    if (localStorage.getItem('lang') === 'en') {
-      document.documentElement.setAttribute('lang', 'en');
-      setLanguage('🇺🇸');
-      setLanguagePage(us);
-    }
-  }, [setLanguagePage, us]);
-
-  const changeMode = () => {
-    if (isDark === '🌚') {
-      setIsDark('🌝');
-      document.body.classList.toggle('light-theme');
-      localStorage.setItem('theme', 'light');
-    } else {
-      setIsDark('🌚');
-      document.body.classList.toggle('light-theme');
-      localStorage.setItem('theme', 'dark');
-    }
-  };
   const handleScroll = () => {
     let lastScroll;
-    const navbar = document.getElementById('navbar');
 
     window.addEventListener('scroll', () => {
       let scrollTop =
@@ -41,16 +20,11 @@ export const Navbar = () => {
         document.documentElement.scrollTop ||
         document.body.scrollTop ||
         0;
-      if (scrollTop === 0) {
-        navbar.classList.add('navbar-background-transparent');
-      }
-
       if (scrollTop > lastScroll) {
-        navbar.style.top = '-80px';
-        navbar.classList.remove('navbar-background-transparent');
+        navbar.current.style.top = '-80px';
         collapseNavbar.current.classList.remove('show');
       } else {
-        navbar.style.top = '0';
+        navbar.current.style.top = '0';
       }
       lastScroll = scrollTop <= 0 ? 0 : scrollTop;
     });
@@ -60,23 +34,11 @@ export const Navbar = () => {
     handleScroll();
   });
 
-  const changeLanguage = () => {
-    if (document.documentElement.lang === 'es') {
-      document.documentElement.setAttribute('lang', 'en');
-      localStorage.setItem('lang', 'en');
-      setLanguage('🇺🇸');
-      setLanguagePage(us);
-    } else {
-      document.documentElement.setAttribute('lang', 'es');
-      localStorage.setItem('lang', 'es');
-      setLanguage('🇪🇸');
-      setLanguagePage(es);
-    }
-  };
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-background-transparent"
+      className="navbar navbar-expand-lg "
       id="navbar"
+      ref={navbar}
     >
       <div className="container d-flex align-content-lg-center h-100">
         <div className="d-flex align-items-center gap-2">
@@ -104,28 +66,19 @@ export const Navbar = () => {
         </div>
         <div className="d-flex align-items-center">
           <button
-            onClick={changeMode}
+            onClick={handleLanguage}
             className="buttons-navbar d-lg-none"
             type="button"
           >
-            {isDark}
+            {languageIcon}
           </button>
-
-          {language === '🇺🇸' ? (
-            <button
-              onClick={changeLanguage}
-              className="buttons-navbar d-lg-none"
-            >
-              {language}
-            </button>
-          ) : (
-            <button
-              onClick={changeLanguage}
-              className="buttons-navbar d-lg-none"
-            >
-              {language}
-            </button>
-          )}
+          <button
+            className="buttons-navbar d-lg-none"
+            type="button"
+            onClick={handleTheme}
+          >
+            {themeIcon}
+          </button>
         </div>
 
         <div
@@ -171,23 +124,21 @@ export const Navbar = () => {
               </a>
             </li>
             <li className="nav-item d-none d-lg-flex align-items-center">
-              {language === '🇺🇸' ? (
-                <button onClick={changeLanguage} className="buttons-navbar">
-                  {language}
-                </button>
-              ) : (
-                <button onClick={changeLanguage} className="buttons-navbar">
-                  {language}
-                </button>
-              )}
-            </li>
-            <li className="nav-item d-none d-lg-flex align-items-center">
               <button
-                onClick={changeMode}
+                onClick={handleLanguage}
                 className="buttons-navbar"
                 type="button"
               >
-                {isDark}
+                {languageIcon}
+              </button>
+            </li>
+            <li className="nav-item d-none d-lg-flex align-items-center">
+              <button
+                className="buttons-navbar"
+                type="button"
+                onClick={handleTheme}
+              >
+                {themeIcon}
               </button>
             </li>
           </ul>

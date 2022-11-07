@@ -7,13 +7,14 @@ export const SkillsSection = ({ languagePage }) => {
             key={card.id}
             className="d-flex col-md-6 flex-column align-items-center justify-content-center gap-2"
           >
-            <div
-              style={{
-                color: 'var(--color-buttons)',
-                fontSize: '120px',
-              }}
-            >
-              <i className={`fa-solid ${card.icon}`}></i>
+            <div className="box-icons-skills">
+              <i
+                className={`fa-solid ${card.icon}`}
+                style={{
+                  WebkitBoxReflect:
+                    'below 3px linear-gradient(transparent, transparent, transparent, #04060f25)',
+                }}
+              ></i>
             </div>
             <div
               className="d-flex flex-column"

@@ -13,10 +13,10 @@
   row-gap: 2rem;
   margin-bottom: 20px;
 }
-.icon-skills{
-  height: 100%;
-  width: 100%;
-  fill: #fff !important;
+
+.box-icons-skills {
+  color: var(--color-buttons);
+  font-size: 8rem;
 }
 .img-profile {
   border-radius: 50%;

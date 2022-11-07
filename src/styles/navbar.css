@@ -1,12 +1,10 @@
 #navbar {
+  background-color: var(--color-bg);
+  box-shadow: 0 0 10px 0 var(--nav-shadow);
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  transition: 0.3s;
   z-index: 100;
-  background-color: var(--color-bg) !important;
-  box-shadow: 0 0 10px 4px var(--nav-shadow);
   padding: 0;
 }
 .navbar-brand {
@@ -25,7 +23,6 @@
   color: var(--color-nav-items);
   padding: 20px 0;
 }
-
 .menu-icon-button {
   display: flex;
   justify-content: center;
@@ -56,9 +53,8 @@
   border: none;
   border-radius: 100%;
 }
-
 @media screen and (max-width: 992px) {
-  #navbar{
+  #navbar {
     padding: 6px;
   }
 }

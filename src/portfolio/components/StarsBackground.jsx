@@ -2,7 +2,7 @@ import '../../styles/stars.css';
 
 export const StarsBackground = () => {
   return (
-    <>
+    <div className='stars-box'>
       <span className="star star1"></span>
       <span className="star star2"></span>
       <span className="star star3"></span>
@@ -18,6 +18,6 @@ export const StarsBackground = () => {
       <span className="star star13"></span>
       <span className="star star14"></span>
       <span className="star star15"></span>
-    </>
+    </div>
   );
 };

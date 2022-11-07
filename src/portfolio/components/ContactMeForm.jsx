@@ -3,10 +3,11 @@ import { useContext, useRef, useState } from 'react';
 import { useForm } from '../../hooks/useForm';
 import '../../styles/contactMeForm.css';
 import { LanguageContext } from '../context/LanguageContext';
+
 const contactMeFormFields = {
   name: '',
   email: '',
-  subjet: '',
+  subject: '',
   message: '',
 };
 const styleIconsScrollDown = {

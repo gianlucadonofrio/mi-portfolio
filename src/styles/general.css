@@ -19,6 +19,23 @@
     0 0 10px 4px rgba(255, 255, 255, 0.2), 0 0 17px 7px rgba(255, 84, 98, 0.1);
   --stars-background-image: linear-gradient(90deg, #c7c6c6ca, transparent);
 }
+[data-theme='light'] {
+  /*   Text and Background Styles*/
+  --color-bg: #fff;
+  --color-text: #0f0f0f;
+  --color-secondary-text: #4d4d4d;
+
+  /*   Navbar Styles*/
+  --nav-shadow: #d5d6d8;
+  --color-nav-items: #5f6368;
+  --color-nav-hover: rgba(32, 33, 36, 0.04);
+
+  /*   Stars Styles*/
+  --background-color-stars: rgba(0, 0, 0, 0.7);
+  --stars-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5),
+    0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 17px 7px rgba(0, 84, 98, 0.1);
+  --stars-background-image: linear-gradient(90deg, #545454ca, transparent);
+}
 #aboutMe,
 #projects,
 #contactMe {
@@ -45,35 +62,26 @@ body {
   right: 20px;
   z-index: 100;
   display: none;
-  background-color: var(--color-buttons);
+  background: -webkit-linear-gradient(
+    -45deg,
+    #4158d0,
+    #c850c0,
+    #ffcc70,
+    #e73c7e
+  );
   border: none;
   border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.5rem;
   width: 50px;
   height: 50px;
   color: white;
 }
-
+.arrow-up-icon {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn-scroll-top:hover {
   color: white;
   transform: scale(1.2);
-}
-
-body.light-theme {
-  /*   Text and Background Styles*/
-  --color-bg: #fff;
-  --color-text: #0f0f0f;
-  --color-secondary-text: #4d4d4d;
-
-  /*   Navbar Styles*/
-  --nav-shadow: #d5d6d8;
-  --color-nav-items: #5f6368;
-  --color-nav-hover: rgba(32, 33, 36, 0.04);
-
-  /*   Stars Styles*/
-  --background-color-stars: rgba(0, 0, 0, 0.7);
-  --stars-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5),
-    0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 17px 7px rgba(0, 84, 98, 0.1);
-  --stars-background-image: linear-gradient(90deg, #545454ca, transparent);
 }
