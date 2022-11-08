@@ -138,7 +138,7 @@
     {
       "id": 1,
       "proyecto__title": "Rick and Morty App",
-      "proyecto__description": "Aplicación web que consume la API de Rick and Morty, que permite buscar personajes, ver sus detalles y episodios en los que aparecen, además de poder ponerlos en favoritos.",
+      "proyecto__description": "Web app que consume la API de Rick and Morty. Permite buscar personajes, ver sus detalles y agregarlos a favoritos.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/ctd-esp-fe1-final",
       "proyecto__url_web": "https://rick-and-morty-taupe-two.vercel.app/",
       "proyecto__tecnologias": ["ReactJS", "Redux", "TypeScript", "JSDoc"]
@@ -146,7 +146,7 @@
     {
       "id": 2,
       "proyecto__title": "Calendar App",
-      "proyecto__description": "Aplicación web que te permite crear, editar y eliminar eventos. Solo ingrese la fecha y hora del evento, el título y una descripción. Lleva un registro de tus eventos y nunca olvides nada.",
+      "proyecto__description": "Calendario colaborativo que permite crear eventos en un día y hora determinada. Los eventos se pueden editar o eliminar.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/10-calendar-app",
       "proyecto__url_web": "https://calendar-app-sooty.vercel.app",
       "proyecto__tecnologias": ["MongoDB", "Express", "ReactJS", "NodeJS"]
@@ -154,7 +154,7 @@
     {
       "id": 3,
       "proyecto__title": "The Food Truck",
-      "proyecto__description": "Aplicación web que te permite pedir comida. Puede ver el menú, agregar productos al carrito, eliminar productos del carrito y realizar el pedido. Cuenta con un sistema de inicio de sesión y registro. ¡Disfruta tu comida!",
+      "proyecto__description": "Aplicación web para un food truck. Permite ver el menú, agregar productos al carrito y realizar un pedido.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
       "proyecto__url_web": "https://the-food-truck-vue-js.vercel.app/",
       "proyecto__tecnologias": ["VueJS", "Vuetify", "Vuex"]
@@ -165,7 +165,7 @@
     {
       "id": 1,
       "proyecto__title": "Digital Booking App",
-      "proyecto__description": "Proyecto final de Certified Tech Developer, realizado en equipo. Aplicación web de reservas para alojamientos. Permite crear, editar y eliminar alojamientos, reservas y usuarios. Cuenta con un sistema de inicio de sesión y registro.",
+      "proyecto__description": "Proyecto integrador realizado en marco de Digital House. Aplicación web de reservas online de alojamientos. Todo el proyecto se desarrolló siguiendo los lineamientos de Metodologías Ágiles, y se gestionó utilizando GitLab.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/digital-booking-app",
       "proyecto__tecnologias": [
         "Java",
@@ -179,7 +179,7 @@
     {
       "id": 2,
       "proyecto__title": "Journal App",
-      "proyecto__description": "Aplicación web que te permite crear, editar y eliminar notas. Solo ingrese el título y una descripción. Lleva un registro de tus notas y nunca olvides nada.",
+      "proyecto__description": "Web app que permite crear, editar y eliminar entradas de un diario.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
       "proyecto__url_web": "https://journal-app-chi-dusky.vercel.app/",
       "proyecto__tecnologias": ["ReactJS", "Redux", "Material UI", "Firebase"]
@@ -187,14 +187,14 @@
     {
       "id": 3,
       "proyecto__title": "API Dental Clinic",
-      "proyecto__description": "API REST que permite gestionar pacientes, turnos y dentistas de una clínica dental. Cuenta con un sistema de inicio de sesión y registro.",
+      "proyecto__description": "API REST que permite gestionar pacientes, turnos y dentistas de una clínica dental.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/finalProject-dentalClinic",
       "proyecto__tecnologias": ["Java", "Spring Boot", "H2 Database", "Log4j"]
     },
     {
       "id": 4,
       "proyecto__title": "Instagram Post Clone",
-      "proyecto__description": "Clon de un post de Instagram. Cuenta con un slider de imágenes, un botón de like y una caja de comentarios. ¡Disfruta tu post!",
+      "proyecto__description": "Clon de un post de Instagram. Cuenta con un slider de imágenes, un botón de like y una caja de comentarios. Permite agregar comentarios.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/post-instagram-clone",
       "proyecto__url_web": "https://gianlucadonofrio.github.io/post-instagram-clone/",
       "proyecto__tecnologias": ["HTML", "CSS", "JavaScript"]
@@ -202,14 +202,14 @@
     {
       "id": 5,
       "proyecto__title": "Mailer App",
-      "proyecto__description": "Aplicación web que te permite enviar correos electrónicos. Solo ingrese el destinatario, el asunto y el mensaje. ¡Disfruta tu correo!",
+      "proyecto__description": "Aplicación web que permite enviar emails. Permite agregar destinatarios, asunto y cuerpo del mensaje. Se utiliza la API de SendGrid.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/mailer-app-python",
       "proyecto__tecnologias": ["Python", "Flask", "HTML", "CSS"]
     },
     {
       "id": 6,
       "proyecto__title": "Todoer App",
-      "proyecto__description": "Aplicación web que te permite crear, editar y eliminar tareas. Disfruta de tu lista de tareas.",
+      "proyecto__description": "Aplicación web que permite crear, editar y eliminar tareas.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/todoer-app-python",
       "proyecto__tecnologias": ["Python", "Flask", "HTML", "CSS"]
     }
