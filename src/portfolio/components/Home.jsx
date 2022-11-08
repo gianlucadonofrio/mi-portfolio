@@ -64,7 +64,7 @@ export const Home = () => {
             </p>
           </a>
         </div>
-        <div className="d-flex flex-row align-items-center">
+        <div className="d-flex flex-row align-items-center mt-5">
           <div className="d-flex flex-column align-items-center justify-content-center">
             <p className="title__description">{languagePage.home__titulo}</p>
             <h1 className="title__name">
