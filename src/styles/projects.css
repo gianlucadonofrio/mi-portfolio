@@ -22,10 +22,11 @@
 }
 /* Others Projects */
 .card-box-others-projects {
-  border: 1px solid var(--color-secondary-text);
+  background-color: transparent;
   border-radius: 5px;
+  padding: 1rem;
   box-shadow: var(--box-shadow-others-projects-cards);
-  border: 1px solid var(--border-other-projects-cards);
+  border: 2px solid var(--border-other-projects-cards);
 }
 .icon-others-projects {
   font-size: 3rem;
@@ -45,17 +46,7 @@
   animation: gradient 5s ease infinite;
 }
 
-@media screen and (min-width: 768px) {
-  .card-box-others-projects {
-    width: 45%;
-  }
-}
-
 @media screen and (min-width: 1024px) {
-  .card-box-others-projects {
-    width: 30%;
-  }
-
   .project-description {
     float: right;
     width: 140%;

@@ -20,9 +20,8 @@
   --stars-background-image: linear-gradient(90deg, #c7c6c6ca, transparent);
 
   /*   Others Projects Styles*/
-  --bg-color-others-projects-cards: transparent;
   --box-shadow-others-projects-cards: 0 3px 6px #010409;
-  --border-other-projects-cards: #21262d;
+  --border-other-projects-cards: #2d333b;
   --color-text-technologies: #a8acb3;
 }
 [data-theme='light'] {
@@ -43,7 +42,6 @@
   --stars-background-image: linear-gradient(90deg, #545454ca, transparent);
 
   /*   Others Projects Styles*/
-  --bg-color-others-projects-cards: #f6f8fa;
   --box-shadow-others-projects-cards: 0 3px 6px rgba(140, 149, 159, 0.15);
   --border-other-projects-cards: hsla(210, 18%, 87%, 1);
   --color-text-technologies: #57606a;

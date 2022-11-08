@@ -20,10 +20,10 @@ export const OthersProjects = ({ languagePage: data }) => {
       <div className="row mt-4">
         {data.others__projects.map((project) => (
           <div
-            className="col-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch"
+            className="col-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch "
             key={project.id}
           >
-            <div className="card p-3 ">
+            <div className="card card-box-others-projects">
               <div className="d-flex justify-content-between align-align-items-center">
                 <i className="fa-regular fa-folder icon-others-projects"></i>
                 <div className="d-flex align-items-center gap-3">
