@@ -23,7 +23,7 @@
   --bg-color-others-projects-cards: transparent;
   --box-shadow-others-projects-cards: 0 3px 6px #010409;
   --border-other-projects-cards: #21262d;
-  --color-text-technologies: #A8ACB3;
+  --color-text-technologies: #a8acb3;
 }
 [data-theme='light'] {
   /*   Text and Background Styles*/
@@ -76,10 +76,10 @@ body {
   display: none;
   background: -webkit-linear-gradient(
     -45deg,
-    #4158d0,
-    #c850c0,
-    #ffcc70,
-    #e73c7e
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab
   );
   border: none;
   border-radius: 50%;

@@ -11,15 +11,15 @@ import { AboutMe } from '../components/AboutMe/AboutMe';
 
 export const PortfolioPage = () => {
   return (
-    <div>
+    <div className="position-relative">
       <Navbar />
+      <StarsBackground />
+      <ButtonToTop />
       <Home />
       <AboutMe />
       <Projects />
       <ContactMeForm />
       <Footer />
-      <ButtonToTop />
-      <StarsBackground />
     </div>
   );
 };

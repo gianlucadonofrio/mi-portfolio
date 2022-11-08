@@ -160,7 +160,7 @@
       "proyecto__tecnologias": ["VueJS", "Vuetify", "Vuex"]
     }
   ],
-  "others__projects__title": "Otros proyectos",
+  "others__projects__title": "Otros proyectos interesantes",
   "others__projects": [
     {
       "id": 1,
@@ -187,14 +187,14 @@
     {
       "id": 3,
       "proyecto__title": "API Dental Clinic",
-      "proyecto__description": "API REST que permite gestionar pacientes, turnos y tratamientos de una clínica dental. Cuenta con un sistema de inicio de sesión y registro. ¡Disfruta tu clínica!",
+      "proyecto__description": "API REST que permite gestionar pacientes, turnos y dentistas de una clínica dental. Cuenta con un sistema de inicio de sesión y registro.",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/finalProject-dentalClinic",
       "proyecto__tecnologias": ["Java", "Spring Boot", "H2 Database", "Log4j"]
     },
     {
       "id": 4,
       "proyecto__title": "Instagram Post Clone",
-      "proyecto__description": "Post de Instagram clonado. Cuenta con un slider de imágenes, un botón de like y una caja de comentarios. ¡Disfruta tu post!",
+      "proyecto__description": "Clon de un post de Instagram. Cuenta con un slider de imágenes, un botón de like y una caja de comentarios. ¡Disfruta tu post!",
       "proyecto__url_github": "https://github.com/gianlucadonofrio/post-instagram-clone",
       "proyecto__url_web": "https://gianlucadonofrio.github.io/post-instagram-clone/",
       "proyecto__tecnologias": ["HTML", "CSS", "JavaScript"]

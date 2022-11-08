@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="container min-vh-100 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center mt-3"
+      className="container d-flex flex-column-reverse flex-md-row justify-content-center align-items-center vh-100"
     >
       <div
         className="d-flex flex-md-column mt-3 align-items-center justify-content-center"
@@ -64,17 +64,15 @@ export const Home = () => {
             </p>
           </a>
         </div>
-        <div className="d-flex flex-row align-items-center mt-5">
-          <div className="d-flex flex-column align-items-center justify-content-center">
-            <p className="title__description">{languagePage.home__titulo}</p>
-            <h1 className="title__name">
-              Gianluca
-              <span>D'Onofrio.</span>
-            </h1>
-            <p className="title__description ps-4">
-              {languagePage.home__subtitulo}
-            </p>
-          </div>
+        <div className="d-flex flex-column align-items-center justify-content-center">
+          <p className="title__description">{languagePage.home__titulo}</p>
+          <h1 className="title__name">
+            Gianluca
+            <span>D'Onofrio.</span>
+          </h1>
+          <p className="title__description ps-4">
+            {languagePage.home__subtitulo}
+          </p>
         </div>
       </div>
     </section>
