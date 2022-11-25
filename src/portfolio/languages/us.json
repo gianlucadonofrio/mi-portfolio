@@ -184,6 +184,20 @@
       "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
       "proyecto__url_web": "https://journal-app-chi-dusky.vercel.app/",
       "proyecto__tecnologias": ["ReactJS", "Redux", "Material UI", "Firebase"]
+    },
+    {
+      "id": 3,
+      "proyecto__title": "Portfolio API",
+      "proyecto__description": "API to send messages from the portfolio contact form, it connects to an email service to send messages.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/mi-portfolio-api",
+      "proyecto__tecnologias": ["NodeJS", "Express", "SendGrid"]
+    },
+    {
+      "id": 4,
+      "proyecto__title": "API Dental Clinic",
+      "proyecto__description": "API for a dental clinic. It allows to manage patients, shifts and dentists.",
+      "proyecto__url_github": "https://github.com/gianlucadonofrio/backend-1/tree/main/final",
+      "proyecto__tecnologias": ["Java", "Spring Boot", "Swagger"]
     }
   ]
 }
