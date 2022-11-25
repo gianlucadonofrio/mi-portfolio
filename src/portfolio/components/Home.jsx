@@ -4,40 +4,45 @@ import { LanguageContext } from '../context/LanguageContext';
 export const Home = () => {
   const { languagePage } = useContext(LanguageContext);
   return (
-    <section
-      id="home"
-      className="container d-flex flex-column-reverse flex-md-row justify-content-center align-items-center vh-100"
-    >
-      <div
-        className="d-flex flex-md-column mt-3 align-items-center justify-content-center"
-        style={{ width: 'fit-content' }}
-      >
-        <a
-          href="https://www.linkedin.com/in/gianlucadonofrio/"
-          target={'_blank'}
-          rel="noreferrer"
-          aria-label="linkedin"
+    <section id="home" className="container vh-100">
+      <div className="container-fluid d-flex flex-column-reverse justify-content-center align-items-center position-relative h-100">
+        <div
+         className='box-social-media'
         >
-          <i className="fa-brands fa-linkedin-in icon-social"></i>
-        </a>
-        <a
-          href="https://github.com/gianlucadonofrio"
-          target={'_blank'}
-          rel="noreferrer"
-          aria-label="github"
-        >
-          <i className="fa-brands fa-github-alt icon-social"></i>
-        </a>
-        <a
-          href="mailto: gian.donofrio2000@gmail.com"
-          target={'_blank'}
-          rel="noreferrer"
-          aria-label="email"
-        >
-          <i className="fa-regular fa-envelope icon-social"></i>
-        </a>
-      </div>
-      <div className="container-fluid d-flex flex-column-reverse justify-content-start align-items-center">
+          <ul className="list-icons-socials">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/gianlucadonofrio/"
+                target={'_blank'}
+                rel="noreferrer"
+                aria-label="linkedin"
+              >
+                <i className="fa-brands fa-linkedin-in icon-social"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/gianlucadonofrio"
+                target={'_blank'}
+                rel="noreferrer"
+                aria-label="github"
+              >
+                <i className="fa-brands fa-github-alt icon-social"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto: gian.donofrio2000@gmail.com"
+                target={'_blank'}
+                rel="noreferrer"
+                aria-label="email"
+              >
+                <i className="fa-regular fa-envelope icon-social"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <div className="container-fluid d-flex justify-content-center flex-wrap flex-md-nowrap ">
           <a
             href={require('../CV/CV-Gianluca-Donofrio.pdf')}
@@ -64,7 +69,7 @@ export const Home = () => {
             </p>
           </a>
         </div>
-        <div className="d-flex flex-column align-items-center justify-content-center">
+        <div className="d-flex flex-column align-items-center justify-content-center position-relative">
           <p className="title__description">{languagePage.home__titulo}</p>
           <h1 className="title__name">
             Gianluca

@@ -5,7 +5,7 @@ export const OthersProjects = ({ languagePage: data }) => {
   };
   return (
     <div className="mt-5">
-      <div className="d-flex flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center j">
         <h1
           className="text-center"
           style={{
@@ -17,10 +17,10 @@ export const OthersProjects = ({ languagePage: data }) => {
         </h1>
         <div className="vbar"></div>
       </div>
-      <div className="row mt-4">
+      <div className="row mt-4 justify-content-center">
         {data.others__projects.map((project) => (
           <div
-            className="col-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch "
+            className="col-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch"
             key={project.id}
           >
             <div className="card card-box-others-projects">
