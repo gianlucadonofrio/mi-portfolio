@@ -1,18 +1,18 @@
-import axios from 'axios';
-import { useContext, useRef, useState } from 'react';
-import { useForm } from '../../hooks/useForm';
-import '../../styles/contactMeForm.css';
-import { LanguageContext } from '../context/LanguageContext';
+import axios from "axios";
+import { useContext, useRef, useState } from "react";
+import { useForm } from "../../hooks/useForm";
+import "../../styles/contactMeForm.css";
+import { LanguageContext } from "../context/LanguageContext";
 
 const contactMeFormFields = {
-  name: '',
-  email: '',
-  subject: '',
-  message: '',
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
 };
 const styleIconsScrollDown = {
-  fontSize: '1.6rem',
-  color: 'var(--color-buttons)',
+  fontSize: "1.6rem",
+  color: "var(--color-buttons)",
 };
 
 export const ContactMeForm = () => {
@@ -28,12 +28,12 @@ export const ContactMeForm = () => {
     try {
       setIsLoading(true);
       await axios
-        .post('https://mi-portfolio-api.vercel.app/api/mail', {
+        .post("https://mi-portfolio-api.vercel.app/api/mail", {
           headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
           },
-          to: 'gian.donofrio2000@gmail.com',
+          to: "gian.donofrio2000@gmail.com",
           from: email,
           subject: subjet,
           text: message,
@@ -45,16 +45,16 @@ export const ContactMeForm = () => {
         })
         .then(({ status }) => {
           if (status === 201) {
-            alertSumbitMail.current.classList.remove('d-none');
+            alertSumbitMail.current.classList.remove("d-none");
             setTimeout(() => {
-              alertSumbitMail.current.classList.add('d-none');
+              alertSumbitMail.current.classList.add("d-none");
             }, 3000);
           }
         });
     } catch ({ message }) {
-      alertErrorMail.current.classList.remove('d-none');
+      alertErrorMail.current.classList.remove("d-none");
       setTimeout(() => {
-        alertErrorMail.current.classList.add('d-none');
+        alertErrorMail.current.classList.add("d-none");
       }, 3000);
     }
     setIsLoading(false);
@@ -69,8 +69,8 @@ export const ContactMeForm = () => {
         <h1
           className="d-flex flex-column justify-content-center align-items-start w-100 align-items-md-start p-md-2"
           style={{
-            fontSize: '2.5rem',
-            width: 'fit-content',
+            fontSize: "2.5rem",
+            width: "fit-content",
           }}
         >
           {languagePage.contactme__subtitle}
@@ -79,11 +79,30 @@ export const ContactMeForm = () => {
           </span>
         </h1>
         <p className="p-md-2 mt-2">{languagePage.contactme__text}</p>
+        <div className="d-flex align-items-center">
+          <a
+            href="mailto: gian.donofrio2000@gmail.com"
+            target={"_blank"}
+            rel="noreferrer"
+            aria-label="email"
+          >
+            <i className="fa-regular fa-envelope icon-social"></i>
+          </a>
+          <p
+            style={{
+              fontSize: "1.1 rem",
+              margin: "0",
+              fontWeight: "bold",
+            }}
+          >
+            gian.donofrio2000@gmail.com
+          </p>
+        </div>
         <p
           className="container position-absolute bottom-0 start-0 d-none d-md-block"
           style={{
-            fontSize: '1.3rem',
-            marginBottom: '100px',
+            fontSize: "1.3rem",
+            marginBottom: "100px",
           }}
         >
           <i
@@ -149,7 +168,7 @@ export const ContactMeForm = () => {
               className="btn btn-media w-100"
               disabled={!!isLoading}
               style={{
-                margin: '0',
+                margin: "0",
               }}
             >
               {isLoading ? (
@@ -185,7 +204,7 @@ export const ContactMeForm = () => {
         </form>
         <p
           className="d-flex justify-content-center d-md-none align-items-center mt-2"
-          style={{ fontSize: '1.3rem' }}
+          style={{ fontSize: "1.3rem" }}
         >
           <i
             className="fa-solid fa-computer-mouse pe-2"

@@ -1,19 +1,17 @@
-import { useContext } from 'react';
-import '../../styles/home.css';
-import { LanguageContext } from '../context/LanguageContext';
+import { useContext } from "react";
+import "../../styles/home.css";
+import { LanguageContext } from "../context/LanguageContext";
 export const Home = () => {
   const { languagePage } = useContext(LanguageContext);
   return (
     <section id="home" className="container vh-100">
       <div className="container-fluid d-flex flex-column-reverse justify-content-center align-items-center position-relative h-100">
-        <div
-         className='box-social-media'
-        >
+        <div className="box-social-media">
           <ul className="list-icons-socials">
             <li>
               <a
                 href="https://www.linkedin.com/in/gianlucadonofrio/"
-                target={'_blank'}
+                target={"_blank"}
                 rel="noreferrer"
                 aria-label="linkedin"
               >
@@ -23,7 +21,7 @@ export const Home = () => {
             <li>
               <a
                 href="https://github.com/gianlucadonofrio"
-                target={'_blank'}
+                target={"_blank"}
                 rel="noreferrer"
                 aria-label="github"
               >
@@ -32,8 +30,7 @@ export const Home = () => {
             </li>
             <li>
               <a
-                href="mailto: gian.donofrio2000@gmail.com"
-                target={'_blank'}
+                href="#contactMe"
                 rel="noreferrer"
                 aria-label="email"
               >
@@ -45,12 +42,12 @@ export const Home = () => {
 
         <div className="container-fluid d-flex justify-content-center flex-wrap flex-md-nowrap ">
           <a
-            href={require('../CV/CV-Gianluca-Donofrio.pdf')}
+            href={require("../CV/CV-Gianluca-Donofrio.pdf")}
             download="CV-Gianluca-Donofrio.pdf"
-            target={'_blank'}
+            target={"_blank"}
             rel="noreferrer"
             aria-label="download cv"
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: "none" }}
           >
             <p className="d-flex align-items-center justify-content-center btn-media">
               {languagePage.home__curriculum}
@@ -60,7 +57,7 @@ export const Home = () => {
 
           <a
             href="#contactMe"
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: "none" }}
             aria-label="contact me"
           >
             <p className="d-flex align-items-center justify-content-center btn-media">
