@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   ContactMeForm,
   Footer,
@@ -6,20 +7,35 @@ import {
   Projects,
   ButtonToTop,
   StarsBackground,
-} from '../components';
-import { AboutMe } from '../components/AboutMe/AboutMe';
+  AboutMe,
+  LoaderMain,
+} from "../components";
 
 export const PortfolioPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
-    <div className="position-relative">
-      <Navbar />
-      <StarsBackground />
-      <ButtonToTop />
-      <Home />
-      <AboutMe />
-      <Projects />
-      <ContactMeForm />
-      <Footer />
-    </div>
+    <>
+      {isLoading ? (
+        <LoaderMain />
+      ) : (
+        <div className="position-relative">
+          <Navbar />
+          <StarsBackground />
+          <ButtonToTop />
+          <Home />
+          <AboutMe />
+          <Projects />
+          <ContactMeForm />
+          <Footer />
+        </div>
+      )}
+    </>
   );
 };
