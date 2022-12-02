@@ -1,19 +1,19 @@
-import { useEffect, useRef, useContext } from 'react';
-import { useLanguage } from '../../hooks/useLanguage';
-import { useTheme } from '../../hooks/useTheme';
-import '../../styles/navbar.css';
-import { LanguageContext } from '../context/LanguageContext';
+import { useEffect, useRef, useContext } from "react";
+import { useLanguage } from "../../hooks/useLanguage";
+import { useTheme } from "../../hooks/useTheme";
+import "../../styles/navbar.css";
+import { LanguageContext } from "../context/LanguageContext";
 
 export const Navbar = () => {
   const collapseNavbar = useRef(null);
   const navbar = useRef(null);
-  const [handleTheme, themeIcon] = useTheme('light');
-  const [languageIcon, handleLanguage] = useLanguage('en');
+  const [handleTheme, themeIcon] = useTheme("light");
+  const [languageIcon, handleLanguage] = useLanguage("en");
   const { languagePage } = useContext(LanguageContext);
   const handleScroll = () => {
     let lastScroll;
 
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       let scrollTop =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
@@ -21,15 +21,15 @@ export const Navbar = () => {
         0;
 
       if (scrollTop === 0) {
-        navbar.current?.classList.add('background-navbar');
+        navbar.current?.classList.add("background-navbar");
       }
 
       if (scrollTop > lastScroll) {
-        navbar.current.style.top = '-80px';
-        collapseNavbar.current.classList.remove('show');
-        navbar.current?.classList.remove('background-navbar');
+        navbar.current.style.top = "-80px";
+        collapseNavbar.current.classList.remove("show");
+        navbar.current?.classList.remove("background-navbar");
       } else {
-        navbar.current.style.top = '0';
+        navbar.current.style.top = "0";
       }
       lastScroll = scrollTop <= 0 ? 0 : scrollTop;
     });
@@ -56,7 +56,7 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
             onClick={() =>
-              navbar.current?.classList.remove('background-navbar')
+              navbar.current?.classList.remove("background-navbar")
             }
           >
             <i className="fa-solid fa-bars menu-icon-button"></i>
@@ -65,11 +65,11 @@ export const Navbar = () => {
             className="navbar-brand"
             href="/"
             onClick={() => {
-              collapseNavbar.current.classList.remove('show');
+              collapseNavbar.current.classList.remove("show");
             }}
             aria-label="Home"
           >
-            Gianluca.
+            {"{ gian }"}
           </a>
         </div>
         <div className="d-flex align-items-center">
@@ -100,7 +100,7 @@ export const Navbar = () => {
                 className="nav-link"
                 href="#aboutMe"
                 onClick={() => {
-                  collapseNavbar.current.classList.remove('show');
+                  collapseNavbar.current.classList.remove("show");
                 }}
                 aria-label="About me"
               >
@@ -112,7 +112,7 @@ export const Navbar = () => {
                 className="nav-link"
                 href="#projects"
                 onClick={() => {
-                  collapseNavbar.current.classList.remove('show');
+                  collapseNavbar.current.classList.remove("show");
                 }}
                 aria-label="Projects"
               >
@@ -124,7 +124,7 @@ export const Navbar = () => {
                 className="nav-link"
                 href="#contactMe"
                 onClick={() => {
-                  collapseNavbar.current.classList.remove('show');
+                  collapseNavbar.current.classList.remove("show");
                 }}
                 aria-label="Contact me"
               >
