@@ -29,11 +29,7 @@ export const Home = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#contactMe"
-                rel="noreferrer"
-                aria-label="email"
-              >
+              <a href="#contactMe" rel="noreferrer" aria-label="email">
                 <i className="fa-regular fa-envelope icon-social"></i>
               </a>
             </li>

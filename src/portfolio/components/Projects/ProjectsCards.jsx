@@ -11,10 +11,10 @@ export const ProjectsCards = ({ languagePage: data }) => {
                   className="card-img-top rounded"
                   alt={project.proyecto__title}
                   style={{
-                    display: 'block',
-                    height: '100%',
-                    width: '100%',
-                    objectFit: 'contain',
+                    display: "block",
+                    height: "100%",
+                    width: "100%",
+                    objectFit: "contain",
                   }}
                 />
               </div>
@@ -22,14 +22,14 @@ export const ProjectsCards = ({ languagePage: data }) => {
               <div
                 className="card-body col-lg-4"
                 style={{
-                  zIndex: '2',
+                  zIndex: "2",
                 }}
               >
                 <p
                   className="card-title"
                   style={{
-                    fontSize: '2.1rem',
-                    fontWeight: '600',
+                    fontSize: "2.1rem",
+                    fontWeight: "600",
                   }}
                 >
                   {project.proyecto__title}
@@ -39,11 +39,11 @@ export const ProjectsCards = ({ languagePage: data }) => {
                 </p>
                 <div
                   className="projects-links d-flex flex-row w-100 justify-content-center"
-                  style={{ width: 'fit-content' }}
+                  style={{ width: "fit-content" }}
                 >
                   <a
                     href={project.proyecto__url_github}
-                    target={'_blank'}
+                    target={"_blank"}
                     rel="noreferrer"
                     aria-label="github"
                   >
@@ -51,7 +51,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                   </a>
                   <a
                     href={project.proyecto__url_web}
-                    target={'_blank'}
+                    target={"_blank"}
                     rel="noreferrer"
                     aria-label="web"
                   >
@@ -60,7 +60,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
                 </div>
                 <ul
                   className="projects-technologies d-flex flex-wrap m-0 p-1 gap-2 justify-content-center"
-                  style={{ listStyleType: 'none', height: 'fit-content' }}
+                  style={{ listStyleType: "none", height: "fit-content" }}
                 >
                   {project.proyecto__tecnologias.map((tecnologia) => (
                     <li key={tecnologia}>
@@ -71,7 +71,7 @@ export const ProjectsCards = ({ languagePage: data }) => {
               </div>
             </div>
           </div>
-          <hr />
+          <div className="line-project"></div>
         </section>
       ))}
     </>

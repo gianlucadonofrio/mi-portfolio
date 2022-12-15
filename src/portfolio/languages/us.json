@@ -3,7 +3,7 @@
   "navbar__proyectos": "My projects",
   "contactame": "Contact me",
   "home__titulo": "Hi 👋🏼, I'm",
-  "home__subtitulo": "Full Stack Developer, passionate about Frontend development.",
+  "home__subtitulo": "Full Stack Web Developer, passionate about Frontend development.",
   "home__curriculum": "Download CV",
   "acerca_de_mi__text_title": "Who I am",
   "acerca_de_mi__title_habilidades": "My skills",
@@ -135,69 +135,9 @@
   "contactme__form__mensajeErrorTexto": "An error occurred while sending the message, please try again later.",
   "footer__subtitulo": "Or you can also contact me through:",
   "footer__texto": "Made with ❤️ by Gianluca D'Onofrio.",
-  "projects__info": [
-    {
-      "id": 1,
-      "proyecto__title": "Rick and Morty App",
-      "proyecto__description": "Web app that consumes the Rick and Morty API. It allows you to search for characters, view their information and save them in a favorites section.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/ctd-esp-fe1-final",
-      "proyecto__url_web": "https://rick-and-morty-taupe-two.vercel.app/",
-      "proyecto__tecnologias": ["ReactJS", "Redux", "TypeScript", "JSDoc"]
-    },
-    {
-      "id": 2,
-      "proyecto__title": "Calendar App",
-      "proyecto__description": "Collaborative calendar app. It allows you to create events, edit them and delete them.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/10-calendar-app",
-      "proyecto__url_web": "https://calendar-app-sooty.vercel.app",
-      "proyecto__tecnologias": ["MongoDB", "Express", "ReactJS", "NodeJS"]
-    },
-    {
-      "id": 3,
-      "proyecto__title": "The Food Truck",
-      "proyecto__description": "Web app that allows you to order food from a food truck. Allows you to view the menu, add items to the cart and place an order.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
-      "proyecto__url_web": "https://the-food-truck-vue-js.vercel.app/",
-      "proyecto__tecnologias": ["VueJS", "Vuetify", "Vuex"]
-    }
-  ],
+  "projects_under_construction_title": "Coming soon...",
+  "projects_under_construction_subtitle": "This section is under construction, please come back later. 😊 ",
+  "projects__info": [],
   "others__projects__title": "Other Noteworthy Projects",
-  "others__projects": [
-    {
-      "id": 1,
-      "proyecto__title": "Digital Booking App",
-      "proyecto__description": "Online accommodation booking web application. It allows you to search for accommodations, view their details and make a reservation.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/digital-booking-app",
-      "proyecto__tecnologias": [
-        "Java",
-        "Spring Boot",
-        "JWT",
-        "MySQL",
-        "AWS",
-        "ReactJS"
-      ]
-    },
-    {
-      "id": 2,
-      "proyecto__title": "Journal App",
-      "proyecto__description": "Web app that allows you to create, edit and delete diary entries.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
-      "proyecto__url_web": "https://journal-app-chi-dusky.vercel.app/",
-      "proyecto__tecnologias": ["ReactJS", "Redux", "Material UI", "Firebase"]
-    },
-    {
-      "id": 3,
-      "proyecto__title": "Portfolio API",
-      "proyecto__description": "API to send messages from the portfolio contact form, it connects to an email service to send messages.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/mi-portfolio-api",
-      "proyecto__tecnologias": ["NodeJS", "Express", "SendGrid"]
-    },
-    {
-      "id": 4,
-      "proyecto__title": "API Dental Clinic",
-      "proyecto__description": "API for a dental clinic. It allows to manage patients, shifts and dentists.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/backend-1/tree/main/final",
-      "proyecto__tecnologias": ["Java", "Spring Boot", "Swagger"]
-    }
-  ]
+  "others__projects": []
 }

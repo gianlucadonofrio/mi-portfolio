@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import {
-  ContactMeForm,
   Footer,
   Home,
   Navbar,
@@ -8,34 +6,20 @@ import {
   ButtonToTop,
   StarsBackground,
   AboutMe,
-  LoaderMain,
+  ContactMePage,
 } from "../components";
 
 export const PortfolioPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
-
   return (
-    <>
-      {isLoading ? (
-        <LoaderMain />
-      ) : (
-        <div className="position-relative">
-          <Navbar />
-          <StarsBackground />
-          <ButtonToTop />
-          <Home />
-          <AboutMe />
-          <Projects />
-          <ContactMeForm />
-          <Footer />
-        </div>
-      )}
-    </>
+    <div className="position-relative">
+      <Navbar />
+      <StarsBackground />
+      <ButtonToTop />
+      <Home />
+      <AboutMe />
+      <Projects />
+      <ContactMePage />
+      <Footer />
+    </div>
   );
 };

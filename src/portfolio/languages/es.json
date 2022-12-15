@@ -3,7 +3,7 @@
   "navbar__proyectos": "Mis proyectos",
   "contactame": "Contáctame",
   "home__titulo": "Hola 👋🏼, soy",
-  "home__subtitulo": "Desarrollador Full Stack, apasionado por el desarrollo Frontend.",
+  "home__subtitulo": "Desarrollador Web Full Stack, apasionado por el desarrollo Frontend.",
   "home__curriculum": "Descargar CV",
   "acerca_de_mi__text_title": "Quién soy",
   "acerca_de_mi__title_habilidades": "Mis habilidades",
@@ -134,69 +134,9 @@
   "contactme__form__mensajeErrorTexto": " Por favor, intenta nuevamente más tarde.",
   "footer__subtitulo": "O también me puedes contactar a través de:",
   "footer__texto": "Hecho con ❤️ por Gianluca D'Onofrio.",
-  "projects__info": [
-    {
-      "id": 1,
-      "proyecto__title": "Rick and Morty App",
-      "proyecto__description": "Web app que consume la API de Rick and Morty. Permite buscar personajes, ver sus detalles y agregarlos a favoritos.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/ctd-esp-fe1-final",
-      "proyecto__url_web": "https://rick-and-morty-taupe-two.vercel.app/",
-      "proyecto__tecnologias": ["ReactJS", "Redux", "TypeScript", "JSDoc"]
-    },
-    {
-      "id": 2,
-      "proyecto__title": "Calendar App",
-      "proyecto__description": "Calendario colaborativo que permite crear eventos en un día y hora determinada. Los eventos se pueden editar o eliminar.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/10-calendar-app",
-      "proyecto__url_web": "https://calendar-app-sooty.vercel.app",
-      "proyecto__tecnologias": ["MongoDB", "Express", "ReactJS", "NodeJS"]
-    },
-    {
-      "id": 3,
-      "proyecto__title": "The Food Truck",
-      "proyecto__description": "Aplicación web para un food truck. Permite ver el menú, agregar productos al carrito y realizar un pedido.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/theFoodTruck-vueJs",
-      "proyecto__url_web": "https://the-food-truck-vue-js.vercel.app/",
-      "proyecto__tecnologias": ["VueJS", "Vuetify", "Vuex"]
-    }
-  ],
+  "projects_under_construction_title": "Pronto disponible...",
+  "projects_under_construction_subtitle": "Esta sección está en construcción. Por favor, vuelve más tarde. 😊",
+  "projects__info": [],
   "others__projects__title": "Otros proyectos interesantes",
-  "others__projects": [
-    {
-      "id": 1,
-      "proyecto__title": "Digital Booking App",
-      "proyecto__description": "Aplicación web de reservas online de alojamientos. Permite buscar alojamientos, ver sus detalles y realizar una reserva.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/digital-booking-app",
-      "proyecto__tecnologias": [
-        "Java",
-        "Spring Boot",
-        "JWT",
-        "MySQL",
-        "AWS",
-        "ReactJS"
-      ]
-    },
-    {
-      "id": 2,
-      "proyecto__title": "Journal App",
-      "proyecto__description": "Aplicación web para crear y guardar notas. Permite crear, editar y eliminar notas.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/react-course/tree/main/08-journal-app",
-      "proyecto__url_web": "https://journal-app-chi-dusky.vercel.app/",
-      "proyecto__tecnologias": ["ReactJS", "Redux", "Material UI", "Firebase"]
-    },
-    {
-      "id": 3,
-      "proyecto__title": "Portfolio API",
-      "proyecto__description": "API para enviar mensajes desde el formulario de contacto del portfolio, se conecta a un servicio de email para enviar los mensajes.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/mi-portfolio-api",
-      "proyecto__tecnologias": ["NodeJS", "Express", "SendGrid"]
-    },
-    {
-      "id": 4,
-      "proyecto__title": "API Dental Clinic",
-      "proyecto__description": "API para una clínica dental. Permite administrar pacientes, turnos y dentistas.",
-      "proyecto__url_github": "https://github.com/gianlucadonofrio/backend-1/tree/main/final",
-      "proyecto__tecnologias": ["Java", "Spring Boot", "Swagger"]
-    }
-  ]
+  "others__projects": []
 }
