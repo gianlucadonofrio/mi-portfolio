@@ -38,8 +38,7 @@ export const Home = () => {
 
         <div className="container-fluid d-flex justify-content-center flex-wrap flex-md-nowrap ">
           <a
-            href={require("../CV/CV-Gianluca-Donofrio.pdf")}
-            download="CV-Gianluca-Donofrio.pdf"
+            href="https://drive.google.com/drive/folders/14HEezWEgyIcWqDcJboZday1oUzzNpm7I?usp=share_link"
             target={"_blank"}
             rel="noreferrer"
             aria-label="download cv"
