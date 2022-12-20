@@ -14,7 +14,7 @@ export const ContactMePage = () => {
   return (
     <section
       id='contactMe'
-      className='container min-vh-100 d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center position-relative'
+      className='container min-vh-100 p-4 d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between align-items-md-center position-relative gap-3'
     >
       <div className=' col-12 col-md-6 d-flex flex-column justify-content-center'>
         <h1
@@ -30,7 +30,7 @@ export const ContactMePage = () => {
           </span>
         </h1>
         <p className='p-md-2 mt-2'>{languagePage.contactme__text}</p>
-        <div className='d-flex align-items-center'>
+        <div className='d-flex align-items-center justify-content-start mb-3'>
           <a
             href='mailto: gian.donofrio2000@gmail.com'
             target={'_blank'}
@@ -41,10 +41,10 @@ export const ContactMePage = () => {
           </a>
           <p
             style={{
-              fontSize: '1.1 rem',
-              margin: '0',
+              fontSize: '1.1rem',
               fontWeight: 'bold',
             }}
+            className='m-0'
           >
             gian.donofrio2000@gmail.com
           </p>
