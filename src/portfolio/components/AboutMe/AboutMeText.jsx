@@ -1,11 +1,4 @@
 export const AboutMeText = () => {
-  const textStyles = {
-    textDecoration: 'none',
-    color: 'var(--text-color)',
-    fontStyle: 'italic',
-    fontWeight: '600',
-  };
-
   return (
     <>
       {document.documentElement.lang === 'es' ? (
@@ -15,11 +8,9 @@ export const AboutMeText = () => {
             única y satisfactoria. Puedes ver algunos de mis proyectos en la
             sección de
             <a
-              href="#projects"
-              style={{
-                ...textStyles,
-              }}
-              aria-label="projects"
+              href='#projects'
+              className='text_important_aboutme'
+              aria-label='projects'
             >
               {' '}
               proyectos.
@@ -35,11 +26,9 @@ export const AboutMeText = () => {
           <p>
             No dude en{' '}
             <a
-              href="#contactMe"
-              style={{
-                ...textStyles,
-              }}
-              aria-label="contact me"
+              href='#contactMe'
+              className='text_important_aboutme'
+              aria-label='contact me'
             >
               contactarse
             </a>{' '}
@@ -52,11 +41,9 @@ export const AboutMeText = () => {
             I love creating websites that provide a unique and satisfying user
             experience. You can see some of my projects in the{' '}
             <a
-              href="#projects"
-              style={{
-                ...textStyles,
-              }}
-              aria-label="projects"
+              href='#projects'
+              className='text_important_aboutme'
+              aria-label='projects'
             >
               projects
             </a>{' '}
@@ -70,11 +57,9 @@ export const AboutMeText = () => {
           <p>
             Feel free to{' '}
             <a
-              href="#contactMe"
-              style={{
-                ...textStyles,
-              }}
-              aria-label="contact me"
+              href='#contactMe'
+              className='text_important_aboutme'
+              aria-label='contact me'
             >
               contact me
             </a>{' '}
@@ -83,5 +68,5 @@ export const AboutMeText = () => {
         </div>
       )}
     </>
-  );
-};
+  )
+}

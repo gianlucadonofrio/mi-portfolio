@@ -4,16 +4,14 @@ import {
   Navbar,
   Projects,
   ButtonToTop,
-  StarsBackground,
   AboutMe,
   ContactMePage,
-} from "../components";
+} from './components'
 
 export const PortfolioPage = () => {
   return (
-    <div className="position-relative">
+    <div className='position-relative'>
       <Navbar />
-      <StarsBackground />
       <ButtonToTop />
       <Home />
       <AboutMe />
@@ -21,5 +19,5 @@ export const PortfolioPage = () => {
       <ContactMePage />
       <Footer />
     </div>
-  );
-};
+  )
+}

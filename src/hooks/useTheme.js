@@ -1,31 +1,31 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
 export const useTheme = (initialTheme) => {
-  const [themeIcon, setThemeIcon] = useState('🌞');
-  const [theme, setTheme] = useState(initialTheme);
+  const [themeIcon, setThemeIcon] = useState('🌞')
+  const [theme, setTheme] = useState(initialTheme)
 
   const handleTheme = () => {
     if (theme === 'light') {
-      setTheme('dark');
-      setThemeIcon('🌚');
-      localStorage.setItem('theme', 'dark');
+      setTheme('dark')
+      setThemeIcon('🌚')
+      localStorage.setItem('theme', 'dark')
     } else {
-      setTheme('light');
-      setThemeIcon('🌞');
-      localStorage.setItem('theme', 'light');
+      setTheme('light')
+      setThemeIcon('🌞')
+      localStorage.setItem('theme', 'light')
     }
-  };
+  }
 
   useEffect(() => {
-    document.body.setAttribute('data-theme', theme);
+    document.body.setAttribute('data-theme', theme)
     if (localStorage.getItem('theme') === 'dark') {
-      setTheme('dark');
-      setThemeIcon('🌚');
+      setTheme('dark')
+      setThemeIcon('🌚')
     } else {
-      setTheme('light');
-      setThemeIcon('🌞');
+      setTheme('light')
+      setThemeIcon('🌞')
     }
-  }, [theme]);
+  }, [theme])
 
-  return [handleTheme, themeIcon];
-};
+  return [handleTheme, themeIcon]
+}

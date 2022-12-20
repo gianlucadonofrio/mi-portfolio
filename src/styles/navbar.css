@@ -8,18 +8,22 @@
   z-index: 100;
   padding: 0;
 }
+
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--color-text);
 }
+
 .background-navbar {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
 .nav-item {
   height: 100%;
 }
+
 .nav-link {
   height: 100%;
   display: flex;
@@ -28,6 +32,7 @@
   color: var(--color-nav-items);
   padding: 20px 0;
 }
+
 .menu-icon-button {
   display: flex;
   justify-content: center;
@@ -35,9 +40,11 @@
   font-size: 1.6rem;
   color: var(--color-nav-items);
 }
+
 .navbar-toggler {
   border: none;
 }
+
 .buttons-navbar {
   background-color: transparent;
   display: flex;
@@ -48,16 +55,19 @@
   font-size: 1.6rem;
   height: 50px;
 }
+
 .nav-link:hover {
   background-color: var(--color-nav-hover);
   color: var(--color-text);
   transition: all 0.2s ease-in-out;
 }
+
 .buttons-navbar:hover {
   background-color: var(--color-nav-hover);
   border: none;
   border-radius: 100%;
 }
+
 @media screen and (max-width: 992px) {
   #navbar {
     padding: 6px;

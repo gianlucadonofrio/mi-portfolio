@@ -1,0 +1,17 @@
+.contactme-footer {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-buttons);
+}
+
+.contactme-footer:hover {
+    color: white;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+
+}
